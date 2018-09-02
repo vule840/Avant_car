@@ -1,0 +1,87 @@
+// Use this file to overwrite the basic Bootstrap variables and add your own variables
+// To overwrite a Bootstrap variable you don´t have to touch the Bootstrap folder. 
+// Just copy a variable from /sass/bootstrap/_variables.scss, paste it here and edit the value.
+// As example you find one of the most important Bootstrap variable below: $brand-primary.
+// Thats the ugly Bootstrap blue used for all the links, primary buttons etc.
+// Just add your color code here, compile the theme.scss file to change this color everywhere
+
+
+//
+// Color system
+//
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700');
+
+$primary: #7C008C;
+
+$secondary: #fff;
+
+$zelena__: #A7B849;
+
+$pocetna__bg: #E1E1E1;
+
+$roboto: 'Roboto', sans-serif;
+
+
+$colors: (
+  "zelena": $zelena__
+  
+) !default;
+
+:root {
+  --zelena: #A7B849;
+  --bijela: #fff;
+  --siva_tamno: #28373C;
+  --siva: #E1E1E1;
+}
+
+$enable-gradients: true;
+
+
+@mixin gradijent($args...) {
+ background-image: -o-gradijent($args); 
+ background-image: -moz-gradijent($args); 
+ background-image: -webkit-gradijent($args); 
+  background-image: gradijent($args); 
+}
+
+
+@mixin padding($value) {
+    // write the css here
+    padding: $value;
+}
+
+@mixin italic() {
+    font-style: italic;
+}
+
+
+@mixin zelena_bold() {
+    // write the css here
+    font-weight: bold;
+    color: var(--zelena);
+}
+
+
+@mixin padding_tb($top,$bottom) {
+    // write the css here
+    padding-top: $top;
+    padding-bottom: $bottom;
+}
+
+@mixin bg_repeat() {
+    // write the css here
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@mixin sivi_gradijent(){
+
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f6f6f6+87,ededed+100 */
+background: rgb(255,255,255); /* Old browsers */
+background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1) 87%, rgba(237,237,237,1) 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(246,246,246,1) 87%,rgba(237,237,237,1) 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(246,246,246,1) 87%,rgba(237,237,237,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
+}
