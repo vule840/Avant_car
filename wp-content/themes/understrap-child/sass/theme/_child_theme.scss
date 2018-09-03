@@ -236,7 +236,25 @@ ul.home_lista {
 }
 
 }
+ul.home_lista2 {
+  list-style:none;
+  padding-left: 0em;
+  li {
+  &:before {
+    content: '';
+    display: inline-block;
+    height: 0.8em;
+    width: 1.3em;
+    //background-image: url(http://placehold.it/32?text=fallback); // Fallback PNG
+    background-image: url("#{$urlsass}/strelica_crna.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right:0.5em; 
 
+  }
+}
+
+}
 
 /********************
 
@@ -349,9 +367,64 @@ ul.home_lista {
 	@include svg(var(--zelena),38px,inline-flex, center);	
 	padding: 0.5rem;
 }
+.home_list{
+	@include svg(var(--bijela),300px,inline-flex, center);
+}
+/*kontakt*/
+.kontakt_email{
+	@include svg(var(--bijela),70px,inline-flex, center);
+}
+.kontakt_mob{
+	@include svg(var(--siva_tamno),50px,inline-flex, center);
+}
+.kontakt_auti{
+	@include svg(var(--siva_tamno),160px,inline-flex, center);
+}
+/* hr i slo*/
+.karta_hr{
+	@include svg(var(--siva_tamno),350px,inline-flex, center);
+}
+.karta_slo{
+	@include svg(var(--siva_tamno),160px,inline-flex, center);
+}
 
+.ref_globus{
+	@include svg(var(--siva_tamno),100px,inline-flex, center);
+}
+.ref_zgrade{
+@include svg(var(--siva_tamno),100px,inline-flex, center);
+}
+.ref_epruveta{
+	@include svg(var(--siva_tamno),80px,inline-flex, center);
+}
+.ref_auti{
+@include svg(var(--siva_tamno),100px,inline-flex, center);
+}
+.ref_akuml{
+@include svg(var(--siva_tamno),100px,inline-flex, center);	
+}
 
+/*transferi*/
 
+.avantour_avion{
+	@include svg(var(--siva_tamno),100px,inline-flex, center);
+}
+.avantour_grad{
+	@include svg(var(--siva_tamno),100px,inline-flex, center);
+}
+.avantour_lik{
+	@include svg(var(--siva_tamno),80px,inline-flex, center);
+}
+
+.avantour_zero_logo{
+	@include svg(var(--siva_tamno),80px,inline-flex, center);
+}
+.pula{
+	@include svg(var(--siva_tamno),40px,inline-flex, center);
+}
+.Rijeka{
+	@include svg(var(--siva_tamno),80px,inline-flex, center);
+}
 /**
  * Owl Carousel v2.3.4
  * Copyright 2013-2018 David Deutsch

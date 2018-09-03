@@ -11074,6 +11074,19 @@ ul.home_lista {
     background-repeat: no-repeat;
     margin-right: 0.5em; }
 
+ul.home_lista2 {
+  list-style: none;
+  padding-left: 0em; }
+  ul.home_lista2 li:before {
+    content: '';
+    display: inline-block;
+    height: 0.8em;
+    width: 1.3em;
+    background-image: url("http://localhost/avant_car/wp-content/themes/understrap/img/strelica_crna.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 0.5em; }
+
 /********************
 
 	HRV_SLO__SEKCIJE
@@ -11187,6 +11200,162 @@ ul.home_lista {
   -ms-flex-item-align: center;
       align-self: center;
   padding: 0.5rem; }
+
+.home_list {
+  fill: var(--bijela);
+  width: 300px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-item-align: center;
+      align-self: center; }
+
+/*kontakt*/
+.kontakt_email {
+  fill: var(--bijela);
+  width: 70px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-item-align: center;
+      align-self: center; }
+
+.kontakt_mob {
+  fill: var(--siva_tamno);
+  width: 50px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-item-align: center;
+      align-self: center; }
+
+.kontakt_auti {
+  fill: var(--siva_tamno);
+  width: 160px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-item-align: center;
+      align-self: center; }
+
+/* hr i slo*/
+.karta_hr {
+  fill: var(--siva_tamno);
+  width: 350px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-item-align: center;
+      align-self: center; }
+
+.karta_slo {
+  fill: var(--siva_tamno);
+  width: 160px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-item-align: center;
+      align-self: center; }
+
+.ref_globus {
+  fill: var(--siva_tamno);
+  width: 100px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-item-align: center;
+      align-self: center; }
+
+.ref_zgrade {
+  fill: var(--siva_tamno);
+  width: 100px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-item-align: center;
+      align-self: center; }
+
+.ref_epruveta {
+  fill: var(--siva_tamno);
+  width: 80px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-item-align: center;
+      align-self: center; }
+
+.ref_auti {
+  fill: var(--siva_tamno);
+  width: 100px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-item-align: center;
+      align-self: center; }
+
+.ref_akuml {
+  fill: var(--siva_tamno);
+  width: 100px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-item-align: center;
+      align-self: center; }
+
+/*transferi*/
+.avantour_avion {
+  fill: var(--siva_tamno);
+  width: 100px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-item-align: center;
+      align-self: center; }
+
+.avantour_grad {
+  fill: var(--siva_tamno);
+  width: 100px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-item-align: center;
+      align-self: center; }
+
+.avantour_lik {
+  fill: var(--siva_tamno);
+  width: 80px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-item-align: center;
+      align-self: center; }
+
+.avantour_zero_logo {
+  fill: var(--siva_tamno);
+  width: 80px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-item-align: center;
+      align-self: center; }
+
+.pula {
+  fill: var(--siva_tamno);
+  width: 40px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-item-align: center;
+      align-self: center; }
+
+.Rijeka {
+  fill: var(--siva_tamno);
+  width: 80px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-item-align: center;
+      align-self: center; }
 
 /**
  * Owl Carousel v2.3.4

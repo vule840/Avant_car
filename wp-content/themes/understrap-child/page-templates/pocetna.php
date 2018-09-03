@@ -102,8 +102,8 @@ HERO SECTION__HEADER
 				<div class="row">
 					
 		
-			<p>Nema minimalnog 
-trajanja najma<svg class="strelica"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#home-strelica" /></svg></p>
+			<span>Nema minimalnog 
+trajanja najma<svg class="strelica"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#home-strelica" /></svg></span>
 					<p>Nema nepredvidivih
 troškova<svg class="strelica"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#home-strelica" /></svg></p>
 	<p>Nema kapitalnih
@@ -137,7 +137,7 @@ ulaganja ili učešća<svg class="strelica"><use xlink:href="<?php bloginfo('tem
 			<div class="col-md-6">
 				<h2 class="text-center zelena">Flota za svaki ukus</h2>
 
-				<img class="text-center" src="http://localhost/avant_car/wp-content/uploads/2018/09/home_auti-8.png">
+				<img class="text-center" src="<?php bloginfo('url') ?>/wp-content/uploads/2018/09/home_auti-8.png">
 				<p class="text-left">> Pogledajte kompletnu flotu</p>
 
 			</div>
@@ -269,8 +269,9 @@ mobilnost je tu, bez buke i bez emisije.</p>
 
 
 			</div>
-			<div class="col-md-12"><p> Kreiramo novo iskustvo. Posjetite naš showroom.</p></div>
-
+			<div class="col-md-12">> Kreiramo novo iskustvo. Posjetite naš showroom. </div>
+			<svg class="home_list"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#home-list" /></svg>
+				
 		</div><!-- .row end -->
 
 

@@ -7,7 +7,7 @@
 				<div class="row">
 						
 						<div class="col-md-6">
-						<ul>
+						<ul class="home_lista2">
 							<li>Dugoročni najam</li>
 							<li>Dugoročni najam</li>
 							<li>Dugoročni najam</li>
@@ -17,7 +17,7 @@
 					</div>
 
 					<div class="col-md-6">
-						<ul>
+						<ul class="home_lista2">
 							<li>Dugoročni najam</li>
 							<li>Dugoročni najam</li>
 							<li>Dugoročni najam</li>
@@ -28,9 +28,15 @@
 
 
 				</div>
-
-			<div class="col-md-12"><p class="text-left">> Zatražite povratni poziv za info o našim uslugama</p></div>
-					
-					
+				<div class="col-md-12">
+					<div class="d-flex">
+		<p class="justify-content-start">> Zatražite povratni poziv za info o našim uslugama</p>
+		<p class="justify-content-end"><button type="button" class="btn btn-outline-dark ">INFO: +385 (0)1 6251 222</button></p>
+		
+	</div>
+				</div>
+	
+			
+			
 				
 		</div><!-- .row end -->		

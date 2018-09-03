@@ -34,7 +34,7 @@ HERO SECTION__HEADER
 		<div id="kontakt_1_kucice" class="row text-center">
 
 			<div class="col-md-4">
-				<img src="https://via.placeholder.com/50x50" alt="">
+				<svg class="kontakt_email"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#kontakt-email" /></svg>
 				<p><a href="mailto:corporate@avantcar.hr">corporate@avantcar.hr</a></p>
 				<p>Djelatnici podrške poslovnim korisnicima
 kontaktirat će Vas u roku 24 sata.</p>
@@ -42,14 +42,14 @@ kontaktirat će Vas u roku 24 sata.</p>
 
 </div>
 			<div class="col-md-4">
-				<img src="https://via.placeholder.com/50x50" alt="">
-				<p><a href="mailto:corporate@avantcar.hr">corporate@avantcar.hr</a></p>
-				<p>Djelatnici podrške poslovnim korisnicima
-kontaktirat će Vas u roku 24 sata.</p>
+				<svg class="kontakt_mob"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#kontakt-mob" /></svg>
+				<p><a href="mailto:corporate@avantcar.hr">+385 (0)1 6251 222</a></p>
+				<p>Možete nas jednostavno nazvati i odmah
+krećemo s unapređenjem vaše mobilnosti.</p>
 
 </div>
 <div class="col-md-4">
-				<img src="https://via.placeholder.com/50x50" alt="">
+				<svg class="kontakt_auti"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#kontakt-auti" /></svg>
 				<p><a href="mailto:corporate@avantcar.hr">corporate@avantcar.hr</a></p>
 				<p>Djelatnici podrške poslovnim korisnicima
 kontaktirat će Vas u roku 24 sata.</p>

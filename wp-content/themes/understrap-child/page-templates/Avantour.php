@@ -58,7 +58,7 @@ HERO SECTION__HEADER
 				  <div class="card">
 				    
 				    <div class="card-body">
-				    	<img src="https://via.placeholder.com/50x50" alt="">
+				    	<svg class="avantour_avion"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#avantour-avion" /></svg>
 				      <h5 class="card-title">ZRAČNA LUKA</h5>
 				      <p class="card-text"><small >Povezujemo zračne luke i gradove.</small></p>
 				      <p class="card-text">Za Vas i vaše poslovne partnere organiziramo
@@ -71,7 +71,7 @@ te se transfer rezervira unaprijed po fiksnoj cijeni.</p>
 				   <div class="card">
 				   
 				    <div class="card-body">
-				    	<img src="https://via.placeholder.com/50x50" alt="">
+				    	<svg class="avantour_grad"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#avantour-grad" />
 				      <h5 class="card-title">INTER CITY</h5>
 				      <p class="card-text"><small >Povezujemo destinacije.</small></p>
 				      <p class="card-text">Avantour omogućava vaš prijevoz od vrata do
@@ -85,7 +85,7 @@ transfer je rješenje za Vas!</p>
 				   <div class="card">
 				   
 				    <div class="card-body">
-				    	<img src="https://via.placeholder.com/50x50" alt="">
+				    	<svg class="avantour_lik"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#avantour-lik" />
 				      <h5 class="card-title">CHAUFFEUR SERVICE</h5>
 				      <p class="card-text"><small >Stvaramo VIP doživljaj.</small></p>
 				      <p class="card-text">Usluga prijevoza Chauffeur service, vodi Vas do
@@ -127,7 +127,7 @@ partnera, pojavite se sa stilom!</p>
 		4. AVANTOUR__VOZITE_OVERLAY
 
 		 *************** -->
-		<div class="row traka_logo"></div>
+		<div class="row traka_logo"><svg class="avantour_zero_logo"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#avantour-zero-logo" /></svg></div>
 		
 				
 
@@ -161,7 +161,7 @@ partnera, pojavite se sa stilom!</p>
 				  <div class="card">
 				    
 				    <div class="card-body">
-				    	<img src="https://via.placeholder.com/50x50" alt="">
+				    	<svg class=Pula"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#pula" /></svg>
 				      <h5 class="card-title">PULA</h5>
 				      <p class="card-text"><small>Pulska arena - amfiteatar</small></p>
 				      
@@ -171,7 +171,7 @@ partnera, pojavite se sa stilom!</p>
 				   <div class="card">
 				   
 				    <div class="card-body">
-				    	<img src="https://via.placeholder.com/50x50" alt="">
+				    	<svg class=Rijeka"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#Rijeka" /></svg>
 				      <h5 class="card-title">RIJEKA</h5>
 				      <p class="card-text"><small >Grad koji teče</small></p>
 				      

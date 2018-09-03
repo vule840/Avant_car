@@ -39,11 +39,12 @@ u međunarodnim zračnim lukama i u više od 15 gradova.</P>
 			</div><!-- #primary -->
 			<div class="col-md-6 text-center">
 				<h2>Avant car Hrvatska</h2>
-				<img src="https://via.placeholder.com/300x300" alt="">
+				<svg class="karta_hr"><use xlink:href="<?php bloginfo('template_url'); ?>/img/karta-hr.svg" /></svg>
 			</div>
 			<div class="col-md-6 text-center">
-					<h2>Avant car Slovenija</h2>
-				<img src="https://via.placeholder.com/300x300" alt="">
+				<h2>Avant car Slovenija</h2>
+
+				<svg class="karta_slo"><use xlink:href="<?php bloginfo('template_url'); ?>/img/karta-slo.svg" /></svg>
 			</div>
 
 		</div><!-- .row end -->
@@ -58,7 +59,7 @@ u međunarodnim zračnim lukama i u više od 15 gradova.</P>
 		 <div id="hrv_slo_2_lokacije" class="row">
 		 	
 
-		 	<div class="col-md-12 text-center"><h2>LOKACIJE POSLOVNICA</h2></div>
+		 	<div class="col-md-12 text-center zelena"><h2>LOKACIJE POSLOVNICA</h2></div>
 			<div class="col-md-6">
 				<h4>ZAGREB - CENTAR</h4>
 				<p>Green Gold - showroom</p>
@@ -114,7 +115,7 @@ društvu nastojimo olakšati i unaprijediti život.</p>
 			</div>
 
 			<div class="col-md-12 text-center">
-				<button type="button" class="btn btn-primary">POŠALJI UPIT</button>
+				<button type="button" class="btn btn-outline-dark ">POŠALJI UPIT</button>
 			</div>
 
 		 </div>
@@ -137,7 +138,7 @@ društvu nastojimo olakšati i unaprijediti život.</p>
 				  <div class="card">
 				    
 				    <div class="card-body">
-				    	<img src="https://via.placeholder.com/50x50" alt="">
+				    	<svg class="ref_globus"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#ref-globus" /></svg>
 				      <h6 class="card-title">IMAMO POVJERENJE
 							KLIJENATA IZ VIŠE OD
 							100 ZEMALJA</h6>
@@ -147,7 +148,7 @@ društvu nastojimo olakšati i unaprijediti život.</p>
 				    <div class="card">
 				    
 				    <div class="card-body">
-				    	<img src="https://via.placeholder.com/50x50" alt="">
+				    	<svg class="ref_zgrade"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#ref-zgrade" /></svg>
 				      <h6 class="card-title">DO SADA SMO UPRAVLJALI
 PARKOM ZA VIŠE OD 200
 PODUZEĆA SVIH VELIČINA</h6>
@@ -157,7 +158,7 @@ PODUZEĆA SVIH VELIČINA</h6>
 				    <div class="card">
 				    
 				    <div class="card-body">
-				    	<img src="https://via.placeholder.com/50x50" alt="">
+				    	<svg class="ref_auti"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#ref-auti" /></svg>
 				      <h6 class="card-title">NAŠA FLOTA SADRŽI
 						VIŠE OD 1.000 VOZILA</h6>
 		      
@@ -167,7 +168,7 @@ PODUZEĆA SVIH VELIČINA</h6>
 				   <div class="card">
 				    
 				    <div class="card-body">
-				    	<img src="https://via.placeholder.com/50x50" alt="">
+				    	<svg class="ref_epruveta"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#ref-epruveta" /></svg>
 				      <h6 class="card-title">IMAMO VLASTITU
 SKUPINU ZA
 ISTRAŽIVANJE I RAZVOJ</h6>
@@ -177,7 +178,7 @@ ISTRAŽIVANJE I RAZVOJ</h6>
 				   <div class="card">
 				    
 				    <div class="card-body">
-				    	<img src="https://via.placeholder.com/50x50" alt="">
+				    	<svg class="ref_akuml"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#ref-akuml" /></svg>
 				      <h6 class="card-title">U REGIJI SMO
 VODEĆI PONUDITELJ
 ELEKTRIČNE MOBILNOSTI</h6>
