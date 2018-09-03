@@ -10908,6 +10908,11 @@ body #cover {
   box-shadow: 3px -3px 16px 2px rgba(0, 0, 0, 0.35);
   padding: 11em 0; }
 
+/********************
+
+	NASLOV_STILOVI
+
+**********************/
 h1.naslovna {
   font-size: 4rem;
   color: var(--bijela);
@@ -10916,6 +10921,9 @@ h1.naslovna {
 .naslovna__ispod {
   font-size: 1.5rem;
   color: var(--bijela);
+  font-weight: 300; }
+
+h2 {
   font-weight: 300; }
 
 /********************
@@ -11007,6 +11015,9 @@ div#content {
   font-weight: bold;
   color: var(--zelena); }
 
+.zelena {
+  color: var(--zelena); }
+
 .traka_logo {
   background: var(--siva_tamno);
   height: 100px; }
@@ -11021,8 +11032,11 @@ div#content {
 **********************/
 #home_1_pogodnosti {
   background: var(--zelena);
-  padding: 3rem;
+  padding: 2rem;
   color: var(--siva_tamno); }
+  #home_1_pogodnosti .card-title {
+    color: var(--bijela);
+    font-weight: 300; }
 
 #home_2_dugorocni {
   color: var(--bijela);
@@ -11041,6 +11055,24 @@ div#content {
 #home_5_elektricna {
   padding: 3rem;
   color: var(--bijela); }
+
+/********************
+
+	LISTA_HOME
+
+**********************/
+ul.home_lista {
+  list-style: none;
+  padding-left: 0em; }
+  ul.home_lista li:before {
+    content: '';
+    display: inline-block;
+    height: 0.8em;
+    width: 1.3em;
+    background-image: url("http://localhost/avant_car/wp-content/themes/understrap/img/home_strelica.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right: 0.5em; }
 
 /********************
 
@@ -11131,6 +11163,30 @@ div#content {
 #kontakt_2_mapa .col-md-4:nth-child(1) {
   padding-top: 4rem;
   padding-bottom: 2rem; }
+
+/********************
+
+	SVG__STILOVI
+
+**********************/
+.home_ikone {
+  fill: #fff;
+  width: 80px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-item-align: center;
+      align-self: center; }
+
+.strelica {
+  fill: var(--zelena);
+  width: 38px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  padding: 0.5rem; }
 
 /**
  * Owl Carousel v2.3.4

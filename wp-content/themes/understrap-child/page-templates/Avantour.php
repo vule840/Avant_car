@@ -35,7 +35,7 @@ HERO SECTION__HEADER
 
 			<div class="col-md-12 content-area" id="primary">
 
-					<h2>Kontakt</h2>
+					<?php gravity_form( 2, false, false, false, '', false ); ?>
 
 			</div><!-- #primary -->
 

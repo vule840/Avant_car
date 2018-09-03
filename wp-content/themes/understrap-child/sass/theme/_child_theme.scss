@@ -26,6 +26,12 @@ body #cover {
     padding: 11em 0;
 }
 
+/********************
+
+	NASLOV_STILOVI
+
+**********************/
+
 h1.naslovna {
     font-size: 4rem;
     
@@ -39,6 +45,9 @@ h1.naslovna {
    // @include gradient-y(#418fde, #fdb927);
 }
 
+h2{
+	font-weight: 300;
+}
 
 /********************
 
@@ -153,6 +162,9 @@ div#content {
 .zelena_bold_slova{
 	@include zelena_bold();
 }
+.zelena{
+	color: var(--zelena);
+}
 
 .traka_logo{
 	background: var(--siva_tamno);
@@ -170,8 +182,12 @@ div#content {
 
 #home_1_pogodnosti{
 	background: var(--zelena);
-	@include padding(3rem);
+	@include padding(2rem);
 	color: var(--siva_tamno);
+	.card-title{
+		color: var(--bijela);
+		font-weight: 300;
+	}
 }
 
 #home_2_dugorocni{
@@ -194,6 +210,33 @@ div#content {
 	@include padding(3rem);
 	color: var(--bijela);
 }
+
+/********************
+
+	LISTA_HOME
+
+**********************/
+
+ul.home_lista {
+  list-style:none;
+  padding-left: 0em;
+  li {
+  &:before {
+    content: '';
+    display: inline-block;
+    height: 0.8em;
+    width: 1.3em;
+    //background-image: url(http://placehold.it/32?text=fallback); // Fallback PNG
+    background-image: url("#{$urlsass}/home_strelica.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right:0.5em; 
+
+  }
+}
+
+}
+
 
 /********************
 
@@ -286,6 +329,25 @@ div#content {
 		
 		@include padding_tb(4rem,2rem);	
 	}
+}
+
+
+/********************
+
+	SVG__STILOVI
+
+**********************/
+
+.home_ikone{
+	fill:  #fff;
+	width: 80px;
+	display: inline-flex;
+  align-self: center;
+}
+
+.strelica{
+	@include svg(var(--zelena),38px,inline-flex, center);	
+	padding: 0.5rem;
 }
 
 

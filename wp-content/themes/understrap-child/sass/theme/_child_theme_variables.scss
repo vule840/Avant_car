@@ -13,6 +13,8 @@
 
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700');
 
+$urlsass: "http://localhost/avant_car/wp-content/themes/understrap/img";
+
 $primary: #7C008C;
 
 $secondary: #fff;
@@ -84,4 +86,11 @@ background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(246,246,246,1
 background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(246,246,246,1) 87%,rgba(237,237,237,1) 100%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(246,246,246,1) 87%,rgba(237,237,237,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 ); /* IE6-9 */
+}
+
+@mixin svg($color, $width, $display, $align){
+	fill:  $color;
+	width: $width;
+	display: $display;
+  align-self: $align;
 }
