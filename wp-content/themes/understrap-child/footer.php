@@ -18,19 +18,19 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<div class="row">
 
-			<div class="col-md-12">
-
-				<footer class="site-footer" id="colophon">
-
-					<div class="site-info">
-
-						<?php understrap_site_info(); ?>
-
-					</div><!-- .site-info -->
-
-				</footer><!-- #colophon -->
-
-			</div><!--col end -->
+			
+						
+						
+						<ul class="home_lista2 my-0">
+							<li>Dugoročni najam</li>
+							<li>Kratkoročni najam</li>
+							<li>Električna mobilnost</li>
+							<li>Corporate car sharing</li>
+							<li>Transferi</li>
+						</ul>
+					
+			
+				
 
 		</div><!-- row end -->
 

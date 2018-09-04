@@ -14,6 +14,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:300,400,400i,700');
 
 $urlsass: "http://localhost/avant_car/wp-content/themes/understrap/img";
+$urlsass2: "http://localhost/avant_car/wp-content/uploads";
 
 $primary: #7C008C;
 
@@ -24,6 +25,10 @@ $zelena__: #A7B849;
 $pocetna__bg: #E1E1E1;
 
 $roboto: 'Roboto', sans-serif;
+
+$dark: #000;
+$dropdown-link-hover-bg: $dark;
+$dropdown-bg: $dark;
 
 
 $colors: (

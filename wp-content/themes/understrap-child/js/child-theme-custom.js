@@ -3,6 +3,8 @@ console.log('dsfds');
 
 jQuery(document).ready(function($) {
 
+
+
 	$('.owl-carousel').owlCarousel({
     loop:true,
     margin:10,
@@ -19,4 +21,10 @@ jQuery(document).ready(function($) {
         }
     }
 })
+
+
+
+
+
+
 });

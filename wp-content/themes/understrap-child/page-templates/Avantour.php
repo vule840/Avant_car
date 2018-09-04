@@ -112,12 +112,12 @@ partnera, pojavite se sa stilom!</p>
 		 *************** -->
 
 		<div  id="avantour_3_vozila" class="row">
-
-			<div class="col-md-12 content-area" id="primary">
+			<?php get_template_part( 'global-templates/carusel_slider' ); ?>
+		<!-- <div class="col-md-12 content-area" id="primary">
 					<h2>AVANTOUR VOZILA</h2>
 					<h2>AVANTOUR__AV_VOZILA SLIDER</h2>
 
-			</div><!-- #primary -->
+			</div> -->	
 
 		</div><!-- .row end -->
 
@@ -161,7 +161,7 @@ partnera, pojavite se sa stilom!</p>
 				  <div class="card">
 				    
 				    <div class="card-body">
-				    	<svg class=Pula"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#pula" /></svg>
+				    	<svg class="Pula"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#pula" /></svg>
 				      <h5 class="card-title">PULA</h5>
 				      <p class="card-text"><small>Pulska arena - amfiteatar</small></p>
 				      
@@ -171,7 +171,7 @@ partnera, pojavite se sa stilom!</p>
 				   <div class="card">
 				   
 				    <div class="card-body">
-				    	<svg class=Rijeka"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#Rijeka" /></svg>
+				    	<svg class="Rijeka"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#rijeka" /></svg>
 				      <h5 class="card-title">RIJEKA</h5>
 				      <p class="card-text"><small >Grad koji teče</small></p>
 				      
@@ -181,7 +181,7 @@ partnera, pojavite se sa stilom!</p>
 				   <div class="card">
 				   
 				    <div class="card-body">
-				    	<img src="https://via.placeholder.com/50x50" alt="">
+				    	<svg class="Zadar"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#zadar" /></svg>
 				      <h5 class="card-title">ZADAR</h5>
 				      <p class="card-text"><small >Srce Dalmacije</small></p>
 				      
@@ -190,7 +190,7 @@ partnera, pojavite se sa stilom!</p>
 				  </div><div class="card">
 				   
 				    <div class="card-body">
-				    	<img src="https://via.placeholder.com/50x50" alt="">
+				    	<svg class="Split align-self-end"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#split" /></svg>
 				      <h5 class="card-title">SPLIT</h5>
 				      <p class="card-text"><small >Dioklecijanov grad</small></p>
 				      
@@ -199,7 +199,7 @@ partnera, pojavite se sa stilom!</p>
 				  </div><div class="card">
 				   
 				    <div class="card-body">
-				    	<img src="https://via.placeholder.com/50x50" alt="">
+				    	<svg class="Dubrovnik align-self-end"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#dubrovnik" /></svg>
 				      <h5 class="card-title">DUBROVNIK</h5>
 				      <p class="card-text"><small >Dubrovačke zidine i
 "Igre prijestolja"</small></p>

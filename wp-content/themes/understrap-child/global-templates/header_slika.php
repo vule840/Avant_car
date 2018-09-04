@@ -23,7 +23,7 @@
 <div class="text-center">
 	<!--<button type="button" class="btn btn-custom text-center">POŠALJI UPIT</button>  -->
 	   <!-- <a href="#" class="btn btn-custom">Custom Link</a> -->
-	  <button type="button" class="btn btn-outline-secondary">POŠALJI UPIT</button>
+	  <button type="button" class="btn btn-outline-secondary"><strong>POŠALJI UPIT</strong> </button>
 </div>
 
 

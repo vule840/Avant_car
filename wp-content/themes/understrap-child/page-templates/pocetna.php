@@ -99,6 +99,12 @@ HERO SECTION__HEADER
 					<p>Dugoročni poslovni najam je svaki najam u vremenskom trajanju od 30 i više dana. Naš poslovni korisnik ima mogućnost vlastitog odabira modela automobila i opreme, upravo po svojoj mjeri.</p>
 					<p>Usluga dugoročnog poslovnog najma podrazumijeva uvijek dostupnog account managera i premium podršku za rješeavanje svih vaših zahtjeva.</p>
 				</div>
+
+
+	
+
+
+
 				<div class="row">
 					
 		
@@ -115,10 +121,7 @@ ulaganja ili učešća<svg class="strelica"><use xlink:href="<?php bloginfo('tem
 	
 
 
-				<!-- <div class="col-md-3">Nema minimalnog trajanja najma <img src="https://via.placeholder.com/50x50"></div>
-				<div class="col-md-3">Nema nepredvidivih troškova <img src="https://via.placeholder.com/50x50"></div>
-				<div class="col-md-3">Nema nepredvidivih troškova <img src="https://via.placeholder.com/50x50"></div>
-				<div class="col-md-3">Nema nepredvidivih troškova <img src="https://via.placeholder.com/50x50"></div> -->	
+				
 				</div>
 				
 
@@ -269,10 +272,17 @@ mobilnost je tu, bez buke i bez emisije.</p>
 
 
 			</div>
-			<div class="col-md-12">> Kreiramo novo iskustvo. Posjetite naš showroom. </div>
-			<svg class="home_list"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#home-list" /></svg>
-				
-		</div><!-- .row end -->
+
+
+<div class="example-container">
+  <div class="example-row">
+    <div class="example-content-main">> Zatražite povratni poziv za info o našim uslugama</div>
+    <div class="example-content-secondary"><svg class="home_list"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#home-list" /></svg></div>
+  </div>
+</div>
+
+			
+</div><!-- .row end -->
 
 
 		<!--**************.
@@ -289,7 +299,7 @@ mobilnost je tu, bez buke i bez emisije.</p>
 
 
 
-	<?php get_template_part( 'global-templates/sidebar_sticky' ); ?>
+	<?php get_template_part( 'global-templates/sidebar_sticky2' ); ?>
 
 </div><!-- Wrapper end -->
 

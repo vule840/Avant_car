@@ -1,40 +1,4 @@
-<?php
-/**
- * Template Name: Flota
- *
- * Template for displaying a page without sidebar even if a sidebar widget is published.
- *
- * @package understrap
- */
-
-get_header();
-$container = get_theme_mod( 'understrap_container_type' );
-?>
-
-
-<!-- 
-
-HERO SECTION__HEADER
-
- -->
-
-
-<?php get_template_part( 'global-templates/header_slika' ); ?>
-
-
-<div class="wrapper" id="full-width-page-wrapper">
-
-	<div class="<?php echo esc_attr( $container ); ?>" id="content">
-
-
-			<!-- 
-
-			1. D_NAJAM_FLOTA
-
-			 -->
-
-
-		<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 			  <ol class="carousel-indicators">
 			    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">ddfdsf</li>
 			    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
@@ -69,25 +33,6 @@ HERO SECTION__HEADER
 
 			     	<hr>
 
-
-				<!-- prvi drugi-->
-			  <div class="row">
-			     	<div class="col-md-4">
-						<img src="https://via.placeholder.com/300x300" alt="">
-						<p>dfsddsf dsfsdf</p>
-						<p>dfsddsf dsfsdf</p>
-			</div>
-			<div class="col-md-4">
-				<img src="https://via.placeholder.com/300x300" alt="">
-				<p>dfsddsf dsfsdf</p>
-				<p>dfsddsf dsfsdf</p>
-			</div>
-			<div class="col-md-4">
-				<img src="https://via.placeholder.com/300x300" alt="">
-				<p>dfsddsf dsfsdf</p>
-				<p>dfsddsf dsfsdf</p>
-			</div>
-			     	</div>
 
 			    </div>
 
@@ -184,40 +129,7 @@ HERO SECTION__HEADER
 			</div>
 			     	</div>
 					
-					<div class="row">
-			     	<div class="col-md-4">
-						<img src="https://via.placeholder.com/300x300" alt="">
-						<p>dfsddsf dsfsdf</p>
-						<p>dfsddsf dsfsdf</p>
-			</div>
-			<div class="col-md-4">
-				<img src="https://via.placeholder.com/300x300" alt="">
-				<p>dfsddsf dsfsdf</p>
-				<p>dfsddsf dsfsdf</p>
-			</div>
-			<div class="col-md-4">
-				<img src="https://via.placeholder.com/300x300" alt="">
-				<p>dfsddsf dsfsdf</p>
-				<p>dfsddsf dsfsdf</p>
-			</div>
-			     	</div>
-			     	<div class="row">
-			     	<div class="col-md-4">
-						<img src="https://via.placeholder.com/300x300" alt="">
-						<p>dfsddsf dsfsdf</p>
-						<p>dfsddsf dsfsdf</p>
-			</div>
-			<div class="col-md-4">
-				<img src="https://via.placeholder.com/300x300" alt="">
-				<p>dfsddsf dsfsdf</p>
-				<p>dfsddsf dsfsdf</p>
-			</div>
-			<div class="col-md-4">
-				<img src="https://via.placeholder.com/300x300" alt="">
-				<p>dfsddsf dsfsdf</p>
-				<p>dfsddsf dsfsdf</p>
-			</div>
-			     	</div>
+				
 
 			    </div>
 
@@ -231,36 +143,3 @@ HERO SECTION__HEADER
 			    <span class="sr-only">Next</span>
 			  </a> -->  
 			</div>
-
-
-			<!-- 
-
-			2. D_NAJAM_VOZILA
-
-			 -->
-
-			<div id="d_najam_vozila" class="row text-center">
-				<div class="col-md-8 mx-auto">
-
-					<!--  -->
-					<h2 class="text-white">VOZILA PO NARUDŽBI</h2>
-					<p class="italic">Želite odabrati vozilo baš po vašoj mjeri i ukusu?</p>
-					<p class="zelena">Javite nam se i zajedno ćemo konfigurirati vozilo prema vašim željama.</p>
-
-					<button type="button" class="btn btn-outline-secondary"><strong>ZATRAŽITE PONUDU</strong> </button>
-				</div>
-			</div>
-		
-			<!-- 
-
-			2. D_NAJAM_MOBILNOST
-
-			 -->
-
-			 <?php get_template_part( 'global-templates/mobilnost_prije_footer' ); ?>		
-
-	</div><!-- Container end -->
-<?php get_template_part( 'global-templates/sidebar_sticky' ); ?>
-</div><!-- Wrapper end -->
-
-<?php get_footer(); ?>

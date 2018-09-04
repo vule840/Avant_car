@@ -39,12 +39,14 @@ u međunarodnim zračnim lukama i u više od 15 gradova.</P>
 			</div><!-- #primary -->
 			<div class="col-md-6 text-center">
 				<h2>Avant car Hrvatska</h2>
-				<svg class="karta_hr"><use xlink:href="<?php bloginfo('template_url'); ?>/img/karta-hr.svg" /></svg>
+				<!-- <svg class="karta_hr"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#karta-slo" /></svg>  -->
+				<img class="karta_hr" src="<?php bloginfo('template_url'); ?>/img/karta_hr.svg" alt="Karta Hrvatske">
+			
 			</div>
 			<div class="col-md-6 text-center">
 				<h2>Avant car Slovenija</h2>
-
-				<svg class="karta_slo"><use xlink:href="<?php bloginfo('template_url'); ?>/img/karta-slo.svg" /></svg>
+				<img  class="karta_slo" src="<?php bloginfo('template_url'); ?>/img/karta_slo.svg" alt="Karta Slovenije">	
+			<!--<svg class="karta_slo"><use xlink:href="<?php bloginfo('template_url'); ?>/img/karta_slo.svg" /></svg>  -->	
 			</div>
 
 		</div><!-- .row end -->
