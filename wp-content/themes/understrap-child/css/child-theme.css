@@ -11237,7 +11237,8 @@ ul.home_lista2 {
   display: inline-flex;
   -ms-flex-item-align: center;
       align-self: center;
-  padding: 0.5rem; }
+  padding: 0.5rem;
+  height: 38px; }
 
 .home_list {
   fill: var(--bijela);
@@ -11492,6 +11493,11 @@ ul.home_lista2 {
           -ms-flex: 0 0 33.33333%;
               flex: 0 0 33.33333%;
       max-width: 33.33333%; } }
+
+svg.sidebar_dogovorite {
+  width: 30px;
+  fill: green;
+  color: white; }
 
 /*********
 

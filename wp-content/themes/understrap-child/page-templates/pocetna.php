@@ -103,26 +103,49 @@ HERO SECTION__HEADER
 
 	
 
+<div class="card-group">
+  <div class="card">
+    
+    <div class="card-body">
+      
+      	<p>Nema minimalnog 
+			trajanja najma<svg class="strelica"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#home-strelica" /></svg></p>
+      
+    </div>
+  </div>
+  <div class="card">
+    
+    <div class="card-body">
+      
+      <p>Nema nepredvidivih
+			troškova<svg class="strelica"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#home-strelica" /></svg></p>
+      
+    </div>
+  </div>
+  <div class="card">
+    
+    <div class="card-body">
+      
+     <p>Nema kapitalnih
+			ulaganja ili učešća<svg class="strelica"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#home-strelica" /></svg></p>
+      
+    </div>
+  </div>
+
+  <div class="card">
+    
+    <div class="card-body">
+      
+     <p>> Zatražite info ponudu za dugoročni najam</p>
+      
+    </div>
+  </div>
+</div>
 
 
-				<div class="row">
-					
-		
-			<span>Nema minimalnog 
-trajanja najma<svg class="strelica"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#home-strelica" /></svg></span>
-					<p>Nema nepredvidivih
-troškova<svg class="strelica"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#home-strelica" /></svg></p>
-	<p>Nema kapitalnih
-ulaganja ili učešća<svg class="strelica"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#home-strelica" /></svg></p>
-		
+
+
 				
-					<p>> Zatražite info ponudu za dugoročni najam</p>
-				
-	
-
-
-				
-				</div>
 				
 
 			</div><!-- #primary -->
@@ -299,8 +322,12 @@ mobilnost je tu, bez buke i bez emisije.</p>
 
 
 
-	<?php get_template_part( 'global-templates/sidebar_sticky2' ); ?>
+	
 
 </div><!-- Wrapper end -->
-
+<!-- The social media icon bar -->
+<div class="icon-bar">
+  
+  <svg class="sidebar_dogovorite popmake-kratkorocni-najam"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#sidebar-dogovorite" /></svg>
+</div>
 <?php get_footer(); ?>

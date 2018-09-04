@@ -51,7 +51,7 @@ HERO SECTION__HEADER
 						<img src="https://via.placeholder.com/300x300" alt="">
 						<p>dfsddsf dsfsdf</p>
 						<p>dfsddsf dsfsdf</p>
-						<a class="popmake-test" href="">Tesla</a>
+						<a class="" href="http://localhost:3000/avant_car/dugorocni/?auto=Tesla">Tesla</a>
 					</div>
 						<div class="col-md-4">
 							<img src="https://via.placeholder.com/300x300" alt="">

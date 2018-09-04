@@ -410,6 +410,7 @@ ul.home_lista2 {
 .strelica{
 	@include svg(var(--zelena),38px,inline-flex, center);	
 	padding: 0.5rem;
+   height: 38px;
 }
 .home_list{
 	@include svg(var(--bijela),300px,inline-flex, center);
@@ -525,7 +526,13 @@ ul.home_lista2 {
   }
 }
 
+svg.sidebar_dogovorite{
+   width: 30px;
+    fill: green;
+    color: white; 
+}
 
+   
 
 /*********
 
