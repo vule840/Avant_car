@@ -1,0 +1,56 @@
+.gform_body .gform_fields .gfield .gfield_checkbox .icheckbox_square {
+    display: inline-block;
+    *display: inline;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    
+    
+}
+.gform_body .gform_fields .gfield .gfield_radio .iradio_square {
+	border-radius: 200px 200px 200px 200px;
+	-moz-border-radius: 200px 200px 200px 200px;
+	-webkit-border-radius: 200px 200px 200px 200px;
+	
+    display: inline-block;
+    *display: inline;
+    vertical-align: middle;
+    margin: 0;
+    padding: 0;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+    
+    
+}
+
+.gform_body .gform_fields .gfield .gfield_radio .iradio_square.hover {
+    	border:2px solid purple;
+        background-position: center; 
+        background-size: 13px 13px;
+}
+.gform_body .gform_fields .gfield .gfield_radio .iradio_square.checked {
+    	border:2px solid purple;
+    	background-color: orange;
+        background-position: center; 
+        background-size: 13px 13px;
+        background-repeat: no-repeat;
+}
+
+
+.gform_body .gform_fields .gfield .gfield_checkbox .icheckbox_square.checked{
+		background-repeat: no-repeat;
+		border:2px solid purple;
+		background-color: orange;
+		background-position: center; 
+		background-size: 13px 13px;
+		background-repeat: no-repeat;
+	
+}
+
+.selectize-control.plugin-remove_button [data-value] .remove{
+	border-bottom: 0 !important;
+}
