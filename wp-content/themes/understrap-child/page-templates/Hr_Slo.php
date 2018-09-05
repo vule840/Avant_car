@@ -61,7 +61,7 @@ u međunarodnim zračnim lukama i u više od 15 gradova.</P>
 		 <div id="hrv_slo_2_lokacije" class="row">
 		 	
 
-		 	<div class="col-md-12 text-center zelena"><h2>LOKACIJE POSLOVNICA</h2></div>
+		 	<div class="col-md-12 text-center zelena"><h2 class="pb-4">LOKACIJE POSLOVNICA</h2></div>
 			<div class="col-md-6">
 				<h4>ZAGREB - CENTAR</h4>
 				<p>Green Gold - showroom</p>
@@ -142,8 +142,8 @@ društvu nastojimo olakšati i unaprijediti život.</p>
 				    <div class="card-body">
 				    	<svg class="ref_globus"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#ref-globus" /></svg>
 				      <h6 class="card-title">IMAMO POVJERENJE
-							KLIJENATA IZ VIŠE OD
-							100 ZEMALJA</h6>
+							KLIJENATA IZ VIŠE OD <strong>100 ZEMALJA</strong>
+							</h6>
 		      
 				    </div>
 				  </div>
@@ -152,8 +152,8 @@ društvu nastojimo olakšati i unaprijediti život.</p>
 				    <div class="card-body">
 				    	<svg class="ref_zgrade"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#ref-zgrade" /></svg>
 				      <h6 class="card-title">DO SADA SMO UPRAVLJALI
-PARKOM ZA VIŠE OD 200
-PODUZEĆA SVIH VELIČINA</h6>
+PARKOM ZA <strong>VIŠE OD 200
+PODUZEĆA SVIH VELIČINA</strong> </h6>
 		      
 				    </div>
 				  </div>
@@ -162,7 +162,7 @@ PODUZEĆA SVIH VELIČINA</h6>
 				    <div class="card-body">
 				    	<svg class="ref_auti"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#ref-auti" /></svg>
 				      <h6 class="card-title">NAŠA FLOTA SADRŽI
-						VIŠE OD 1.000 VOZILA</h6>
+						<strong>VIŠE OD 1.000 VOZILA</strong></h6>
 		      
 				    </div>
 				  </div>
@@ -172,8 +172,8 @@ PODUZEĆA SVIH VELIČINA</h6>
 				    <div class="card-body">
 				    	<svg class="ref_epruveta"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#ref-epruveta" /></svg>
 				      <h6 class="card-title">IMAMO VLASTITU
-SKUPINU ZA
-ISTRAŽIVANJE I RAZVOJ</h6>
+SKUPINU ZA <strong>ISTRAŽIVANJE I RAZVOJ</strong>
+</h6>
 		      
 				    </div>
 				  </div>
@@ -182,8 +182,8 @@ ISTRAŽIVANJE I RAZVOJ</h6>
 				    <div class="card-body">
 				    	<svg class="ref_akuml"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#ref-akuml" /></svg>
 				      <h6 class="card-title">U REGIJI SMO
-VODEĆI PONUDITELJ
-ELEKTRIČNE MOBILNOSTI</h6>
+VODEĆI PONUDITELJ <strong>ELEKTRIČNE MOBILNOSTI</strong>
+</h6>
 		      
 				    </div>
 				  </div>
@@ -208,6 +208,8 @@ ELEKTRIČNE MOBILNOSTI</h6>
 
 
 	</div><!-- Container end -->
+
+	<?php get_template_part( 'global-templates/gumb_sticky' ); ?>	
 
 </div><!-- Wrapper end -->
 

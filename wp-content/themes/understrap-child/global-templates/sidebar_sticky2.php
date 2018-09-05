@@ -1,7 +1,5 @@
 <!-- The social media icon bar -->
 <div class="icon-bar">
-  dfgdfg
-hjhjjhg
-  fghgf
-  <svg class="sidebar_dogovorite"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#sidebar-dogovorite" /></svg>
+  
+ <img class="p-2" src="<?php bloginfo('url'); ?>/wp-content/uploads/2018/09/Sidebar_gumb.svg" alt="Karta Hrvatske">
 </div>

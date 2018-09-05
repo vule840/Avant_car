@@ -59,8 +59,8 @@ HERO SECTION__HEADER
 				    
 				    <div class="card-body">
 				    	<svg class="avantour_avion"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#avantour-avion" /></svg>
-				      <h5 class="card-title">ZRAČNA LUKA</h5>
-				      <p class="card-text"><small >Povezujemo zračne luke i gradove.</small></p>
+				      <h5 class="card-title text-white">ZRAČNA LUKA</h5>
+				      <p class="card-text font-weight-bold">Povezujemo zračne luke i gradove.</p>
 				      <p class="card-text">Za Vas i vaše poslovne partnere organiziramo
 bezbrižan transfer iz i do zračnih luka u Hrvatskoj i
 Sloveniji. Za razliku od taksi usluge, nema čekanja
@@ -72,8 +72,8 @@ te se transfer rezervira unaprijed po fiksnoj cijeni.</p>
 				   
 				    <div class="card-body">
 				    	<svg class="avantour_grad"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#avantour-grad" />
-				      <h5 class="card-title">INTER CITY</h5>
-				      <p class="card-text"><small >Povezujemo destinacije.</small></p>
+				      <h5 class="card-title text-white">INTER CITY</h5>
+				      <p class="card-text font-weight-bold">Povezujemo destinacije.</p>
 				      <p class="card-text">Avantour omogućava vaš prijevoz od vrata do
 vrata - door-to-door. Ukoliko završavate sastanak
 u jednom gradu i morate odmah krenuti na
@@ -86,8 +86,8 @@ transfer je rješenje za Vas!</p>
 				   
 				    <div class="card-body">
 				    	<svg class="avantour_lik"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#avantour-lik" />
-				      <h5 class="card-title">CHAUFFEUR SERVICE</h5>
-				      <p class="card-text"><small >Stvaramo VIP doživljaj.</small></p>
+				      <h5 class="card-title text-white">CHAUFFEUR SERVICE</h5>
+				      <p class="card-text font-weight-bold">Stvaramo VIP doživljaj.</p>
 				      <p class="card-text">Usluga prijevoza Chauffeur service, vodi Vas do
 odredišta sa stilom. Profesionalni i educirani
 vozači preuzet će brigu oko prtljage i biti Vam
@@ -127,7 +127,7 @@ partnera, pojavite se sa stilom!</p>
 		4. AVANTOUR__VOZITE_OVERLAY
 
 		 *************** -->
-		<div class="row traka_logo"><svg class="avantour_zero_logo"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#avantour-zero-logo" /></svg></div>
+		<div class="row traka_logo"><img class="p-2" src="<?php bloginfo('url'); ?>/wp-content/uploads/2018/09/Avantour_logo_2.png" alt="Karta Hrvatske"></div>
 		
 				
 
@@ -210,7 +210,7 @@ partnera, pojavite se sa stilom!</p>
 				 
 				</div>
 
-				<button type="button" class="btn btn-outline-dark">POŠALJI UPIT</button>
+				<button type="button" class="btn btn-outline-dark font-weight-bold">ZAPOČNITE AVANTOUR</button>
 
 			</div><!-- #primary -->
 

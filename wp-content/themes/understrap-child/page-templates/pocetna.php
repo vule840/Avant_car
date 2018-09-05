@@ -30,13 +30,13 @@ HERO SECTION__HEADER
 
 		 *************** -->
 
-		 <button type="button" class="btn btn-cta">Primary</button>
+		<!-- <button type="button" class="btn btn-cta">Primary</button> --> 
 
 		<div class="row" id="home_1_pogodnosti">
 
 			<div class="col-md-12 content-area text-center " id="primary">
 
-				<h2 class="text-center">POGODNOSTI ZA POSLOVNE KORISNIKE</h2>
+				<h2 class="text-center pt-4">POGODNOSTI ZA POSLOVNE KORISNIKE</h2>
 					
 				<div class="card-group">
 				  <div class="card">
@@ -103,38 +103,50 @@ HERO SECTION__HEADER
 
 	
 
-<div class="card-group">
+<div class="card-group pt-5">
   <div class="card">
     
     <div class="card-body">
+    	<div class="row no-gutters">
+    		<div class="col-md-6"><p>Nema minimalnog<br> 
+			trajanja najma</p></div>
+      <div class="col-md-3"><svg class="strelica"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#home-strelica" /></svg></div>
+    	</div>
       
-      	<p>Nema minimalnog 
-			trajanja najma<svg class="strelica"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#home-strelica" /></svg></p>
+      	
+				
       
     </div>
   </div>
   <div class="card">
     
     <div class="card-body">
-      
-      <p>Nema nepredvidivih
-			troškova<svg class="strelica"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#home-strelica" /></svg></p>
+      <div class="row no-gutters">
+    		<div class="col-md-6"><p>Nema nepredvidivih <br>
+			troškova</p></div>
+      <div class="col-md-3"><svg class="strelica"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#home-strelica" /></svg></div>
+    	</div>
+
       
     </div>
   </div>
   <div class="card">
     
     <div class="card-body">
-      
-     <p>Nema kapitalnih
-			ulaganja ili učešća<svg class="strelica"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#home-strelica" /></svg></p>
+      <div class="row no-gutters">
+    		<div class="col-md-6"><p>Nema kapitalnih<br>
+			ulaganja ili učešća</p></div>
+      <div class="col-md-3"><svg class="strelica"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#home-strelica" /></svg></div>
+    	</div>
+
+   
       
     </div>
   </div>
 
   <div class="card">
     
-    <div class="card-body">
+    <div class="card-body home_zatrazite">
       
      <p>> Zatražite info ponudu za dugoročni najam</p>
       
@@ -163,8 +175,8 @@ HERO SECTION__HEADER
 			<div class="col-md-6">
 				<h2 class="text-center zelena">Flota za svaki ukus</h2>
 
-				<img class="text-center" src="<?php bloginfo('url') ?>/wp-content/uploads/2018/09/home_auti-8.png">
-				<p class="text-left">> Pogledajte kompletnu flotu</p>
+				<img class="text-center pt-5" src="<?php bloginfo('url') ?>/wp-content/uploads/2018/09/home_auti-8.png">
+				<p class="text-left home_kompletnu">> Pogledajte kompletnu flotu</p>
 
 			</div>
 
@@ -202,18 +214,18 @@ HERO SECTION__HEADER
 		 *************** -->
 		<div class="row text-center" id="home_4_zatrazite">
 
-			<div class="col-md-8 mx-auto">
+			<div class="col-md-7 mx-auto">
 				<h2 class="text-center">ZATRAŽITE PONUDU PO VAŠOJ MJERI</h2>
-				<p class="text-center">Jednostavno unesite kontakt podatke i pripremit ćemo vam informativnu ponudu. Bez obzira jeste li mala ili velika tvrtka - imamo rješenje za vaše potrebe!</p>
+				<p class="text-center italic_slova">Jednostavno unesite kontakt podatke i pripremit ćemo vam informativnu ponudu. <br>Bez obzira jeste li mala ili velika tvrtka - imamo rješenje za vaše potrebe!</p>
 			</div>
 
-			<div class="col-md-12 content-area" id="primary">
+			<div class="col-md-12 py-5 content-area" id="primary">
 
 
 				<div class="card-group">
 				 
 				  <div class="card">
-				   <p class="bijeli_broj">1.</p>
+				   <p class="zelena">1.</p>
 				    <div class="card-body">
 				      <h5 class="card-title">INFO UPIT</h5>
 				      <p class="card-text">Sve što trebate je poslati jednostavan upit za
@@ -223,16 +235,16 @@ ulaganje vremena.</p>
 				    </div>
 				  </div>
 				  <div class="card">
-				     <p class="bijeli_broj">2.</p>
+				     <p class="zelena">2.</p>
 				    <div class="card-body">
 				      <h5 class="card-title">PONUDA</h5>
 				      <p class="card-text">Javit ćemo se ubrzo nakon vašeg upita i
-kreirati ponudu prema vašim individualnim</p>
+kreirati ponudu prema vašim individualnim potrebama.</p>
 				     
 				    </div>
 				  </div>
 				  <div class="card">
-				   <p class="bijeli_broj">3.</p>
+				   <p class="zelena">3.</p>
 				    <div class="card-body">
 				      <h5 class="card-title">MOBILNOST PO VAŠOJ MJERI</h5>
 				      <p class="card-text">Uz kompletnu uslugu koja generira uštedu
@@ -248,7 +260,7 @@ dinamično okruženje te pratiti vaš razvoj.</p>
 			</div><!-- #primary -->
 
 			<div class="col-md-12 text-center">
-				<button type="button" class="btn btn-outline-secondary">POŠALJI UPIT</button>
+				<button type="button" class="btn btn-outline-secondary">ZATRAŽITE PONUDU</button>
 			</div>
 
 
@@ -299,7 +311,7 @@ mobilnost je tu, bez buke i bez emisije.</p>
 
 <div class="example-container">
   <div class="example-row">
-    <div class="example-content-main">> Zatražite povratni poziv za info o našim uslugama</div>
+    <div class="example-content-main"><p>> Kreiramo novo iskustvo. Posjetite naš showroom.</p></div>
     <div class="example-content-secondary"><svg class="home_list"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#home-list" /></svg></div>
   </div>
 </div>
@@ -326,8 +338,11 @@ mobilnost je tu, bez buke i bez emisije.</p>
 
 </div><!-- Wrapper end -->
 <!-- The social media icon bar -->
-<div class="icon-bar">
-  
-  <svg class="sidebar_dogovorite popmake-kratkorocni-najam"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#sidebar-dogovorite" /></svg>
-</div>
+
+
+
+
+
+	<?php get_template_part( 'global-templates/gumb_sticky' ); ?>	
+
 <?php get_footer(); ?>

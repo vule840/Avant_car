@@ -19,7 +19,7 @@
 					<div class="col-md-6">
 						<ul class="home_lista2">
 							<li>Sve usluge na jednom mjestu</li>
-							<li>Optimizacija troškova i ušteda vremena</li>
+							<li> <span>Optimizacija troškova i ušteda vremena</span></li>
 							<li>Stručna i pravovremena podrška 24 / 7 / 365</li>
 							<!-- <li>Dugoročni najam</li>
 							<li>Dugoročni najam</li> -->

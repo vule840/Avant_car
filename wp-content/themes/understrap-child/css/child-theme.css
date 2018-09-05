@@ -10888,6 +10888,12 @@ body {
   background: #E1E1E1;
   font-family: "Roboto", sans-serif; }
 
+p {
+  font-weight: 300; }
+
+ul li {
+  font-weight: 300; }
+
 .wrapper {
   padding-top: 30px;
   padding-bottom: 0; }
@@ -10925,14 +10931,25 @@ body #cover {
 
 **********************/
 h1.naslovna {
-  font-size: 4rem;
+  font-size: 5.5rem;
   color: var(--bijela);
-  font-weight: 300; }
+  font-weight: 300;
+  line-height: 0.8; }
+  @media (max-width: 991.98px) {
+    h1.naslovna {
+      font-size: 3.5rem; } }
 
 .naslovna__ispod {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   color: var(--bijela);
-  font-weight: 300; }
+  font-weight: 300;
+  margin-bottom: 3rem; }
+
+.naslovna__ispod2 {
+  font-size: 2.2rem;
+  color: var(--bijela);
+  font-weight: 300;
+  margin-top: -0.5rem; }
 
 h2 {
   font-weight: 300; }
@@ -10976,9 +10993,19 @@ div#content {
 /* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
 .icon-bar {
   position: fixed;
-  top: 50%;
+  top: 30%;
   -webkit-transform: translateY(-50%);
-  transform: translateY(-50%); }
+  transform: translateY(-50%);
+  height: 39px;
+  width: 42px; }
+
+.icon-bar2 {
+  position: fixed;
+  top: 75%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  height: 39px;
+  width: 42px; }
 
 /* Style the icon bar links */
 .icon-bar a {
@@ -11032,14 +11059,16 @@ div#content {
   color: var(--zelena); }
 
 .zelena {
-  color: var(--zelena); }
+  color: var(--zelena);
+  margin-bottom: 0; }
 
 .traka_logo {
-  background: var(--siva_tamno);
-  height: 100px; }
+  background: var(--siva_tamno); }
 
 .btn-outline-secondary {
-  padding: 0.5rem 2rem; }
+  padding: 0.5rem 4rem;
+  font-weight: bold;
+  border-radius: 0; }
 
 /********************
 
@@ -11048,29 +11077,90 @@ div#content {
 **********************/
 #home_1_pogodnosti {
   background: var(--zelena);
-  padding: 2rem;
+  padding: 1rem;
   color: var(--siva_tamno); }
+  #home_1_pogodnosti h2 {
+    font-size: 2.4rem;
+    margin-bottom: 0.5rem; }
   #home_1_pogodnosti .card-title {
     color: var(--bijela);
     font-weight: 300; }
+  #home_1_pogodnosti p {
+    font-weight: 300;
+    font-size: 0.9rem; }
 
 #home_2_dugorocni {
   color: var(--bijela);
-  padding: 3rem; }
+  padding: 2.5rem 0rem 1rem 0;
+  /*
+	.card{
+		p{
+			&:after{
+				content: '';
+			    display: inline-block;
+			    height: .8em;
+			    width: 1.3em;
+			    background-image: url(http://localhost/avant_car/wp-content/themes/understrap/img/home_strelica.svg);
+			    background-size: contain;
+			    background-repeat: no-repeat;
+			    margin-right: .5em;
+			}	
+		}
+			
+	}*/ }
+  #home_2_dugorocni p {
+    margin-bottom: 1.5rem;
+    font-size: 0.95rem; }
+  #home_2_dugorocni h2 {
+    margin-bottom: -3px; }
+  #home_2_dugorocni .italic_slova {
+    font-size: 1.2rem;
+    padding-bottom: 1.4rem; }
+  #home_2_dugorocni .card .home_zatrazite p {
+    padding-top: 0.5rem;
+    padding-bottom: 0;
+    font-size: 0.9rem; }
+  #home_2_dugorocni .card-body {
+    padding: 0; }
+    #home_2_dugorocni .card-body p {
+      font-size: 0.8rem; }
 
 #home_3_flota {
   background: var(--bijela);
-  padding: 3rem;
+  padding: 2rem;
   color: var(--siva_tamno); }
+  #home_3_flota span.zelena {
+    font-weight: bold; }
+  #home_3_flota .home_kompletnu {
+    font-size: 1.2rem; }
+  #home_3_flota .home_lista li {
+    font-size: 1.2rem; }
 
 #home_4_zatrazite {
-  background: var(--zelena);
-  padding: 3rem;
-  color: var(--siva_tamno); }
+  background: var(--siva_tamno);
+  padding: 2rem;
+  color: var(--bijela); }
+  #home_4_zatrazite h2 {
+    margin-bottom: -3px;
+    font-size: 2.1rem; }
+  #home_4_zatrazite .card-body {
+    padding-top: 0;
+    padding: 0 2rem;
+    font-size: 0.9rem; }
+  #home_4_zatrazite .zelena {
+    font-size: 1.5rem;
+    font-weight: bold; }
+  #home_4_zatrazite h5 {
+    font-size: 1rem; }
 
 #home_5_elektricna {
   padding: 3rem;
   color: var(--bijela); }
+  #home_5_elektricna h2 {
+    margin-bottom: -3px; }
+  #home_5_elektricna .italic_slova {
+    padding-bottom: 2rem;
+    display: block; }
 
 /********************
 
@@ -11083,25 +11173,51 @@ ul.home_lista {
   ul.home_lista li:before {
     content: '';
     display: inline-block;
-    height: 0.8em;
-    width: 1.3em;
-    background-image: url("http://localhost/avant_car/wp-content/themes/understrap/img/home_strelica.svg");
+    height: 1.2em;
+    width: 1.6em;
+    background-image: url("http://localhost/avant_car/wp-content/themes/understrap/img/home_strelica1.svg");
     background-size: contain;
     background-repeat: no-repeat;
-    margin-right: 0.5em; }
+    margin-right: 0.2em; }
 
 ul.home_lista2 {
-  list-style: none;
-  padding-left: 0em; }
-  ul.home_lista2 li:before {
+  padding-left: 0em;
+  list-style-position: outside;
+  list-style-image: url("http://localhost/avant_car/wp-content/themes/understrap/img/strelica_crna.svg");
+  /* li {
+  &:before {
     content: '';
     display: inline-block;
     height: 0.8em;
     width: 1.3em;
+   
     background-image: url("http://localhost/avant_car/wp-content/themes/understrap/img/strelica_crna.svg");
     background-size: contain;
     background-repeat: no-repeat;
-    margin-right: 0.5em; }
+    margin-right:0.5em; 
+
+  }
+}*/ }
+
+#fade {
+  /*margin: 50px;*/
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  left: 0px;
+  z-index: 99;
+  background-image: none;
+  cursor: pointer; }
+
+#fade2 {
+  /*margin: 50px;*/
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  left: 0px;
+  z-index: 99;
+  background-image: none;
+  cursor: pointer; }
 
 /********************
 
@@ -11153,6 +11269,7 @@ ul.home_lista2 {
 
 #avantour_5_destinacije {
   padding: 3rem;
+  color: var(--siva_tamno);
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f6f6f6+87,ededed+100 */
   background: white;
   /* Old browsers */
@@ -11163,10 +11280,15 @@ ul.home_lista2 {
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 );
   /* IE6-9 */ }
+  #avantour_5_destinacije h2 {
+    color: var(--siva_tamno); }
   #avantour_5_destinacije h5 {
     font-weight: bold;
     margin-top: 1rem;
-    margin-bottom: 0; }
+    margin-bottom: 0;
+    color: var(--siva_tamno); }
+  #avantour_5_destinacije small {
+    color: var(--siva_tamno); }
 
 /********************
 
@@ -11189,9 +11311,22 @@ ul.home_lista2 {
   padding-top: 4rem;
   padding-bottom: 2rem; }
 
-#kontakt_2_mapa .col-md-4:nth-child(1) {
-  padding-top: 4rem;
-  padding-bottom: 2rem; }
+#kontakt_2_mapa {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,f6f6f6+87,ededed+100 */
+  background: white;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(white), color-stop(87%, #f6f6f6), to(#ededed));
+  background: linear-gradient(to bottom, white 0%, #f6f6f6 87%, #ededed 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ededed',GradientType=0 );
+  /* IE6-9 */
+  margin-bottom: -6px; }
+  #kontakt_2_mapa .col-md-4:nth-child(1) {
+    padding-top: 4rem;
+    padding-bottom: 2rem;
+    padding: 5rem 3rem; }
 
 /********************
 
@@ -11222,12 +11357,13 @@ ul.home_lista2 {
 **********************/
 .home_ikone {
   fill: #fff;
-  width: 80px;
+  width: 60px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -ms-flex-item-align: center;
-      align-self: center; }
+      align-self: center;
+  height: 114px; }
 
 .strelica {
   fill: var(--zelena);
@@ -11237,7 +11373,7 @@ ul.home_lista2 {
   display: inline-flex;
   -ms-flex-item-align: center;
       align-self: center;
-  padding: 0.5rem;
+  padding: 0.2rem;
   height: 38px; }
 
 .home_list {
@@ -11437,7 +11573,7 @@ ul.home_lista2 {
 
 **********************/
 .example-container {
-  width: 800px;
+  width: 700px;
   width: 100%;
   padding-right: 15px;
   padding-left: 15px;

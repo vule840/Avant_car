@@ -7,6 +7,7 @@
 			
 			<div class="header">
 			<h1 class="naslovna text-center text-uppercase"><?php the_field('tx_naslov') ?></h1>
+			<p class="naslovna__ispod2 text-center"><?php the_field('tx_ispodnaslov2') ?> </p>
 			<p class="naslovna__ispod text-center"><?php the_field('tx_ispodnaslov') ?> </p>
 			
 		</div>

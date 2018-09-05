@@ -99,3 +99,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 	display: $display;
   align-self: $align;
 }
+@mixin line_height($height){
+  margin-bottom: $height;
+}

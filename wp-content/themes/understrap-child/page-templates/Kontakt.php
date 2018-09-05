@@ -35,7 +35,7 @@ HERO SECTION__HEADER
 
 			<div class="col-md-4">
 				<svg class="kontakt_email"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#kontakt-email" /></svg>
-				<p><a href="mailto:corporate@avantcar.hr">corporate@avantcar.hr</a></p>
+				<h4 class="font-weight-light pb-2"><a class="text-white" href="mailto:corporate@avantcar.hr">corporate@avantcar.hr</a></h4>
 				<p>Djelatnici podrške poslovnim korisnicima
 kontaktirat će Vas u roku 24 sata.</p>
 
@@ -43,17 +43,18 @@ kontaktirat će Vas u roku 24 sata.</p>
 </div>
 			<div class="col-md-4">
 				<svg class="kontakt_mob"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#kontakt-mob" /></svg>
-				<p><a href="mailto:corporate@avantcar.hr">+385 (0)1 6251 222</a></p>
+				<h4 class="font-weight-light pb-2"><a class="zelena" href="mailto:corporate@avantcar.hr">+385 (0)1 6251 222</a></h4>
 				<p>Možete nas jednostavno nazvati i odmah
 krećemo s unapređenjem vaše mobilnosti.</p>
 
 </div>
 <div class="col-md-4">
 				<svg class="kontakt_auti"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#kontakt-auti" /></svg>
-				<p><a href="mailto:corporate@avantcar.hr">corporate@avantcar.hr</a></p>
-				<p>Djelatnici podrške poslovnim korisnicima
-kontaktirat će Vas u roku 24 sata.</p>
-
+				<h3 class="font-weight-light">
+					Otkrijte more mogućnosti uz Avant car poslovna rješenja	
+				</h3>
+				<!-- <p>Otkrijte more mogućnosti uz Avant car poslovna rješenja</p>
+ -->
 </div>
 
 		</div><!-- .row end -->
@@ -65,17 +66,17 @@ kontaktirat će Vas u roku 24 sata.</p>
 
 		 *************** -->
 
-		<div id="kontakt_2_mapa" class="row text-center">
+		<div id="kontakt_2_mapa" class="row text-left">
 
 			<div class="col-md-4 ">
-				<h2>LOKACIJA</h2>
+				<h4>LOKACIJA</h4>
 				<p>Green Gold centar</p>
 				<p>Avant car showroom</p>
 				<p>Radnička cesta 52, 10 000 Zagreb</p>
 
-				<hr>
+				<br>
 
-				<h2>RADNO VRIJEME</h2>
+				<h4>RADNO VRIJEME</h4>
 				<p>za poslovne korisnike</p>
 				<p>Pon - Pet: 08:00 - 18:00</p>
 			
@@ -103,15 +104,13 @@ kontaktirat će Vas u roku 24 sata.</p>
 
 
 	
-  
-  <!-- Trigger the modal with a button -->
-  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
+  <!-- <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
 
-  <!-- Modal -->
+ 
   <div class="modal fade" id="myModal" role="dialog">
     <div class="modal-dialog">
     
-      <!-- Modal content-->
+   
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">&times;</button>
@@ -138,16 +137,15 @@ kontaktirat će Vas u roku 24 sata.</p>
       </div>
       
     </div>
-  </div>
+  </div> -->
+  
+  
 
- <?php
- echo "string";
-echo $forms[0]['title'];
-?>
+
 	</div><!-- Container end -->
 
 	<!-- SIDEBAR_STICKY -->
-	<?php get_template_part( 'global-templates/sidebar_sticky' ); ?>
+	<?php get_template_part( 'global-templates/gumb_sticky' ); ?>	
 
 </div><!-- Wrapper end -->
 

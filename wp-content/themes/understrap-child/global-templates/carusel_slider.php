@@ -11,20 +11,18 @@
 			     
 			     <!-- PRVI -->
 					 <div class="row">
-			     	<div class="col-md-4">
-						<img src="https://via.placeholder.com/300x300" alt="">
+			     	<div class="col-md-3">
+						
 						<p>dfsddsf dsfsdf</p>
 						<p>dfsddsf dsfsdf</p>
 						<a class="popmake-test" href="">Tesla</a>
 					</div>
-						<div class="col-md-4">
-							<img src="https://via.placeholder.com/300x300" alt="">
-							<p>dfsddsf dsfsdf</p>
-							<p>dfsddsf dsfsdf</p>
-							<a class="popmake-test" href="">Fico</a>
+						<div class="col-md-6">
+							<img  src="<?php bloginfo('url'); ?>/wp-content/uploads/2018/09/avantour_vozila.png" alt="Karta Hrvatske">
+							
 						</div>
-						<div class="col-md-4">
-							<img src="https://via.placeholder.com/300x300" alt="">
+						<div class="col-md-3">
+							
 							<p>dfsddsf dsfsdf</p>
 							<p>dfsddsf dsfsdf</p>
 							<a class="popmake-test" href="">Merdo</a>

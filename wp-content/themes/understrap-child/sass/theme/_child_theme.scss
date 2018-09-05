@@ -2,6 +2,12 @@ body{
 	background: $pocetna__bg;
 	font-family: $roboto;
 }
+p{
+	font-weight: 300;
+}
+ul li{
+	font-weight: 300;
+}
 .wrapper{
 	padding-top: 30px;
 	padding-bottom: 0;
@@ -47,15 +53,31 @@ body #cover {
 **********************/
 
 h1.naslovna {
-    font-size: 4rem;
+    font-size: 5.5rem;
     
     color: var(--bijela);
     font-weight: 300;
+        line-height: 0.8;
+        
+ 
+    @include media-breakpoint-down(md) {
+        // Smaller than md: 768px
+        font-size: 3.5rem;
+    }
 }
 .naslovna__ispod {
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     color: var(--bijela);
     font-weight: 300;
+    margin-bottom: 3rem;
+
+   // @include gradient-y(#418fde, #fdb927);
+}
+.naslovna__ispod2 {
+    font-size: 2.2rem;
+    color: var(--bijela);
+    font-weight: 300;
+    margin-top: -0.5rem;
    // @include gradient-y(#418fde, #fdb927);
 }
 
@@ -115,11 +137,24 @@ div#content {
 /* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
 .icon-bar {
   position: fixed;
-  top: 50%;
+  top: 30%;
   -webkit-transform: translateY(-50%);
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
+  height: 39px;
+    width: 42px;
 }
+
+.icon-bar2 {
+  position: fixed;
+  top: 75%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  height: 39px;
+    width: 42px;
+}
+
 
 /* Style the icon bar links */
 .icon-bar a {
@@ -182,14 +217,19 @@ div#content {
 }
 .zelena{
 	color: var(--zelena);
+	//font-size: 1.5rem;
+	margin-bottom: 0;
+	
 }
 
 .traka_logo{
 	background: var(--siva_tamno);
-	height: 100px;
+	//height: 100px;
 }
 .btn-outline-secondary{
-	padding: 0.5rem 2rem;
+	padding: 0.5rem 4rem;
+	font-weight: bold;
+	border-radius:0;
 }
 
 /********************
@@ -200,33 +240,122 @@ div#content {
 
 #home_1_pogodnosti{
 	background: var(--zelena);
-	@include padding(2rem);
+	@include padding(1rem);
 	color: var(--siva_tamno);
+	h2{
+		font-size: 2.4rem;
+		margin-bottom: 0.5rem;
+	}
 	.card-title{
 		color: var(--bijela);
 		font-weight: 300;
+	}
+	p{
+		font-weight: 300;
+		font-size: 0.9rem;
 	}
 }
 
 #home_2_dugorocni{
 	color: var(--bijela);
-	@include padding(3rem);
+	padding: 2.5rem 0rem 1rem 0;
+	p{
+		margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+	}
+	h2{
+		 @include line_height(-3px);  
+	}
+	.italic_slova{
+		font-size: 1.2rem;
+		padding-bottom: 1.4rem;
+	}
+	.card{
+		.home_zatrazite{
+		p{
+			padding-top: 0.5rem;
+			padding-bottom: 0;
+			font-size: 0.9rem;
+		}
+	}
+	}
+	
+	/*
+	.card{
+		p{
+			&:after{
+				content: '';
+			    display: inline-block;
+			    height: .8em;
+			    width: 1.3em;
+			    background-image: url(http://localhost/avant_car/wp-content/themes/understrap/img/home_strelica.svg);
+			    background-size: contain;
+			    background-repeat: no-repeat;
+			    margin-right: .5em;
+			}	
+		}
+			
+	}*/
+
+	.card-body{
+		padding: 0;
+
+		p{
+			font-size: 0.8rem;
+		
+		}
+	}
+
 }
 #home_3_flota{
 	background: var(--bijela);
-	@include padding(3rem);
+	@include padding(2rem);
 	color: var(--siva_tamno);
+	span.zelena{
+		font-weight: bold;
+	}
+	.home_kompletnu{
+		font-size: 1.2rem;
+	}
+	.home_lista li{
+		font-size: 1.2rem;
+	}
 }
 
 #home_4_zatrazite{
-	background: var(--zelena);
-	@include padding(3rem);
-	color: var(--siva_tamno);
+	background: var(--siva_tamno);
+	@include padding(2rem);
+	color: var(--bijela);
+
+	h2{
+		@include line_height(-3px); 
+		font-size: 2.1rem; 
+	}
+	.card-body{
+		padding-top: 0;
+		padding: 0 2rem;
+    font-size: 0.9rem;
+	}
+	.zelena{
+		font-size: 1.5rem;
+		font-weight: bold;
+	}
+	h5{
+		font-size: 1rem;
+	}
+	
 }
 
 #home_5_elektricna{
 	@include padding(3rem);
 	color: var(--bijela);
+	h2{
+		@include line_height(-3px);  
+	}
+	.italic_slova{
+		padding-bottom: 2rem;
+		display: block;
+	}
 }
 
 /********************
@@ -242,38 +371,66 @@ ul.home_lista {
   &:before {
     content: '';
     display: inline-block;
-    height: 0.8em;
-    width: 1.3em;
+    height: 1.2em;
+    width: 1.6em;
     //background-image: url(http://placehold.it/32?text=fallback); // Fallback PNG
-    background-image: url("#{$urlsass}/home_strelica.svg");
+    background-image: url("#{$urlsass}/home_strelica1.svg");
     background-size: contain;
     background-repeat: no-repeat;
-    margin-right:0.5em; 
+    margin-right:0.2em; 
 
   }
 }
 
 }
+
 ul.home_lista2 {
-  list-style:none;
+  
   padding-left: 0em;
-  li {
+   list-style-position: outside;
+list-style-image: url("#{$urlsass}/strelica_crna.svg");
+ /* li {
   &:before {
     content: '';
     display: inline-block;
     height: 0.8em;
     width: 1.3em;
-    //background-image: url(http://placehold.it/32?text=fallback); // Fallback PNG
+   
     background-image: url("#{$urlsass}/strelica_crna.svg");
     background-size: contain;
     background-repeat: no-repeat;
     margin-right:0.5em; 
 
   }
-}
+}*/
 
 }
-
+#fade {
+  /*margin: 50px;*/
+  //padding: 50px;
+  
+      display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 0px;
+    z-index: 99;
+    background-image: none;
+    cursor: pointer;
+}
+   
+ #fade2  {
+  /*margin: 50px;*/
+  //padding: 50px;
+  
+      display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 0px;
+    z-index: 99;
+    background-image: none;
+    cursor: pointer;
+}
+   
 /********************
 
 	HRV_SLO__SEKCIJE
@@ -328,11 +485,19 @@ ul.home_lista2 {
 }
 #avantour_5_destinacije{
 	@include padding(3rem);
+	color: var(--siva_tamno);
 	@include sivi_gradijent();
+	h2{
+		color: var(--siva_tamno);
+	}
 	h5{
 		font-weight: bold;
 		margin-top: 1rem;
 		margin-bottom: 0;
+		color: var(--siva_tamno);
+	}
+	small{
+		color: var(--siva_tamno);
 	}
 }
 
@@ -364,8 +529,13 @@ ul.home_lista2 {
 #kontakt_2_mapa{
 	.col-md-4:nth-child(1){
 		
-		@include padding_tb(4rem,2rem);	
+		@include padding_tb(4rem,2rem);
+		padding: 5rem 3rem; 	
+
 	}
+	@include sivi_gradijent();
+	    margin-bottom: -6px;
+
 }
 
 
@@ -402,14 +572,15 @@ ul.home_lista2 {
 
 .home_ikone{
 	fill:  #fff;
-	width: 80px;
+	width: 60px;
 	display: inline-flex;
   align-self: center;
+      height: 114px;
 }
 
 .strelica{
 	@include svg(var(--zelena),38px,inline-flex, center);	
-	padding: 0.5rem;
+	padding: 0.2rem;
    height: 38px;
 }
 .home_list{
@@ -495,7 +666,7 @@ ul.home_lista2 {
 **********************/
 
 .example-container {
-  width: 800px;
+  width: 700px;
   @include make-container();
 }
 
