@@ -1,34 +1,46 @@
 <?php
-/*
-Plugin Name: Gravity Forms Google Places
-Description: Adds a location field type that integrates with the Google Places API.
-Author: Stephen Beemsterboer @ Oomph, Inc.
-Version: 1.1.0
-Author URI: http://www.oomphinc.com/
-License: MIT
-	The MIT License (MIT)
-	Copyright (c) 2016 Oomph, Inc
-	Permission is hereby granted, free of charge, to any person obtaining a copy
-	of this software and associated documentation files (the "Software"), to deal
-	in the Software without restriction, including without limitation the rights
-	to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-	copies of the Software, and to permit persons to whom the Software is
-	furnished to do so, subject to the following conditions:
-	The above copyright notice and this permission notice shall be included in
-	all copies or substantial portions of the Software.
-	THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-	IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-	FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-	AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-	LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-	OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-	THE SOFTWARE.
-*/
+/**
+ * @link              https://github.com/davebonds/
+ * @since             1.0.0
+ * @package           GFormsGooglePlaces
+ *
+ * @wordpress-plugin
+ * Plugin Name:       Gravity Forms Google Places
+ * Plugin URI:        https://github.com/davebonds/gravity-forms-google-places
+ * Description:       Adds a Gravity Forms field type for autocompleting addresses using the Google Places API.
+ * Version:           1.0.0
+ * Author:            Dave Bonds
+ * Author URI:        https://github.com/davebonds/
+ * License:           GPL-2.0+
+ * License URI:       http://www.gnu.org/licenses/gpl-2.0.txt
+ * Text Domain:       gforms-google-places
+ * Domain Path:       /languages
+ */
 
-namespace OomphInc\GFormsGooglePlaces;
+define( 'GF_GOOGLE_PLACES_ADDON_VERSION', '1.0.0' );
+define( 'GF_GOOGLE_PLACES_ADDON_URL', plugins_url( '/', __FILE__ ) );
 
-if ( !class_exists( __NAMESPACE__ . '\\Plugin' ) ) {
-	require_once __DIR__ . '/inc/Plugin.php';
-	define( __NAMESPACE__ . '\\PLUGINS_URL', plugins_url( '/', __FILE__ ) );
-	Plugin::init();
+add_action( 'gform_loaded', array( 'GFormsGooglePlaces', 'load' ), 5 );
+
+/**
+ * Loads plugin class and registers addon with Gravity Forms.
+ */
+class GFormsGooglePlaces {
+
+	/**
+	 * Loads plugin class and registers addon with Gravity Forms.
+	 *
+	 * @return void|null Returns early if Gravity Forms not active.
+	 */
+	public static function load() {
+
+		if ( ! method_exists( 'GFForms', 'include_addon_framework' ) ) {
+			return;
+		}
+
+		require_once __DIR__ . '/classes/gforms-google-places.php';
+
+		GFAddOn::register( 'GPlacesAddon' );
+	}
+
 }

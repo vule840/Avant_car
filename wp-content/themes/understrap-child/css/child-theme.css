@@ -11745,6 +11745,9 @@ ol.carousel-indicators li {
 OBRAZCI
 
 ********/
+div.pac-container {
+  z-index: 99999999999 !important; }
+
 div.pum-theme-82 .pum-container, .pum-theme-default-theme .pum-container {
   padding: 0px;
   padding-left: 1rem;

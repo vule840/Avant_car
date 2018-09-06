@@ -1,12 +1,12 @@
 {
-    "name": "oomphinc/gravity-forms-google-places",
-    "description": "Adds a location field type that integrates with the Google Places API.",
+    "name": "gravity-forms-google-places",
+    "description": "Adds a Gravity Forms field type for autocompleting addresses using the Google Places API.",
     "type": "wordpress-plugin",
-    "license": "MIT",
+    "license": "GPL",
     "authors": [
         {
-            "name": "Stephen Beemsterboer",
-            "homepage": "https://github.com/balbuf",
+            "name": "Dave Bonds",
+            "homepage": "https://github.com/davebonds",
             "role": "Developer"
         }
     ],

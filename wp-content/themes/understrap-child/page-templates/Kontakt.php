@@ -121,8 +121,29 @@ krećemo s unapređenjem vaše mobilnosti.</p>
 
 
         <div class="row">
-	<div class="col-md-8"><?php gravity_form( 3, false, false, false, '', true ,12); ?></div>
-	<div class="col-md-4"><img src="//localhost:3000/avant_car/wp-content/uploads/2018/09/obrazac_svg-02.svg" alt="" class="alignnone size-full wp-image-136" /></div>
+	<div class="col-md-8"><?php gravity_form(5, false, false, false, '', true, 12); ?></div>
+	<div class="col-md-4"><?php
+$loop = new WP_Query( array(
+    'post_type' => 'business_car',
+    'posts_per_page' => -1
+  )
+);
+?>
+
+<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+
+  <!-- do stuff -->
+  <?php the_title( ) ?>
+  <?php the_post_thumbnail( ) ?>
+  
+
+  <?php if( get_field('transferi_slika') ): ?>
+
+	<img src="<?php the_field('transferi_slika'); ?>" />
+
+<?php endif; ?>
+
+<?php endwhile; wp_reset_query(); ?></div>
 </div>
 
         </div>
@@ -135,6 +156,9 @@ krećemo s unapređenjem vaše mobilnosti.</p>
   </div> 
   
   
+<?php gravity_form(5, false, false, false, '', true, 12); ?>
+
+
 
 
 	</div><!-- Container end -->
