@@ -346,3 +346,4 @@ mobilnost je tu, bez buke i bez emisije.</p>
 	<?php get_template_part( 'global-templates/gumb_sticky' ); ?>	
 
 <?php get_footer(); ?>
+

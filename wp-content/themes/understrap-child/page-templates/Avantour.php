@@ -112,7 +112,14 @@ partnera, pojavite se sa stilom!</p>
 		 *************** -->
 
 		<div  id="avantour_3_vozila" class="row">
-			<?php get_template_part( 'global-templates/carusel_slider' ); ?>
+			<div class="col-md-12">
+				<h2 class="text-center">AVANTOUR VOZILA</h2>
+			</div>
+			
+			<div class="col-md-12">
+				<?php get_template_part( 'global-templates/carusel_slider' ); ?>
+			</div>
+			
 		<!-- <div class="col-md-12 content-area" id="primary">
 					<h2>AVANTOUR VOZILA</h2>
 					<h2>AVANTOUR__AV_VOZILA SLIDER</h2>

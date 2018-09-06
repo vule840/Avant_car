@@ -517,7 +517,43 @@ list-style-image: url("#{$urlsass}/strelica_crna.svg");
 
 #avantour_3_vozila{
 	background: var(--bijela);
-	@include padding(3rem);
+	@include padding(0rem);
+	.carousel {
+		.avantour_covac{
+				@include svg(var(--zelena),50px,inline-flex, center);
+			}
+		.avantour_taska{
+				@include svg(var(--zelena),70px,inline-flex, center);
+				height: 50px;
+			}	
+		.transferi_link_rezervirajte{
+			position: absolute;
+			bottom:25px;
+			left: 0;
+			right: 0;
+			margin: auto;
+
+
+		}
+		.carousel-indicators{
+			//bottom:10px;
+			top:300px;
+			//background: var(--zelena);
+			margin-right: 0;
+			margin-left: 0;
+			@include padding(3rem);
+			li{
+				border: 1px solid var(--zelena);
+				text-indent:0;
+    			//line-height: 4;
+				padding-top: 1.2rem;
+
+			}
+			.active{
+					background: var(--zelena);
+				}
+		}
+	}
 }
 #avantour_4_vozite{
 	@include padding_tb(10rem,10rem);
@@ -751,7 +787,10 @@ svg.sidebar_dogovorite{
 CARUSEL
 
 ********/
-
+.carousel{
+	width: 100%;
+	    padding: 2rem 0 9rem 1rem;
+}
  ol.carousel-indicators {
     position: absolute;
     right: 0;
@@ -775,4 +814,39 @@ ol.carousel-indicators li {
   width: 20px;
   height: 20px;
   border-radius: 100%;
+}
+
+
+/*********
+
+OBRAZCI
+
+********/
+
+//***********  KRATKOROČNI NAJAM  ************/
+
+#popmake-88 .pum-container, .pum-theme-default-theme .pum-container{
+	
+	
+}
+
+div.pum-theme-82 .pum-container, .pum-theme-default-theme .pum-container{
+	padding: 0px; 
+	padding-left: 1rem;
+	    border-bottom: 5px solid $zelena__;
+	        border-top: 5px solid $zelena__;
+	#pum_popup_title_88{
+		display:none;
+	}
+}
+div.pum-theme-82, .pum-theme-default-theme{
+	background-color: rgba( 0, 0, 0, 0.5 );
+}
+
+//***********  DUGOROČNI NAJAM  ************/
+
+#popmake-121{
+	#pum_popup_title_121{
+		display:none;
+	}
 }

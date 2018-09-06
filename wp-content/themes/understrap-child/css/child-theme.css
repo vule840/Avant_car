@@ -11297,7 +11297,41 @@ ul.home_lista2 {
 
 #avantour_3_vozila {
   background: var(--bijela);
-  padding: 3rem; }
+  padding: 0rem; }
+  #avantour_3_vozila .carousel .avantour_covac {
+    fill: var(--zelena);
+    width: 50px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-item-align: center;
+        align-self: center; }
+  #avantour_3_vozila .carousel .avantour_taska {
+    fill: var(--zelena);
+    width: 70px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-item-align: center;
+        align-self: center;
+    height: 50px; }
+  #avantour_3_vozila .carousel .transferi_link_rezervirajte {
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    right: 0;
+    margin: auto; }
+  #avantour_3_vozila .carousel .carousel-indicators {
+    top: 300px;
+    margin-right: 0;
+    margin-left: 0;
+    padding: 3rem; }
+    #avantour_3_vozila .carousel .carousel-indicators li {
+      border: 1px solid var(--zelena);
+      text-indent: 0;
+      padding-top: 1.2rem; }
+    #avantour_3_vozila .carousel .carousel-indicators .active {
+      background: var(--zelena); }
 
 #avantour_4_vozite {
   padding-top: 10rem;
@@ -11679,6 +11713,10 @@ svg.sidebar_dogovorite {
 CARUSEL
 
 ********/
+.carousel {
+  width: 100%;
+  padding: 2rem 0 9rem 1rem; }
+
 ol.carousel-indicators {
   position: absolute;
   right: 0;
@@ -11701,3 +11739,22 @@ ol.carousel-indicators li {
   width: 20px;
   height: 20px;
   border-radius: 100%; }
+
+/*********
+
+OBRAZCI
+
+********/
+div.pum-theme-82 .pum-container, .pum-theme-default-theme .pum-container {
+  padding: 0px;
+  padding-left: 1rem;
+  border-bottom: 5px solid #A7B849;
+  border-top: 5px solid #A7B849; }
+  div.pum-theme-82 .pum-container #pum_popup_title_88, .pum-theme-default-theme .pum-container #pum_popup_title_88 {
+    display: none; }
+
+div.pum-theme-82, .pum-theme-default-theme {
+  background-color: rgba(0, 0, 0, 0.5); }
+
+#popmake-121 #pum_popup_title_121 {
+  display: none; }
