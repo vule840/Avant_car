@@ -33,7 +33,7 @@ function add_child_theme_textdomain() {
 add_action( 'after_setup_theme', 'add_child_theme_textdomain' );
 
 
-/*add_filter( 'script_loader_src', 'gfgp_api_key', 10, 2 );
+add_filter( 'script_loader_src', 'gfgp_api_key', 10, 2 );
 function gfgp_api_key( $src, $handle ) {
     if( 'google-places' === $handle ) {
         $src = add_query_arg( array(
@@ -41,7 +41,7 @@ function gfgp_api_key( $src, $handle ) {
         ), $src );
     }
     return $src;
-}*/
+}
 
 function cc_mime_types($mimes) {
  $mimes['svg'] = 'image/svg+xml';
@@ -106,3 +106,45 @@ function business_car() {
 
 }
 add_action( 'init', 'business_car', 0 );
+
+
+add_action( 'wp_footer', 'gform_popup_fix');
+function gform_popup_fix() {
+
+    $tag = "";
+    ob_start();
+    ?>
+    <script type="text/javascript">
+        function gformInitDatepicker(){jQuery(".datepicker").each(function(){var a=jQuery(this),b=this.id,c={yearRange:"-100:+20",showOn:"focus",dateFormat:"mm/dd/yy",changeMonth:!0,changeYear:!0,suppressDatePicker:!1,onClose:function(){a.focus();var b=this;this.suppressDatePicker=!0,setTimeout(function(){b.suppressDatePicker=!1},200)},beforeShow:function(a,b){return!this.suppressDatePicker}};a.hasClass("dmy")?c.dateFormat="dd/mm/yy":a.hasClass("dmy_dash")?c.dateFormat="dd-mm-yy":a.hasClass("dmy_dot")?c.dateFormat="dd.mm.yy":a.hasClass("ymd_slash")?c.dateFormat="yy/mm/dd":a.hasClass("ymd_dash")?c.dateFormat="yy-mm-dd":a.hasClass("ymd_dot")&&(c.dateFormat="yy.mm.dd"),a.hasClass("datepicker_with_icon")&&(c.showOn="both",c.buttonImage=jQuery("#gforms_calendar_icon_"+b).val(),c.buttonImageOnly=!0),b=b.split("_"),c=gform.applyFilters("gform_datepicker_options_pre_init",c,b[1],b[2]),a.datepicker(c)})};
+        (function ($) {
+            $(document).ready( function() {
+                $('a','.order-fuel').click( function() {
+                    setTimeout(function() {
+                        gformInitDatepicker();
+                    }, 500);
+                });
+            });
+        })(jQuery)
+    </script>
+    <?php
+    $tag = ob_get_contents();
+    ob_end_clean();
+    echo $tag;
+
+}
+
+
+
+add_filter( 'gform_enable_credit_card_field', 'enable_creditcard', 11 );
+function enable_creditcard( $is_enabled ) {
+    return true;
+}
+
+add_action( 'wp_head', 'gf_datepicker_fix', 1000000 );
+function gf_datepicker_fix(){
+?><style>
+body div#ui-datepicker-div[style] {
+z-index: 2000000000 !important;
+}
+</style> <?php
+}

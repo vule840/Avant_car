@@ -34,9 +34,9 @@ HERO SECTION__HEADER
 			 -->
 
 
-			<div class="row" id="najam_1_flota">
-				<?php get_template_part( 'global-templates/carusel_slider_flota' ); ?>
-			</div>
+			<div class="row" id="najam_1_flota"><?php get_template_part( 'global-templates/carusel_slider_flota' ); ?></div>
+				
+			
 
 
 

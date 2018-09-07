@@ -125,7 +125,7 @@ krećemo s unapređenjem vaše mobilnosti.</p>
 	<div class="col-md-4"><?php
 $loop = new WP_Query( array(
     'post_type' => 'business_car',
-    'posts_per_page' => -1
+    'posts_per_page' => 3
   )
 );
 ?>

@@ -7,6 +7,6 @@
 
 
 <div id="fade2" class="icon-bar2 ">
-  
- <img class="" src="<?php bloginfo('url'); ?>/wp-content/uploads/2018/09/Sidebar_gumb2.svg" alt="Karta Hrvatske">
+  <a href="#"> <img class="" src="<?php bloginfo('url'); ?>/wp-content/uploads/2018/09/Sidebar_gumb2.svg" alt="Karta Hrvatske"></a>
+
 </div>
