@@ -12,7 +12,7 @@
 			    <div class="carousel-item active">
 			     
 			     <!-- PRVI -->
-					 <div class="row no-gutters">
+					 <div class="row no-gutters popmake-transferi_bussines_car">
 			     	<div class="col-md-3 text-center">
 						
 					<p><svg class="avantour_covac"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#avantour-covac" /></p>

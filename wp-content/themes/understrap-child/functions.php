@@ -43,6 +43,13 @@ function gfgp_api_key( $src, $handle ) {
     return $src;
 }
 
+
+/************
+
+    SVG SUPPORT
+
+**************/
+
 function cc_mime_types($mimes) {
  $mimes['svg'] = 'image/svg+xml';
  return $mimes;
@@ -51,7 +58,11 @@ add_filter('upload_mimes', 'cc_mime_types');
 
 
 
-// Register Custom Post Type
+/************
+
+    BUSSINES CAR CUSTOM POST
+
+**************/
 function business_car() {
 
     $labels = array(
@@ -108,6 +119,14 @@ function business_car() {
 add_action( 'init', 'business_car', 0 );
 
 
+
+/************
+
+    POP UP FIX
+
+**************/
+
+
 add_action( 'wp_footer', 'gform_popup_fix');
 function gform_popup_fix() {
 
@@ -134,11 +153,32 @@ function gform_popup_fix() {
 }
 
 
+/************
 
+    TEST
+
+**************/
+
+/*add_filter( 'gform_field_value_date', 'get_current_post_title' );
+function get_current_post_title($the_title){  
+ 
+    $current_post_title = get_the_title($post->ID);
+ 
+    return $current_post_title;
+}*/
+
+/*
 add_filter( 'gform_enable_credit_card_field', 'enable_creditcard', 11 );
 function enable_creditcard( $is_enabled ) {
     return true;
-}
+}*/
+
+
+/************
+
+    ZA DATEPICKER Z INDEX
+
+**************/
 
 add_action( 'wp_head', 'gf_datepicker_fix', 1000000 );
 function gf_datepicker_fix(){
@@ -147,4 +187,19 @@ body div#ui-datepicker-div[style] {
 z-index: 2000000000 !important;
 }
 </style> <?php
+}
+
+
+
+
+add_filter( 'gform_progress_bar', 'my_custom_function', 10, 3 );
+function my_custom_function( $progress_bar, $form, $confirmation_message ) {
+ 
+    $progress_bar = '<ul>
+        <li>Page 1</li>
+        <li>Page 2</li>
+        <li>Page 3</li>
+    </ul>';
+ 
+    return $progress_bar;
 }

@@ -41,7 +41,7 @@
 						<div id="" class="col-md-4 text-center">
 							<!--  <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('category-thumb'); ?></a>	-->
 									<!-- NASLOV -->	
-									<h2><a class="" href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h2>
+									<h2><a class="popmake-kratkorocni-najam" href="#"><?php the_title(); ?></a></h2>
 
 								<!-- SLIKA -->
 									<?php if( get_field('flota_slika') ): ?>

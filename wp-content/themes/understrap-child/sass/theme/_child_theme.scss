@@ -22,7 +22,9 @@ ul li{
     /*Without this, clicking will make it sticky*/
     pointer-events: none;
 }
-
+.navbar-brand{
+    top: 0;
+}
 /********************
 
 	HEADER_STILOVI
@@ -1175,3 +1177,13 @@ OWL CARUSEL_STILOVI
 		color: white;
 	}
 }
+
+.gform_wrapper form.gf_simple_horizontal div.gform_body{
+  width: 100% !important;
+}
+
+
+body .gform_wrapper .gf_progressbar_wrapper {border: 1px solid red};
+body .gform_wrapper .gform_body .gf_progressbar_wrapper .gf_progressbar_title {color: red};
+body .gform_wrapper .gf_progressbar_wrapper .gf_progressbar {border: 1px solid red};
+body .gform_wrapper .gf_progressbar_wrapper .gf_progressbar .gf_progressbar_percentage {border: 1px solid red};
