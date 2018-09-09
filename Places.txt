@@ -29,3 +29,21 @@ git remote add origin https://github.com/vule840/Avant_car.git
 ssh -T vule840@github.com
 
 ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAACAQDYtoVmQCRayFoYGP0NClYsbITYtioJLuDo7OIHX2WN+CM0Vj9/sPatBThME9fVO14JjuHNRoDx/vIxBhmnLYCvkdH0ps7gDUGorGdUr9l67HPbX7Ho3A+jLu7UygWY5EqjsgxbRqpkvH/h7ef9JkNshz0ewiQwNVEVa5/3UzbbICdGhu2v0aTXxwOELWvrkz2NOgAGHwfeZbyMiFjWa1LP+DV1hkXmBiAio3eMJqC141ZgO1vyGsQG5p5oAon4MNLudhpdZs9g0ccMt8o+I1TRiQ66Kawl3cEYa20BFVHZ3yDJ0kgm/tX/vQvzxfQhh0zwcNyHmvDHsRXtM5YsKhrSSx4HLT5XJ6UmW1SMX+/RcsyY4/O6cTDpIcTRaMtht42Jk3nr/vD01XL0PV1D17KRPW5tW5S1VLrnc714okaeCBZWmrC0VkOhnwK8WKILUjKdZ1qUEu3tehexdnWwSqaauEb5DFBV8dHQ5TA54NxH+yGqcr14S6HV57ryKmMgtg27Zu/jsVSgbhVc5gdOCZdXukuHhJKy7cHJ0eKPCgI8I5FmoWPN8FhCDhHhbKRcF3GBphJe592XUcnUNcI0R3Yxg50CCrRXQ4MYYMGpb8IINuVGwf/LWlguLCqCKCfq4cwrEIj7D13Rq/ucQuwWYtF3ElYiyDbbooBjoRM32j/ZIw== vule840@github.com
+
+to kad pushah na github, prije toga sam morao generirati ssh kljuceve, jebao se 2 sata, pulla pa pushao 
+
+http://rogerdudler.github.io/git-guide/ - odlican tutorial
+git push -u origin master
+
+
+https://docs.gravityforms.com/gform_field_value_parameter_name/
+
+
+https://wpshout.com/php-globals-variable-scope-wordpress/
+
+
+https://www.gravitygeek.com/knowledge-base/how-to-pre-fill-list-field-fields/
+
+
+ZA DOTS CONECTED
+https://www.youtube.com/watch?v=DYevj6UGNWA
