@@ -1,5 +1,5 @@
 <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-			  <ol class="carousel-indicators">
+			  <ul class="carousel-indicators progressbar">
 
 			    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">BUSINESS car</li>
 			    <li data-target="#carouselExampleIndicators" data-slide-to="1">PREMIUM car</li>
@@ -7,7 +7,7 @@
 			     <li data-target="#carouselExampleIndicators" data-slide-to="3">VIP van</li>
 			      <li data-target="#carouselExampleIndicators" data-slide-to="4">TESLA model S</li>
 			      <li data-target="#carouselExampleIndicators" data-slide-to="5">TESLA model X</li>
-			  </ol>
+			  </ul>
 			  <div class="carousel-inner">
 			    <div class="carousel-item active">
 			     

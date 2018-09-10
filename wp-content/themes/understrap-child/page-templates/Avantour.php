@@ -42,6 +42,7 @@ HERO SECTION__HEADER
 		</div><!-- .row end -->
 
 
+
 	<!--**************.
 
 		2. AVANTOUR__AV_USLUGE
@@ -230,63 +231,7 @@ partnera, pojavite se sa stilom!</p>
 		 *************** -->
 		<?php get_template_part( 'global-templates/mobilnost_prije_footer' ); ?>	
 
-dsfdsfsd
-<div class="row">
-<?php
 
-			// check if the repeater field has rows of data
-			if( have_rows('repeater') ):
-
-			 	// loop through the rows of data
-			    while ( have_rows('repeater') ) : the_row(); ?>
-
-			       
-			      <!--  <a  href="<?php the_sub_field('bt_url') ?>">dfdfgdfgdfgdf</a> --> 
-
-			        <div id="" class="col-md-4 text-center">
-							
-									<!-- NASLOV -->	
-									<h2><a class="popmake-kratkorocni-najam" href="#"><?php the_sub_field('auto') ?></a></h2>
-
-							
-
-										<img src="<?php the_sub_field('auto_slika') ?>" />
-
-									
-								
-							 		<!-- TABLICA -->
-							 		<table class="table  table-light ikonice">
-										 
-										  <tbody>
-										    <tr>
-										      <td><svg class="flota_sjedalo"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#flota-sjedalo" /></svg></td>
-										      <td><svg class="flota_torba"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#flota-torba" /></svg></td>
-										      <td><svg class="flota_vrata"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#flota-vrata" /></svg></td>
-										      <td><svg class="flota_snjeg"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#flota-snjeg" /></svg></td>
-										    </tr>
-										    <tr>
-										      <td>4</td>
-										      <td>2</td>
-										      <td>4</td>
-										      <td></td>
-										    </tr>
-										    
-										  </tbody>
-										</table>
-						
-						</div>
-
-			 <?php 	endwhile;
-
-			else :
-
-			    // no rows found
-
-			endif;
-
-			?>
-
-		</div><!-- row end -->
 	</div><!-- Container end -->
 
 	<!-- SIDEBAR_STICKY -->

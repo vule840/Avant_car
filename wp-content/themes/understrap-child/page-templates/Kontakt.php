@@ -104,59 +104,7 @@ krećemo s unapređenjem vaše mobilnosti.</p>
 
 
 	
-  <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
-
  
-  <div class="modal fade" id="myModal" role="dialog">
-    <div class="modal-dialog">
-    
-   
-      <div class="modal-content">
-        <div class="modal-header">
-          <button type="button" class="close" data-dismiss="modal">&times;</button>
-          <h4 class="modal-title">Modal Header</h4>
-        </div>
-        <div class="modal-body">
-
-
-
-        <div class="row">
-	<div class="col-md-8"><?php gravity_form(5, false, false, false, '', true, 12); ?></div>
-	<div class="col-md-4"><?php
-$loop = new WP_Query( array(
-    'post_type' => 'business_car',
-    'posts_per_page' => 3
-  )
-);
-?>
-
-<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-
-  <!-- do stuff -->
-  <?php the_title( ) ?>
-  <?php the_post_thumbnail( ) ?>
-  
-
-  <?php if( get_field('transferi_slika') ): ?>
-
-	<img src="<?php the_field('transferi_slika'); ?>" />
-
-<?php endif; ?>
-
-<?php endwhile; wp_reset_query(); ?></div>
-</div>
-
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        </div>
-      </div>
-      
-    </div>
-  </div> 
-  
-  
-<?php gravity_form(5, false, false, false, '', true, 12); ?>
 
 
 

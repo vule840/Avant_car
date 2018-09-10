@@ -6,6 +6,26 @@ console.log('dsfds');
 jQuery(document).ready(function($) {
 
 
+//*https://stackoverflow.com/questions/21349984/how-to-make-bootstrap-carousel-slider-use-mobile-left-right-swipe/30551685#30551685*/
+
+$(".carousel").on("touchstart", function(event){
+        var xClick = event.originalEvent.touches[0].pageX;
+    $(this).one("touchmove", function(event){
+        var xMove = event.originalEvent.touches[0].pageX;
+        if( Math.floor(xClick - xMove) > 5 ){
+            $(this).carousel('next');
+        }
+        else if( Math.floor(xClick - xMove) < -5 ){
+            $(this).carousel('prev');
+        }
+    });
+    $(".carousel").on("touchend", function(){
+            $(this).off("touchmove");
+    });
+});
+
+
+
         /** za auto koji izabaers https://stackoverflow.com/questions/9232810/change-placeholder-text-using-jquery  ***/
 
 $('.popmake-kratkorocni-najam').click(function() {

@@ -1,0 +1,1189 @@
+body{
+	background: $pocetna__bg;
+	font-family: $roboto;
+}
+p{
+	font-weight: 300;
+}
+ul li{
+	font-weight: 300;
+}
+.wrapper{
+	padding-top: 30px;
+	padding-bottom: 0;
+}
+
+//BOOTSTRAP MENU // DVA IZBORNIKA ?
+//https://github.com/understrap/understrap/issues/303
+.dropdown:hover > .dropdown-menu {
+    display: block;
+}
+.dropdown > .dropdown-toggle:active {
+    /*Without this, clicking will make it sticky*/
+    pointer-events: none;
+}
+.navbar-brand{
+    top: 0;
+}
+/********************
+
+	HEADER_STILOVI
+
+**********************/
+
+body #cover {
+    padding: 60px 0;
+    display: table;
+    width: 100%;
+    height: 100%;
+    min-height: 100%;
+   
+    padding: 0 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    z-index: 3;
+    -webkit-box-shadow: 3px -3px 16px 2px rgba(0,0,0,.35);
+    box-shadow: 3px -3px 16px 2px rgba(0,0,0,.35);
+    padding: 11em 0;
+}
+
+/********************
+
+	NASLOV_STILOVI
+
+**********************/
+
+h1.naslovna {
+    font-size: 5.5rem;
+    
+    color: var(--bijela);
+    font-weight: 300;
+        line-height: 0.8;
+        
+ 
+    @include media-breakpoint-down(md) {
+        // Smaller than md: 768px
+        font-size: 3.5rem;
+    }
+}
+.naslovna__ispod {
+    font-size: 1.6rem;
+    color: var(--bijela);
+    font-weight: 300;
+    margin-bottom: 3rem;
+
+   // @include gradient-y(#418fde, #fdb927);
+}
+.naslovna__ispod2 {
+    font-size: 2.2rem;
+    color: var(--bijela);
+    font-weight: 300;
+    margin-top: -0.5rem;
+   // @include gradient-y(#418fde, #fdb927);
+}
+
+h2{
+	font-weight: 300;
+}
+
+/********************
+
+	NAVBAR_STILOVI
+
+**********************/
+
+.navbar{
+	background: var(--siva_tamno);
+	padding-bottom: 0;
+	padding-top: 1rem;
+	.nav-item{
+		font-weight: bold;
+		text-transform: uppercase;
+		margin: 0 1rem;
+		a{
+			color:var(--bijela);
+
+		}
+		&:hover{
+			    border-bottom: 5px solid var(--zelena);
+		}
+	}
+	.active {
+			color:var(--zelena);
+			 border-bottom: 5px solid var(--zelena);			 
+			 	.nav-link{
+			 		color:var(--zelena);
+			 	
+			 }
+		}
+}
+
+
+.card{
+	background: none;
+	border:none;
+}
+
+/* pomaknuti ontent gore*/;
+div#content {
+       margin-top: -9rem;
+}
+
+.navbar-brand{
+	height: 85px;
+    width: 250px;
+    position: absolute;
+}
+
+/* Fixed/sticky icon bar (vertically aligned 50% from the top of the screen) */
+.icon-bar {
+  position: fixed;
+  top: 30%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  height: 39px;
+    width: 42px;
+}
+
+.icon-bar2 {
+  position: fixed;
+  top: 75%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  height: 39px;
+    width: 42px;
+}
+
+
+/* Style the icon bar links */
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 16px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 20px;
+}
+
+/* Style the social media icons with color, if you want */
+.icon-bar a:hover {
+  background-color: #000;
+}
+
+.facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.google {
+  background: #dd4b39;
+  color: white;
+}
+
+.linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.youtube {
+  background: #bb0000;
+  color: white;
+}
+
+/********************
+
+	MISC_STILOVI
+
+**********************/
+
+
+.bijeli_broj{
+	font-size: 1.5rem;
+	color: var(--bijela);
+	margin-bottom: 0;
+}
+
+.italic_slova{
+	@include italic();
+}
+.zelena_bold_slova{
+	@include zelena_bold();
+}
+.zelena{
+	color: var(--zelena);
+	//font-size: 1.5rem;
+	margin-bottom: 0;
+	
+}
+
+.traka_logo{
+	background: var(--siva_tamno);
+	//height: 100px;
+}
+.btn-outline-secondary{
+	padding: 0.5rem 4rem;
+	font-weight: bold;
+	border-radius:0;
+}
+
+/********************
+
+	HOME_SEKCIJE
+
+**********************/
+
+#home_1_pogodnosti{
+	background: var(--zelena);
+	@include padding(1rem);
+	color: var(--siva_tamno);
+	h2{
+		font-size: 2.4rem;
+		margin-bottom: 0.5rem;
+	}
+	.card-title{
+		color: var(--bijela);
+		font-weight: 300;
+	}
+	p{
+		font-weight: 300;
+		font-size: 0.9rem;
+	}
+}
+
+#home_2_dugorocni{
+	color: var(--bijela);
+	padding: 2.5rem 0rem 1rem 0;
+	p{
+		margin-bottom: 1.5rem;
+    font-size: 0.95rem;
+	}
+	h2{
+		 @include line_height(-3px);  
+	}
+	.italic_slova{
+		font-size: 1.2rem;
+		padding-bottom: 1.4rem;
+	}
+	.card{
+		.home_zatrazite{
+		p{
+			padding-top: 0.5rem;
+			padding-bottom: 0;
+			font-size: 0.9rem;
+		}
+	}
+	}
+	
+	/*
+	.card{
+		p{
+			&:after{
+				content: '';
+			    display: inline-block;
+			    height: .8em;
+			    width: 1.3em;
+			    background-image: url(http://localhost/avant_car/wp-content/themes/understrap/img/home_strelica.svg);
+			    background-size: contain;
+			    background-repeat: no-repeat;
+			    margin-right: .5em;
+			}	
+		}
+			
+	}*/
+
+	.card-body{
+		padding: 0;
+
+		p{
+			font-size: 0.8rem;
+		
+		}
+	}
+
+}
+#home_3_flota{
+	background: var(--bijela);
+	@include padding(2rem);
+	color: var(--siva_tamno);
+	span.zelena{
+		font-weight: bold;
+	}
+	.home_kompletnu{
+		font-size: 1.2rem;
+	}
+	.home_lista li{
+		font-size: 1.2rem;
+	}
+}
+
+#home_4_zatrazite{
+	background: var(--siva_tamno);
+	@include padding(2rem);
+	color: var(--bijela);
+
+	h2{
+		@include line_height(-3px); 
+		font-size: 2.1rem; 
+	}
+	.card-body{
+		padding-top: 0;
+		padding: 0 2rem;
+    font-size: 0.9rem;
+	}
+	.zelena{
+		font-size: 1.5rem;
+		font-weight: bold;
+	}
+	h5{
+		font-size: 1rem;
+	}
+	
+}
+
+#home_5_elektricna{
+	@include padding(3rem);
+	color: var(--bijela);
+	h2{
+		@include line_height(-3px);  
+	}
+	.italic_slova{
+		padding-bottom: 2rem;
+		display: block;
+	}
+}
+
+/********************
+
+	LISTA_HOME
+
+**********************/
+
+ul.home_lista {
+  list-style:none;
+  padding-left: 0em;
+  li {
+  &:before {
+    content: '';
+    display: inline-block;
+    height: 1.2em;
+    width: 1.6em;
+    //background-image: url(http://placehold.it/32?text=fallback); // Fallback PNG
+    background-image: url("#{$urlsass}/home_strelica1.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right:0.2em; 
+
+  }
+}
+
+}
+
+ul.home_lista2 {
+  
+  padding-left: 0em;
+   list-style-position: outside;
+list-style-image: url("#{$urlsass}/strelica_crna.svg");
+ /* li {
+  &:before {
+    content: '';
+    display: inline-block;
+    height: 0.8em;
+    width: 1.3em;
+   
+    background-image: url("#{$urlsass}/strelica_crna.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-right:0.5em; 
+
+  }
+}*/
+
+}
+    @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+#fade {
+  /*margin: 50px;*/
+  //padding: 50px;
+  
+      display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 0px;
+    z-index: 99;
+    background-image: none;
+    cursor: pointer;
+
+
+
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+
+}
+  //https://codepen.io/jmelgoza/pen/jEaGYg 
+ #fade2  {
+  /*margin: 50px;*/
+  //padding: 50px;
+  
+      display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 0px;
+    z-index: 99;
+    background-image: none;
+    cursor: pointer;
+      display: none;
+    position: fixed;
+    bottom: 20px;
+    left: 0px;
+    z-index: 99;
+    background-image: none;
+    cursor: pointer;
+
+
+
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+   
+/********************
+
+	HRV_SLO__SEKCIJE
+
+**********************/
+
+#hrv_slo_1_usluge{
+	background: var(--zelena);
+	@include padding(3rem);
+}
+
+#hrv_slo_2_lokacije{
+	background: var(--siva_tamno);
+	color: var(--bijela);
+	@include padding(3rem);
+}
+#hrv_slo_3_drustvena{
+	background: var(--bijela);
+	@include padding(3rem);
+}
+#hrv_slo_4_reference{
+	background: var(--zelena);
+	@include padding(3rem);
+
+}
+#hrv_slo_5_mobilnost{
+	@include padding(3rem);
+	@include bg_repeat();
+}
+
+
+/********************
+
+	AVANTOUR_SEKCIJE
+
+**********************/
+
+#avantour_2_usluge{
+	background: var(--zelena);
+	@include padding(3rem);
+	color: var(--siva_tamno);
+}
+
+#avantour_3_vozila{
+	background: var(--bijela);
+	@include padding(0rem);
+	.carousel {
+		.avantour_covac{
+				@include svg(var(--zelena),50px,inline-flex, center);
+			}
+		.avantour_taska{
+				@include svg(var(--zelena),70px,inline-flex, center);
+				height: 50px;
+			}	
+		.transferi_link_rezervirajte{
+			position: absolute;
+			bottom:25px;
+			left: 0;
+			right: 0;
+			margin: auto;
+
+
+		}
+		.carousel-indicators{
+			//bottom:10px;
+			top:300px;
+			//background: var(--zelena);
+			margin-right: 0;
+			margin-left: 0;
+			@include padding(3rem);
+			li{
+				border: 1px solid var(--zelena);
+				text-indent:0;
+    			//line-height: 4;
+				padding-top: 1.2rem;
+
+			}
+			.active{
+					background: var(--zelena);
+				}
+		}
+	}
+}
+#avantour_4_vozite{
+	@include padding_tb(10rem,10rem);
+	color: var(--bijela);
+	@include bg_repeat();
+}
+#avantour_5_destinacije{
+	@include padding(3rem);
+	color: var(--siva_tamno);
+	@include sivi_gradijent();
+	h2{
+		color: var(--siva_tamno);
+	}
+	h5{
+		font-weight: bold;
+		margin-top: 1rem;
+		margin-bottom: 0;
+		color: var(--siva_tamno);
+	}
+	small{
+		color: var(--siva_tamno);
+	}
+}
+
+/********************
+
+	KONTAKT__SEKCIJE
+
+**********************/
+
+#kontakt_1_kucice{
+	
+	.col-md-4:nth-child(1){
+		background: var(--siva_tamno);
+		
+		color: var(--bijela);
+		@include padding_tb(4rem,2rem);	
+	}
+	.col-md-4:nth-child(2){
+		background: var(--siva);
+		@include padding_tb(4rem,2rem);	
+	}
+	.col-md-4:nth-child(3){
+		background: var(--zelena);
+		@include padding_tb(4rem,2rem);	
+	}
+}
+
+
+#kontakt_2_mapa{
+	.col-md-4:nth-child(1){
+		
+		@include padding_tb(4rem,2rem);
+		padding: 5rem 3rem; 	
+
+	}
+	@include sivi_gradijent();
+	    margin-bottom: -6px;
+
+}
+
+
+/********************
+
+	D_NAJAM_VOZILA
+
+**********************/
+#d_najam_vozila{
+	@include padding(3rem);
+	background: var(--siva_tamno);
+}
+#najam_1_flota{
+	background: var(--bijela);
+	a{
+		 
+		color: var(--siva_tamno);
+	}
+}
+/********************
+
+	FOOTER
+
+**********************/
+
+#wrapper-footer{
+	background: var(--zelena);
+	background-image: url("#{$urlsass2}/2018/09/footer_auto-8.png");
+	background-repeat: no-repeat;
+    background-position: center -126px;
+    padding-top: 4rem;
+    padding-bottom: 0;;
+	//height: 50px;/
+} 
+/********************
+
+	SVG__STILOVI
+
+**********************/
+
+.home_ikone{
+	fill:  #fff;
+	width: 60px;
+	display: inline-flex;
+  align-self: center;
+      height: 114px;
+}
+
+.strelica{
+	@include svg(var(--zelena),38px,inline-flex, center);	
+	padding: 0.2rem;
+   height: 38px;
+}
+.home_list{
+	@include svg(var(--bijela),300px,inline-flex, center);
+}
+/*kontakt*/
+.kontakt_email{
+	@include svg(var(--bijela),70px,inline-flex, center);
+}
+.kontakt_mob{
+	@include svg(var(--siva_tamno),50px,inline-flex, center);
+}
+.kontakt_auti{
+	@include svg(var(--siva_tamno),160px,inline-flex, center);
+}
+/* hr i slo*/
+.karta_hr{
+	@include svg(var(--siva_tamno),300px,inline-flex, center);
+	padding: 1rem 0;
+}
+.karta_slo{
+	@include svg(var(--siva_tamno),300px,inline-flex, center);
+	padding: 1rem 0;
+}
+
+.ref_globus{
+	@include svg(var(--siva_tamno),100px,inline-flex, center);
+}
+.ref_zgrade{
+@include svg(var(--siva_tamno),100px,inline-flex, center);
+}
+.ref_epruveta{
+	@include svg(var(--siva_tamno),80px,inline-flex, center);
+}
+.ref_auti{
+@include svg(var(--siva_tamno),100px,inline-flex, center);
+}
+.ref_akuml{
+@include svg(var(--siva_tamno),100px,inline-flex, center);	
+}
+
+/*transferi*/
+
+.avantour_avion{
+	@include svg(var(--siva_tamno),100px,inline-flex, center);
+}
+.avantour_grad{
+	@include svg(var(--siva_tamno),100px,inline-flex, center);
+}
+.avantour_lik{
+	@include svg(var(--siva_tamno),80px,inline-flex, center);
+}
+
+.avantour_zero_logo{
+	@include svg(var(--siva_tamno),80px,inline-flex, center);
+}
+.Pula{
+	@include svg(var(--siva_tamno),140px,inline-flex, center);
+	height: 100px;
+} 
+.Rijeka{
+	@include svg(var(--siva_tamno),140px,inline-flex, center);
+	height: 100px;
+}
+.Zadar{
+	@include svg(var(--siva_tamno),140px,inline-flex, center);
+	height: 100px;
+}
+.Split{
+	@include svg(var(--siva_tamno),140px,inline-flex, center);
+	height: 100px;
+}
+.Dubrovnik{
+	@include svg(var(--siva_tamno),160px,inline-flex, center);
+	height: 100px;
+}
+
+
+.ikonice {
+	svg{
+		@include svg(var(--zelena),25px,inline-flex, center);
+	height: 25px;
+	}
+	table{
+		border:0;
+	}
+	td{
+		padding: 0.2rem;
+		&:nth-child(1){
+			border:none;
+		}
+	}
+	
+}
+/********************
+
+	CUSTOM_ROW_EL_
+	za mobilnost i još jedan
+
+**********************/
+
+.example-container {
+  width: 700px;
+  @include make-container();
+}
+
+.example-row {
+  @include make-row();
+      align-items: flex-end;
+}
+
+.example-content-main {
+  @include make-col-ready();
+
+  @include media-breakpoint-up(sm) {
+    @include make-col(6);
+  }
+  @include media-breakpoint-up(lg) {
+    @include make-col(8);
+  }
+}
+
+.example-content-secondary {
+  @include make-col-ready();
+
+  @include media-breakpoint-up(sm) {
+    @include make-col(6);
+  }
+  @include media-breakpoint-up(lg) {
+    @include make-col(4);
+  }
+}
+
+svg.sidebar_dogovorite{
+   width: 30px;
+    fill: green;
+    color: white; 
+}
+
+   
+
+/*********
+
+CARUSEL
+
+********/
+.carousel{
+	width: 100%;
+	    padding: 2rem 0 9rem 1rem;
+}
+ ol.carousel-indicators {
+    position: absolute;
+    right: 0;
+    top: -26px;
+    left: 0;
+    z-index: 15;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+       justify-content: space-between;
+    padding-left: 0;
+    margin-right: 15%;
+    margin-left: 15%;
+    list-style: none;
+    height: 50px;
+}   
+
+ol.carousel-indicators li {
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+}
+
+
+/*********
+
+OBRAZCI
+
+********/
+
+//***********  KRATKOROČNI NAJAM  ************/
+
+
+
+
+div.pac-container {
+    z-index: 99999999999 !important;
+}
+
+#popmake-88 .pum-container, .pum-theme-default-theme .pum-container{
+	
+	
+}
+
+div.pum-theme-82 .pum-container, .pum-theme-default-theme .pum-container{
+	padding: 0px; 
+	padding-left: 1rem;
+	    border-bottom: 5px solid $zelena__;
+	        border-top: 5px solid $zelena__;
+	#pum_popup_title_88{
+		display:none;
+	}
+}
+div.pum-theme-82, .pum-theme-default-theme{
+	background-color: rgba( 0, 0, 0, 0.5 );
+}
+
+//***********  DUGOROČNI NAJAM  ************/
+
+#popmake-121{
+	#pum_popup_title_121{
+		display:none;
+	}
+}
+
+
+
+body div#ui-datepicker-div[style] {
+z-index: 9999 !important;
+}
+
+
+/*********
+
+OWL CARUSEL
+
+********/
+
+
+
+
+/**
+ * Owl Carousel v2.3.4
+ * Copyright 2013-2018 David Deutsch
+ * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE
+ */
+/*
+ *  Default theme - Owl Carousel CSS File
+ */
+.owl-theme .owl-nav {
+  margin-top: 10px;
+  text-align: center;
+  -webkit-tap-highlight-color: transparent; }
+  .owl-theme .owl-nav [class*='owl-'] {
+    color: #FFF;
+    font-size: 14px;
+    margin: 5px;
+    padding: 4px 7px;
+    background: #D6D6D6;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 3px; }
+    .owl-theme .owl-nav [class*='owl-']:hover {
+      background: #869791;
+      color: #FFF;
+      text-decoration: none; }
+  .owl-theme .owl-nav .disabled {
+    opacity: 0.5;
+    cursor: default; }
+
+.owl-theme .owl-nav.disabled + .owl-dots {
+  margin-top: 10px; }
+
+.owl-theme .owl-dots {
+  text-align: center;
+  -webkit-tap-highlight-color: transparent; }
+  .owl-theme .owl-dots .owl-dot {
+    display: inline-block;
+    zoom: 1;
+    *display: inline; }
+    .owl-theme .owl-dots .owl-dot span {
+      width: 10px;
+      height: 10px;
+      margin: 5px 7px;
+      background: #D6D6D6;
+      display: block;
+      -webkit-backface-visibility: visible;
+      transition: opacity 200ms ease;
+      border-radius: 30px; }
+    .owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+      background: #869791; }
+/**
+ * Owl Carousel v2.3.4
+ * Copyright 2013-2018 David Deutsch
+ * Licensed under: SEE LICENSE IN https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE
+ */
+/*
+ *  Owl Carousel - Core
+ */
+.owl-carousel {
+  display: none;
+  width: 100%;
+  -webkit-tap-highlight-color: transparent;
+  /* position relative and z-index fix webkit rendering fonts issue */
+  position: relative;
+  z-index: 1; }
+  .owl-carousel .owl-stage {
+    position: relative;
+    -ms-touch-action: pan-Y;
+    touch-action: manipulation;
+    -moz-backface-visibility: hidden;
+    /* fix firefox animation glitch */ }
+  .owl-carousel .owl-stage:after {
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0; }
+  .owl-carousel .owl-stage-outer {
+    position: relative;
+    overflow: hidden;
+    /* fix for flashing background */
+    -webkit-transform: translate3d(0px, 0px, 0px); }
+  .owl-carousel .owl-wrapper,
+  .owl-carousel .owl-item {
+    -webkit-backface-visibility: hidden;
+    -moz-backface-visibility: hidden;
+    -ms-backface-visibility: hidden;
+    -webkit-transform: translate3d(0, 0, 0);
+    -moz-transform: translate3d(0, 0, 0);
+    -ms-transform: translate3d(0, 0, 0); }
+  .owl-carousel .owl-item {
+    position: relative;
+    min-height: 1px;
+    float: left;
+    -webkit-backface-visibility: hidden;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-touch-callout: none; }
+  .owl-carousel .owl-item img {
+    display: block;
+    width: 100%; }
+  .owl-carousel .owl-nav.disabled,
+  .owl-carousel .owl-dots.disabled {
+    display: none; }
+  .owl-carousel .owl-nav .owl-prev,
+  .owl-carousel .owl-nav .owl-next,
+  .owl-carousel .owl-dot {
+    cursor: pointer;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+  .owl-carousel .owl-nav button.owl-prev,
+  .owl-carousel .owl-nav button.owl-next,
+  .owl-carousel button.owl-dot {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0 !important;
+    font: inherit; }
+  .owl-carousel.owl-loaded {
+    display: block; }
+  .owl-carousel.owl-loading {
+    opacity: 0;
+    display: block; }
+  .owl-carousel.owl-hidden {
+    opacity: 0; }
+  .owl-carousel.owl-refresh .owl-item {
+    visibility: hidden; }
+  .owl-carousel.owl-drag .owl-item {
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none; }
+  .owl-carousel.owl-grab {
+    cursor: move;
+    cursor: grab; }
+  .owl-carousel.owl-rtl {
+    direction: rtl; }
+  .owl-carousel.owl-rtl .owl-item {
+    float: right; }
+
+/* No Js */
+.no-js .owl-carousel {
+  display: block; }
+
+/*
+ *  Owl Carousel - Animate Plugin
+ */
+.owl-carousel .animated {
+  animation-duration: 1000ms;
+  animation-fill-mode: both; }
+
+.owl-carousel .owl-animated-in {
+  z-index: 0; }
+
+.owl-carousel .owl-animated-out {
+  z-index: 1; }
+
+.owl-carousel .fadeOut {
+  animation-name: fadeOut; }
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+/*
+ *  Owl Carousel - Auto Height Plugin
+ */
+.owl-height {
+  transition: height 500ms ease-in-out; }
+
+/*
+ *  Owl Carousel - Lazy Load Plugin
+ */
+.owl-carousel .owl-item {
+  /**
+            This is introduced due to a bug in IE11 where lazy loading combined with autoheight plugin causes a wrong
+            calculation of the height of the owl-item that breaks page layouts
+         */ }
+  .owl-carousel .owl-item .owl-lazy {
+    opacity: 0;
+    transition: opacity 400ms ease; }
+  .owl-carousel .owl-item .owl-lazy[src^=""], .owl-carousel .owl-item .owl-lazy:not([src]) {
+    max-height: 0; }
+  .owl-carousel .owl-item img.owl-lazy {
+    transform-style: preserve-3d; }
+
+/*
+ *  Owl Carousel - Video Plugin
+ */
+.owl-carousel .owl-video-wrapper {
+  position: relative;
+  height: 100%;
+  background: #000; }
+
+.owl-carousel .owl-video-play-icon {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  left: 50%;
+  top: 50%;
+  margin-left: -40px;
+  margin-top: -40px;
+  background: url("owl.video.play.png") no-repeat;
+  cursor: pointer;
+  z-index: 1;
+  -webkit-backface-visibility: hidden;
+  transition: transform 100ms ease; }
+
+.owl-carousel .owl-video-play-icon:hover {
+  -ms-transform: scale(1.3, 1.3);
+      transform: scale(1.3, 1.3); }
+
+.owl-carousel .owl-video-playing .owl-video-tn,
+.owl-carousel .owl-video-playing .owl-video-play-icon {
+  display: none; }
+
+.owl-carousel .owl-video-tn {
+  opacity: 0;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  transition: opacity 400ms ease; }
+
+.owl-carousel .owl-video-frame {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  width: 100%; }
+
+.owl-carousel .owl-item {
+    padding: 1rem;
+}
+
+.owl_tx{
+    padding-top: 1rem;
+    text-align: center;
+}
+//navigacija
+.owl-prev{
+    .fa-chevron-left{
+         color:#5F2A2D ;
+
+    }
+    
+}
+.owl-next{
+   
+    .fa-chevron-right{
+        color:#5F2A2D ;
+    }
+}
+.owl-theme .owl-nav [class*='owl-']:hover {
+    background: none;
+    color: #FFF;
+    text-decoration: none;
+}
+
+/*********
+
+OWL CARUSEL_STILOVI
+
+********/
+
+#flota_dugo{
+
+	color: white;
+	a{
+		color: white;
+	}
+}
+
+.gform_wrapper form.gf_simple_horizontal div.gform_body{
+  width: 100% !important;
+}
+
+
+body .gform_wrapper .gf_progressbar_wrapper {border: 1px solid red};
+body .gform_wrapper .gform_body .gf_progressbar_wrapper .gf_progressbar_title {color: red};
+body .gform_wrapper .gf_progressbar_wrapper .gf_progressbar {border: 1px solid red};
+body .gform_wrapper .gf_progressbar_wrapper .gf_progressbar .gf_progressbar_percentage {border: 1px solid red};
