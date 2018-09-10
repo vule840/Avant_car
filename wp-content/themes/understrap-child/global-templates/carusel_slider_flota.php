@@ -6,7 +6,7 @@
 
 
 <div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
-			  <ul class="carousel-indicators progressbar">
+			  <ul class=" progressbar">
 			  
 			    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">CITY / COMPACT</li>
 

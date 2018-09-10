@@ -11415,24 +11415,19 @@ ul.home_lista2 {
   background: var(--siva_tamno); }
 
 #najam_1_flota {
-  background: var(--bijela); }
-  #najam_1_flota .carousel {
-    padding: 2rem 0 2rem 1rem; }
+  background: var(--bijela);
+  /*.carousel{
+		padding: 2rem 0 2rem 1rem;
+	}*/
+  /*	.progressbar li{
+		text-align: center;
+		text-indent: 0;
+  
+		}*/
+  /*.progressbar li.active:before {
+    
+}*/ }
   #najam_1_flota a {
-    color: var(--siva_tamno); }
-  #najam_1_flota .carousel-indicators {
-    top: -100px;
-    width: 100%;
-    height: 100px;
-    padding: 3rem;
-    background: var(--zelena);
-    margin-left: 0; }
-  #najam_1_flota .progressbar li {
-    text-align: center;
-    text-indent: 0; }
-  #najam_1_flota .progressbar li.active:before {
-    border-color: var(--siva_tamno);
-    background: var(--siva_tamno);
     color: var(--siva_tamno); }
   #najam_1_flota .ikonice {
     margin: auto; }
@@ -11864,6 +11859,17 @@ body .gform_wrapper .gf_progressbar_wrapper .gf_progressbar {
 body .gform_wrapper .gf_progressbar_wrapper .gf_progressbar .gf_progressbar_percentage {
   border: 1px solid red; }
 
+.progressbar {
+  top: -100px;
+  width: 100%;
+  height: 100px;
+  padding: 3rem;
+  background: var(--zelena);
+  margin-left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
 .progressbar li {
   list-style-type: none;
   width: 25%;
@@ -11886,7 +11892,8 @@ body .gform_wrapper .gf_progressbar_wrapper .gf_progressbar .gf_progressbar_perc
   text-align: center;
   margin: 0 auto 10px auto;
   border-radius: 50%;
-  background-color: white; }
+  background-color: white;
+  content: ""; }
 
 .progressbar li:after {
   width: 100%;
@@ -11906,12 +11913,16 @@ body .gform_wrapper .gf_progressbar_wrapper .gf_progressbar .gf_progressbar_perc
 
 .progressbar li.active:before {
   border-color: var(--zelena);
-  background: var(--zelena); }
+  background: var(--zelena);
+  border-color: var(--siva_tamno);
+  background: var(--siva_tamno);
+  /*color: var(--siva_tamno);*/ }
 
 .progressbar li.active + li:after {
   background-color: #55b776; }
 
-.carousel-indicators li {
-  height: 2px;
-  margin-right: 0;
-  margin-left: 0; }
+/* .carousel-indicators li{
+  	height: 	2px;
+  	margin-right: 	0;
+  	margin-left: 	0;
+  }*/
