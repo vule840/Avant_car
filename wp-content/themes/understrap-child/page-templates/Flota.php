@@ -51,7 +51,7 @@ HERO SECTION__HEADER
 
 					<!--  -->
 					<h2 class="text-white">VOZILA PO NARUDŽBI</h2>
-					<p class="italic">Želite odabrati vozilo baš po vašoj mjeri i ukusu?</p>
+					<p class="italic_slova">Želite odabrati vozilo baš po vašoj mjeri i ukusu?</p>
 					<p class="zelena">Javite nam se i zajedno ćemo konfigurirati vozilo prema vašim željama.</p>
 
 					<button type="button" class="btn btn-outline-secondary"><strong>ZATRAŽITE PONUDU</strong> </button>

@@ -6,14 +6,14 @@
 
 
 <div id="carouselExampleIndicators" class="carousel slide " data-ride="carousel">
-			  <ul class=" progressbar">
+			  <ul class="carousel-indicators progressbar">
 			  
 			    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">CITY / COMPACT</li>
 
 			    <li data-target="#carouselExampleIndicators" data-slide-to="1">ECONOMY</li>
 			    <li data-target="#carouselExampleIndicators" data-slide-to="2">BUSINESS</li>
-			     <li data-target="#carouselExampleIndicators" data-slide-to="3">PREMIUM / TESLA</li>
-			      <li data-target="#carouselExampleIndicators" data-slide-to="4">ELECTRIC COMPACT / BUSINESS</li>
+			     <li data-target="#carouselExampleIndicators" data-slide-to="3">PREMIUM TESLA</li>
+			      <li data-target="#carouselExampleIndicators" data-slide-to="4">ELECTRIC COMPACT BUSINESS</li>
 			      <li data-target="#carouselExampleIndicators" data-slide-to="5">VAN</li>
 			      <li data-target="#carouselExampleIndicators" data-slide-to="6">VOZILA PO NARUDŽBI</li>
 			  </ul>

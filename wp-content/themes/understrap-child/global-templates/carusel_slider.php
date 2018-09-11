@@ -9,72 +9,84 @@
 			      <li data-target="#carouselExampleIndicators" data-slide-to="5">TESLA model X</li>
 			  </ul>
 			  <div class="carousel-inner">
+
+			  
+			   <!-- PRVI -->
 			    <div class="carousel-item active">
 			     
-			     <!-- PRVI -->
-					 <div class="row no-gutters popmake-transferi_bussines_car">
+			    
+					 <div data-toggle="modal" data-target="#exampleModal" class="row no-gutters">
 			     	<div class="col-md-3 text-center">
 						
 					<p><svg class="avantour_covac"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#avantour-covac" /></p>
-					<p><strong class="text-center">1-3</strong></p>	
+					<p class="tx_field_bold"><strong class="text-center">1-3</strong></p>	
 							
 					</div>
+
 						<div class="col-md-6">
 							<img  src="<?php bloginfo('url'); ?>/wp-content/uploads/2018/09/avantour_vozila.png" alt="Karta Hrvatske">
 							
 						</div>
-						<div class="col align-items-center">
+
+						<div class="col text-center">
 							<p><svg class="avantour_taska"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#avantour-taska" /></p>
-							<p><strong class="text-center">1-3</strong></p>
+							<p class="tx_field_bold"><strong class="text-center">1-3</strong></p>
 							
 						</div>
 			     	</div>
-
-			     
 
 
 			    </div>
 
 			<!-- DRUGI -->
 
-			 <div class="carousel-item">
-			      <div class="row no-gutters">
-			     	<div class="col-md-3">
+			<div class="carousel-item">
+
+					 <div class="row no-gutters popmake-transferi_bussines_car">
+			     	<div class="col-md-3 text-center">
 						
-						<p><svg class="avantour_covac"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#avantour-covac" /></p>
-					<p><strong class="text-center">1-3</strong></p>	
+					<p><svg class="avantour_covac"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#avantour-covac" /></p>
+					<p class="tx_field_bold"><strong class="text-center">1-3</strong></p>	
+							
 					</div>
+
 						<div class="col-md-6">
 							<img  src="<?php bloginfo('url'); ?>/wp-content/uploads/2018/09/avantour_vozila.png" alt="Karta Hrvatske">
 							
 						</div>
-						<div class="col-md-3">
-							
+						
+						<div class="col text-center">
 							<p><svg class="avantour_taska"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#avantour-taska" /></p>
-							<p><strong class="text-center">1-3</strong></p>
+							<p class="tx_field_bold"><strong class="text-center">1-3</strong></p>
+							
 						</div>
 			     	</div>
 
-				
+
 			    </div>
 
 				<!-- TRECI -->
 
-			    <div class="carousel-item">
-			        <div class="row no-gutters">
-			     	<div class="col-md-3">
+			   <div class="carousel-item">
+			     
+			    
+					 <div class="row no-gutters popmake-transferi_bussines_car">
+			     	<div class="col-md-3 text-center">
 						
-						<p><svg class="avantour_covac"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#avantour-covac" /></p>
-					<p><strong class="text-center">1-3</strong></p>	
+					<p><svg class="avantour_covac"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#avantour-covac" /></p>
+					<p class="tx_field_bold"><strong class="text-center">1-3</strong></p>	
+							
 					</div>
+
 						<div class="col-md-6">
 							<img  src="<?php bloginfo('url'); ?>/wp-content/uploads/2018/09/avantour_vozila.png" alt="Karta Hrvatske">
 							
 						</div>
-						<div class="col-md-3">
-							
+						
+						<div class="col text-center">
 							<p><svg class="avantour_taska"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#avantour-taska" /></p>
-							<p><strong class="text-center">1-3</strong></p>
+							<p class="tx_field_bold"><strong class="text-center">1-3</strong></p>
+							
 						</div>
 			     	</div>
 
@@ -84,67 +96,83 @@
 				<!-- ČETVRTI -->
 
 			    <div class="carousel-item">
-			       <div class="row no-gutters">
-			     	<div class="col-md-3">
+			     
+			    
+					 <div class="row no-gutters popmake-transferi_bussines_car">
+			     	<div class="col-md-3 text-center">
 						
-						<p><svg class="avantour_covac"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#avantour-covac" /></p>
-					<p><strong class="text-center">1-3</strong></p>	
+					<p><svg class="avantour_covac"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#avantour-covac" /></p>
+					<p class="tx_field_bold"><strong class="text-center">1-3</strong></p>	
+							
 					</div>
+
 						<div class="col-md-6">
 							<img  src="<?php bloginfo('url'); ?>/wp-content/uploads/2018/09/avantour_vozila.png" alt="Karta Hrvatske">
 							
 						</div>
-						<div class="col-md-3">
-							
+						
+						<div class="col text-center">
 							<p><svg class="avantour_taska"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#avantour-taska" /></p>
-							<p><strong class="text-center">1-3</strong></p>
+							<p class="tx_field_bold"><strong class="text-center">1-3</strong></p>
+							
 						</div>
 			     	</div>
+
 
 			    </div>
 
 			    <!-- PETI -->
 
 			    <div class="carousel-item">
-			       <div class="row no-gutters">
-			     	<div class="col-md-3">
+			     
+			    
+					 <div class="row no-gutters popmake-transferi_bussines_car">
+			     	<div class="col-md-3 text-center">
 						
-						<p><svg class="avantour_covac"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#avantour-covac" /></p>
-					<p><strong class="text-center">1-3</strong></p>	
+					<p><svg class="avantour_covac"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#avantour-covac" /></p>
+					<p class="tx_field_bold"><strong class="text-center">1-3</strong></p>	
+							
 					</div>
+
 						<div class="col-md-6">
 							<img  src="<?php bloginfo('url'); ?>/wp-content/uploads/2018/09/avantour_vozila.png" alt="Karta Hrvatske">
 							
 						</div>
-						<div class="col-md-3">
-							
+						
+						<div class="col text-center">
 							<p><svg class="avantour_taska"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#avantour-taska" /></p>
-							<p><strong class="text-center">1-3</strong></p>
+							<p class="tx_field_bold"><strong class="text-center">1-3</strong></p>
+							
 						</div>
 			     	</div>
-				
+
 
 			    </div>
 			     <!-- ŠESTI -->
 
 			    <div class="carousel-item">
-			       <div class="row no-gutters">
-			     	<div class="col-md-3">
+			     
+			    
+					 <div class="row no-gutters popmake-transferi_bussines_car">
+			     	<div class="col-md-3 text-center">
 						
-						<p><svg class="avantour_covac"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#avantour-covac" /></p>
-					<p><strong class="text-center">1-3</strong></p>	
+					<p><svg class="avantour_covac"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#avantour-covac" /></p>
+					<p class="tx_field_bold"><strong class="text-center">1-3</strong></p>	
+							
 					</div>
+
 						<div class="col-md-6">
 							<img  src="<?php bloginfo('url'); ?>/wp-content/uploads/2018/09/avantour_vozila.png" alt="Karta Hrvatske">
 							
 						</div>
-						<div class="col-md-3">
-							
+						
+						<div class="col text-center">
 							<p><svg class="avantour_taska"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#avantour-taska" /></p>
-							<p><strong class="text-center">1-3</strong></p>
+							<p class="tx_field_bold"><strong class="text-center">1-3</strong></p>
+							
 						</div>
 			     	</div>
-				
+
 
 			    </div>
 

@@ -526,13 +526,29 @@ list-style-image: url("#{$urlsass}/strelica_crna.svg");
 #avantour_3_vozila{
 	background: var(--bijela);
 	@include padding(0rem);
+	h2{
+		padding: 2rem 0;
+	}
+	.tx_field_bold{
+		font-size: 2rem;
+		font-weight: bold;
+	}
+	.progressbar{
+		background: none;
+		li{
+			&:before{
+				margin-top: 0;
+
+			}
+		}
+	}
 	.carousel {
 		.avantour_covac{
 				@include svg(var(--zelena),50px,inline-flex, center);
 			}
 		.avantour_taska{
 				@include svg(var(--zelena),70px,inline-flex, center);
-				height: 50px;
+				height: 150px;
 			}	
 		.transferi_link_rezervirajte{
 			position: absolute;
@@ -549,13 +565,14 @@ list-style-image: url("#{$urlsass}/strelica_crna.svg");
 			//background: var(--zelena);
 			margin-right: 0;
 			margin-left: 0;
-			@include padding(3rem);
+			@include padding(2rem);
 			li{
 				//border: 1px solid var(--zelena);
 				text-indent:0;
     			//line-height: 4;
 				//padding-top: 1.2rem;
-
+				margin-left: 0;
+		margin-right: 0;
 			}
 			.active{
 					background: var(--zelena);
@@ -563,6 +580,7 @@ list-style-image: url("#{$urlsass}/strelica_crna.svg");
 		}
 	}
 }
+
 #avantour_4_vozite{
 	@include padding_tb(10rem,10rem);
 	color: var(--bijela);
@@ -632,20 +650,39 @@ list-style-image: url("#{$urlsass}/strelica_crna.svg");
 #d_najam_vozila{
 	@include padding(3rem);
 	background: var(--siva_tamno);
+	.italic_slova{
+		color: var(--bijela);
+	}
+	.zelena{
+		@include padding(3rem);
+	}
 }
 #najam_1_flota{
 	background: var(--bijela);
 	/*.carousel{
 		padding: 2rem 0 2rem 1rem;
 	}*/
+	.progressbar{
+		top: -140px;
+	}
+	.carousel-item{
+		h2{
+			padding: 2rem 0;
+		}
+	}
+	.carousel-indicators li{
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.carousel-indicators li::before{
+		position: static;
+	}
 	a{
 		 
 		color: var(--siva_tamno);
 	}
-  .progressbar{
-          
-  }
-	
+
+ 
 /*	.progressbar li{
 		text-align: center;
 		text-indent: 0;
@@ -687,6 +724,12 @@ list-style-image: url("#{$urlsass}/strelica_crna.svg");
 .progressbar li.active {
     
     color: var(--siva_tamno);
+    background: var(--siva_tamno);
+    &:before{
+      border-color: var(--siva_tamno);
+    background: var(--siva_tamno);
+ 
+    }
 }
 
 
@@ -882,7 +925,7 @@ CARUSEL
 ********/
 .carousel{
 	width: 100%;
-	    padding: 2rem 0 9rem 1rem;
+	    padding: 0rem 0 9rem 0rem;
 }
  ol.carousel-indicators {
     position: absolute;
@@ -988,7 +1031,7 @@ body .gform_wrapper .gf_progressbar_wrapper .gf_progressbar .gf_progressbar_perc
       //counter-reset: step;
       top: -100px;
     width: 100%;
-    height: 100px;
+   height: 139px;
     padding: 3rem;
     background: var(--zelena);
     margin-left: 0;
@@ -1004,6 +1047,7 @@ body .gform_wrapper .gf_progressbar_wrapper .gf_progressbar .gf_progressbar_perc
       text-transform: uppercase;
       color: #7d7d7d;
       background: var(--siva_tamno);
+      height: 2px;
   }
   .progressbar li:before {
       width: 20px;
@@ -1014,7 +1058,7 @@ body .gform_wrapper .gf_progressbar_wrapper .gf_progressbar .gf_progressbar_perc
       border: 2px solid #7d7d7d;
       display: block;
       text-align: center;
-      margin: 0 auto 10px auto;
+      margin-top:-7px;
       border-radius: 50%;
       background-color: white;
       content: "";
@@ -1039,8 +1083,8 @@ body .gform_wrapper .gf_progressbar_wrapper .gf_progressbar .gf_progressbar_perc
   .progressbar li.active:before {
       border-color: var(--zelena);
       background: var(--zelena);
-      border-color: var(--siva_tamno);
-    background: var(--siva_tamno);
+      //border-color: var(--siva_tamno);
+    //background: var(--siva_tamno);
     /*color: var(--siva_tamno);*/
   }
   .progressbar li.active + li:after {
@@ -1051,3 +1095,32 @@ body .gform_wrapper .gf_progressbar_wrapper .gf_progressbar .gf_progressbar_perc
   	margin-right: 	0;
   	margin-left: 	0;
   }*/
+
+
+/*********
+
+SUBMIT GUMB
+
+********/
+
+  .submit_gumb{
+  	 background-image: url("#{$urlsass}/submit_gumb.svg");
+  	     background-repeat: no-repeat;
+    text-indent: -99999px;
+        WIDTH: 50px;
+    height: 58px;
+    background-color: transparent;
+    &:focus{
+    	box-shadow:none;
+    }
+
+  }
+
+
+
+
+
+.modal-dialog {
+    max-width: 1200px;
+    margin: 1.75rem auto;
+}

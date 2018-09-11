@@ -234,6 +234,12 @@ partnera, pojavite se sa stilom!</p>
 
 	</div><!-- Container end -->
 
+
+
+
+<?php get_template_part( 'global-templates/modal' ); ?>
+
+
 	<!-- SIDEBAR_STICKY -->
 	<?php get_template_part( 'global-templates/sidebar_sticky' ); ?>
 

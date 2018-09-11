@@ -427,6 +427,59 @@ function Flota_dugorocni() {
     );
     register_post_type( 'Vozila_po_naruzbi', $args );
 
+
+    ///TRANSFERI
+
+      $labels = array(
+        'name'                  => _x( 'Transferi', 'Post Type General Name', 'text_domain' ),
+        'singular_name'         => _x( 'Transferi', 'Post Type Singular Name', 'text_domain' ),
+        'menu_name'             => __( 'Transferi', 'text_domain' ),
+        'name_admin_bar'        => __( 'Post Type', 'text_domain' ),
+        'archives'              => __( 'Item Archives', 'text_domain' ),
+        'attributes'            => __( 'Item Attributes', 'text_domain' ),
+        'parent_item_colon'     => __( 'Parent Item:', 'text_domain' ),
+        'all_items'             => __( 'All Items', 'text_domain' ),
+        'add_new_item'          => __( 'Dodaj novi transfer', 'text_domain' ),
+        'add_new'               => __( 'Dodaj novi transfer', 'text_domain' ),
+        'new_item'              => __( 'New Item', 'text_domain' ),
+        'edit_item'             => __( 'Edit Item', 'text_domain' ),
+        'update_item'           => __( 'Update Item', 'text_domain' ),
+        'view_item'             => __( 'View Item', 'text_domain' ),
+        'view_items'            => __( 'View Items', 'text_domain' ),
+        'search_items'          => __( 'Search Item', 'text_domain' ),
+        'not_found'             => __( 'Not found', 'text_domain' ),
+        'not_found_in_trash'    => __( 'Not found in Trash', 'text_domain' ),
+        'featured_image'        => __( 'Featured Image', 'text_domain' ),
+        'set_featured_image'    => __( 'Set featured image', 'text_domain' ),
+        'remove_featured_image' => __( 'Remove featured image', 'text_domain' ),
+        'use_featured_image'    => __( 'Use as featured image', 'text_domain' ),
+        'insert_into_item'      => __( 'Insert into item', 'text_domain' ),
+        'uploaded_to_this_item' => __( 'Uploaded to this item', 'text_domain' ),
+        'items_list'            => __( 'Items list', 'text_domain' ),
+        'items_list_navigation' => __( 'Items list navigation', 'text_domain' ),
+        'filter_items_list'     => __( 'Filter items list', 'text_domain' ),
+    );
+    $args = array(
+        'label'                 => __( 'Transfer', 'text_domain' ),
+        'description'           => __( 'Transfer pojmovi', 'text_domain' ),
+        'labels'                => $labels,
+        'supports'              => array( 'title', 'editor' ),
+        'taxonomies'            => array( 'Pojmovi' ),
+        'hierarchical'          => false,
+        'public'                => true,
+        'show_ui'               => true,
+        'show_in_menu'          => true,
+        'menu_position'         => 4,
+        'show_in_admin_bar'     => true,
+        'show_in_nav_menus'     => true,
+        'can_export'            => true,
+        'has_archive'           => true,
+        'exclude_from_search'   => false,
+        'publicly_queryable'    => true,
+        'capability_type'       => 'post',
+    );
+    register_post_type( 'Transferi', $args );
+
 }
 
 add_action( 'init', 'Flota_dugorocni', 0 );
@@ -517,4 +570,34 @@ function my_custom_function( $progress_bar, $form, $confirmation_message ) {
     </ul>';
  
     return $progress_bar;
+}
+
+/************
+
+   CUSTOM GUMB GRAVITY
+
+https://docs.gravityforms.com/gform_submit_button/
+**************/
+
+
+
+// filter the Gravity Forms button type
+add_filter( 'gform_submit_button', 'form_submit_button', 10, 2 );
+function form_submit_button( $button, $form ) {
+    return "<button class='btn submit_gumb' id='gform_submit_button_{$form['id']}'><span>Submit</span></button>";
+}
+
+/************
+
+   SEARCH
+https://github.com/understrap/understrap/issues/686
+**************/
+
+
+  add_filter('wp_nav_menu_items','add_search_box_to_menu', 10, 2);
+function add_search_box_to_menu( $items, $args ) {
+    if( $args->theme_location == 'primary' )
+        return $items.'<li class="menu-item nav-item nav-search"><form action="http://example.com/" id="searchform" method="get"><input type="text" name="s" id="s" class="form-control" placeholder="Search"></form></li>';
+ 
+    return $items;
 }

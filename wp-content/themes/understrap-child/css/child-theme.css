@@ -11304,6 +11304,15 @@ ul.home_lista2 {
 #avantour_3_vozila {
   background: var(--bijela);
   padding: 0rem; }
+  #avantour_3_vozila h2 {
+    padding: 2rem 0; }
+  #avantour_3_vozila .tx_field_bold {
+    font-size: 2rem;
+    font-weight: bold; }
+  #avantour_3_vozila .progressbar {
+    background: none; }
+    #avantour_3_vozila .progressbar li:before {
+      margin-top: 0; }
   #avantour_3_vozila .carousel .avantour_covac {
     fill: var(--zelena);
     width: 50px;
@@ -11320,7 +11329,7 @@ ul.home_lista2 {
     display: inline-flex;
     -ms-flex-item-align: center;
         align-self: center;
-    height: 50px; }
+    height: 150px; }
   #avantour_3_vozila .carousel .transferi_link_rezervirajte {
     position: absolute;
     bottom: 25px;
@@ -11331,9 +11340,11 @@ ul.home_lista2 {
     top: 300px;
     margin-right: 0;
     margin-left: 0;
-    padding: 3rem; }
+    padding: 2rem; }
     #avantour_3_vozila .carousel .carousel-indicators li {
-      text-indent: 0; }
+      text-indent: 0;
+      margin-left: 0;
+      margin-right: 0; }
     #avantour_3_vozila .carousel .carousel-indicators .active {
       background: var(--zelena); }
 
@@ -11413,6 +11424,10 @@ ul.home_lista2 {
 #d_najam_vozila {
   padding: 3rem;
   background: var(--siva_tamno); }
+  #d_najam_vozila .italic_slova {
+    color: var(--bijela); }
+  #d_najam_vozila .zelena {
+    padding: 3rem; }
 
 #najam_1_flota {
   background: var(--bijela);
@@ -11427,6 +11442,15 @@ ul.home_lista2 {
   /*.progressbar li.active:before {
     
 }*/ }
+  #najam_1_flota .progressbar {
+    top: -140px; }
+  #najam_1_flota .carousel-item h2 {
+    padding: 2rem 0; }
+  #najam_1_flota .carousel-indicators li {
+    margin-left: 0;
+    margin-right: 0; }
+  #najam_1_flota .carousel-indicators li::before {
+    position: static; }
   #najam_1_flota a {
     color: var(--siva_tamno); }
   #najam_1_flota .ikonice {
@@ -11452,7 +11476,11 @@ ul.home_lista2 {
 			border:none;
 		}*/ }
   #najam_1_flota .progressbar li.active {
-    color: var(--siva_tamno); }
+    color: var(--siva_tamno);
+    background: var(--siva_tamno); }
+    #najam_1_flota .progressbar li.active:before {
+      border-color: var(--siva_tamno);
+      background: var(--siva_tamno); }
 
 .page-template-Flota #content {
   margin-top: 0rem; }
@@ -11784,7 +11812,7 @@ CARUSEL
 ********/
 .carousel {
   width: 100%;
-  padding: 2rem 0 9rem 1rem; }
+  padding: 0rem 0 9rem 0rem; }
 
 ol.carousel-indicators {
   position: absolute;
@@ -11862,7 +11890,7 @@ body .gform_wrapper .gf_progressbar_wrapper .gf_progressbar .gf_progressbar_perc
 .progressbar {
   top: -100px;
   width: 100%;
-  height: 100px;
+  height: 139px;
   padding: 3rem;
   background: var(--zelena);
   margin-left: 0;
@@ -11879,7 +11907,8 @@ body .gform_wrapper .gf_progressbar_wrapper .gf_progressbar .gf_progressbar_perc
   text-align: center;
   text-transform: uppercase;
   color: #7d7d7d;
-  background: var(--siva_tamno); }
+  background: var(--siva_tamno);
+  height: 2px; }
 
 .progressbar li:before {
   width: 20px;
@@ -11890,7 +11919,7 @@ body .gform_wrapper .gf_progressbar_wrapper .gf_progressbar .gf_progressbar_perc
   border: 2px solid #7d7d7d;
   display: block;
   text-align: center;
-  margin: 0 auto 10px auto;
+  margin-top: -7px;
   border-radius: 50%;
   background-color: white;
   content: ""; }
@@ -11914,8 +11943,6 @@ body .gform_wrapper .gf_progressbar_wrapper .gf_progressbar .gf_progressbar_perc
 .progressbar li.active:before {
   border-color: var(--zelena);
   background: var(--zelena);
-  border-color: var(--siva_tamno);
-  background: var(--siva_tamno);
   /*color: var(--siva_tamno);*/ }
 
 .progressbar li.active + li:after {
@@ -11926,3 +11953,22 @@ body .gform_wrapper .gf_progressbar_wrapper .gf_progressbar .gf_progressbar_perc
   	margin-right: 	0;
   	margin-left: 	0;
   }*/
+/*********
+
+SUBMIT GUMB
+
+********/
+.submit_gumb {
+  background-image: url("http://localhost/avant_car/wp-content/themes/understrap/img/submit_gumb.svg");
+  background-repeat: no-repeat;
+  text-indent: -99999px;
+  WIDTH: 50px;
+  height: 58px;
+  background-color: transparent; }
+  .submit_gumb:focus {
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+
+.modal-dialog {
+  max-width: 1200px;
+  margin: 1.75rem auto; }
