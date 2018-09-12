@@ -49,7 +49,7 @@ krećemo s unapređenjem vaše mobilnosti.</p>
 
 </div>
 <div class="col-md-4">
-				<svg class="kontakt_auti"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#kontakt-auti" /></svg>
+				<svg class="kontakt_auti"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#ref-auti" /></svg>
 				<h3 class="font-weight-light">
 					Otkrijte more mogućnosti uz Avant car poslovna rješenja	
 				</h3>

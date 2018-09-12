@@ -36,7 +36,7 @@ HERO SECTION__HEADER
 
 			<div class="col-md-12 content-area text-center " id="primary">
 
-				<h2 class="text-center pt-4">POGODNOSTI ZA POSLOVNE KORISNIKE</h2>
+				<h2 class="text-center pt-4">PREDNOSTI POSLOVNOG KORISNIKA</h2>
 					
 				<div class="card-group">
 				  <div class="card">
@@ -46,7 +46,7 @@ HERO SECTION__HEADER
 
 
 				    <div class="card-body">
-				      <h5 class="card-title">KOMPLETNA USLUGA</h5>
+				      <h5 class="card-title">KOMPLETNA USLUGA UŠTEDA VREMENA</h5>
 				      <p class="card-text">Kompletna usluga vam omogućava optimizaciju troškova i uštedu vremena. Nema skrivenih troškova, već su svi troškovi osiguranja i održavanja vozila uključeni. Jedna i konstantna faktura.</p>
 				     
 				    </div>
@@ -62,7 +62,7 @@ HERO SECTION__HEADER
 				  <div class="card">
 				    <svg class="home_ikone"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#home-slagalica" /></svg>
 				    <div class="card-body">
-				      <h5 class="card-title">FLOTA ZA SVAKI UKUS</h5>
+				      <h5 class="card-title">FLOTA ZA SVAKI UKUS VAŠA FLOTA. 1.600 VOZILA</h5>
 				      <p class="card-text">Vaša sigurnost i udobnost u vožnji su nam iznimno bitni. Upravo zato isporučujemo sve klase modernih vozila koja se redovito servisiraju i zamijenjuju sa najnovijim modelima.</p>
 				      
 				    </div>
@@ -70,7 +70,7 @@ HERO SECTION__HEADER
 				  <div class="card">
 				    <svg class="home_ikone"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#home-sat" /></svg>
 				    <div class="card-body">
-				      <h5 class="card-title">PODRŠKA 24/7/365</h5>
+				      <h5 class="card-title">PODRŠKA 24/7/365 <br> UVIJEK SMO TU ZA VAS</h5>
 				      <p class="card-text">Naši profesionalni djelatnici i dugogodišnje iskustvo garantiraju izvanrednu korisničku i tehničku podršku. Vjerujemo u naše poslovanje te imamo rješenje za svaku vašu situaciju.</p>
 				      
 				    </div>
@@ -92,7 +92,7 @@ HERO SECTION__HEADER
 			<div class="col-md-12 content-area text-center" id="primary">
 
 				<h2 class="text-center">ŠTO JE DUGOROČNI NAJAM VOZILA?</h2>
-				<p class="text-center italic_slova">Jedina prava alternativa kupnji, leasingu vozila.</p>
+				<p class="text-center italic_slova">Komplena usluga. Ušteda vremena i novaca.</p>
 
 				<div class="col-md-8 mx-auto">
 					<p>Ukoliko imate potrebu za vozilom na mjesec dana ili više godina, Avant car ima portfolio rješenja koja mogu pouzdano zadovoljiti vaše potrebe za mobilnosti.</p>
@@ -148,7 +148,7 @@ HERO SECTION__HEADER
     
     <div class="card-body home_zatrazite">
       
-     <p>> Zatražite info ponudu za dugoročni najam</p>
+     <p class="popmake-sastanak">> Zatražite info ponudu za dugoročni najam</p>
       
     </div>
   </div>
@@ -260,7 +260,7 @@ dinamično okruženje te pratiti vaš razvoj.</p>
 			</div><!-- #primary -->
 
 			<div class="col-md-12 text-center">
-				<button type="button" class="btn btn-outline-secondary">ZATRAŽITE PONUDU</button>
+				<button type="button" class="btn btn-outline-secondary popmake-sastanak">ZATRAŽITE PONUDU</button>
 			</div>
 
 
@@ -338,8 +338,6 @@ mobilnost je tu, bez buke i bez emisije.</p>
 
 </div><!-- Wrapper end -->
 <!-- The social media icon bar -->
-
-
 
 
 

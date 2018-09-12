@@ -54,7 +54,7 @@ HERO SECTION__HEADER
 					<p class="italic_slova">Želite odabrati vozilo baš po vašoj mjeri i ukusu?</p>
 					<p class="zelena">Javite nam se i zajedno ćemo konfigurirati vozilo prema vašim željama.</p>
 
-					<button type="button" class="btn btn-outline-secondary"><strong>ZATRAŽITE PONUDU</strong> </button>
+					<button type="button" class="btn btn-outline-secondary popmake-sastanak"><strong>ZATRAŽITE PONUDU</strong> </button>
 				</div>
 			</div>
 		
@@ -67,7 +67,7 @@ HERO SECTION__HEADER
 			 <?php get_template_part( 'global-templates/mobilnost_prije_footer' ); ?>		
 
 	</div><!-- Container end -->
-<?php get_template_part( 'global-templates/sidebar_sticky' ); ?>
+<?php get_template_part( 'global-templates/gumb_sticky' ); ?>
 </div><!-- Wrapper end -->
 
 <?php get_footer(); ?>

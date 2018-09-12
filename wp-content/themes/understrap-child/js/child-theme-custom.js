@@ -6,6 +6,12 @@ console.log('dsfds');
 jQuery(document).ready(function($) {
 
 
+/*jQuery('#pum-88').popmake('open', callback);
+
+
+var settings = jQuery('#popmake-88').data('popmake');
+console.log(settings);*/
+
 //*https://stackoverflow.com/questions/21349984/how-to-make-bootstrap-carousel-slider-use-mobile-left-right-swipe/30551685#30551685*/
 
 $(".carousel").on("touchstart", function(event){
@@ -30,11 +36,19 @@ $(".carousel").on("touchstart", function(event){
 
 $('.popmake-kratkorocni-najam').click(function() {
      var test =  $(this).text();
-     alert( test );
+     //alert( test );
      $('#input_3_17').val(test);
     $('#input_3_17').attr("placeholder", test);
 });
   
+$('.popmake-dugorocni-najam').click(function() {
+     var test2 =  $(this).text();
+     //alert( test2 );
+     $('#input_4_14').val(test2);
+    $('#input_4_14').attr("placeholder", test2);
+});
+
+
             /**  GUMBI I SCROLL **/
         window.onscroll = function() {scrollFunction()};
 
@@ -55,13 +69,13 @@ $('.popmake-kratkorocni-najam').click(function() {
            /**  DATEPICKER FIX DA IZLETAVA SAMO DATUM 
            https://docs.gravityforms.com/disable-keyboard-input-datepicker-fields/
            **/ 
-         $( ".datepicker" ).datepicker({ }).attr('readonly','readonly');
+        // $( ".datepicker" ).datepicker({ }).attr('readonly','readonly');
 
 
          /**  DATEPICKER DA TI HILITA TAJ DATUM KOJI PIKAS
            https://docs.gravityforms.com/highlighting-current-future-date-datepicker/
            **/ 
-            $( "#input_1_20" ).datepicker({ 
+         /*   $( "#input_1_20" ).datepicker({ 
                 defaultDate: '+7d',
                 minDate: '+7d',
                 gotoCurrent: true,
@@ -69,15 +83,15 @@ $('.popmake-kratkorocni-najam').click(function() {
                 showOn: 'both',
                 buttonImage: '/wp-content/plugins/gravityforms/images/calendar.png',
                 buttonImageOnly: true
-            }); 
+            }); */
 
 
 
          /**  OVO JE ZA CARUSEL DA MOŽE SWIPE ALI NE RADI **/    
-        !function(t){t.fn.bcSwipe=function(e){var n={threshold:50};return e&&t.extend(n,e),this.each(function(){function e(t){1==t.touches.length&&(u=t.touches[0].pageX,c=!0,this.addEventListener("touchmove",o,!1))}function o(e){if(c){var o=e.touches[0].pageX,i=u-o;Math.abs(i)>=n.threshold&&(h(),t(this).carousel(i>0?"next":"prev"))}}function h(){this.removeEventListener("touchmove",o),u=null,c=!1}var u,c=!1;"ontouchstart"in document.documentElement&&this.addEventListener("touchstart",e,!1)}),this}}(jQuery);
+        //!function(t){t.fn.bcSwipe=function(e){var n={threshold:50};return e&&t.extend(n,e),this.each(function(){function e(t){1==t.touches.length&&(u=t.touches[0].pageX,c=!0,this.addEventListener("touchmove",o,!1))}function o(e){if(c){var o=e.touches[0].pageX,i=u-o;Math.abs(i)>=n.threshold&&(h(),t(this).carousel(i>0?"next":"prev"))}}function h(){this.removeEventListener("touchmove",o),u=null,c=!1}var u,c=!1;"ontouchstart"in document.documentElement&&this.addEventListener("touchstart",e,!1)}),this}}(jQuery);
          
         // Swipe functions for Bootstrap Carousel
-        $('.carousel').bcSwipe({ threshold: 50 });
+        //$('.carousel').bcSwipe({ threshold: 50 });
 
 
 /*

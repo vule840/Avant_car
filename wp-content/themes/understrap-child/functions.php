@@ -558,7 +558,12 @@ z-index: 2000000000 !important;
 }
 
 
+/************
 
+   CUSTOM PROGRESS BAR  NAPRAVITI DOTS
+
+
+**************/
 
 add_filter( 'gform_progress_bar', 'my_custom_function', 10, 3 );
 function my_custom_function( $progress_bar, $form, $confirmation_message ) {
@@ -580,8 +585,8 @@ https://docs.gravityforms.com/gform_submit_button/
 **************/
 
 
-
 // filter the Gravity Forms button type
+
 add_filter( 'gform_submit_button', 'form_submit_button', 10, 2 );
 function form_submit_button( $button, $form ) {
     return "<button class='btn submit_gumb' id='gform_submit_button_{$form['id']}'><span>Submit</span></button>";
@@ -594,10 +599,10 @@ https://github.com/understrap/understrap/issues/686
 **************/
 
 
-  add_filter('wp_nav_menu_items','add_search_box_to_menu', 10, 2);
+ /* add_filter('wp_nav_menu_items','add_search_box_to_menu', 10, 2);
 function add_search_box_to_menu( $items, $args ) {
     if( $args->theme_location == 'primary' )
         return $items.'<li class="menu-item nav-item nav-search"><form action="http://example.com/" id="searchform" method="get"><input type="text" name="s" id="s" class="form-control" placeholder="Search"></form></li>';
  
     return $items;
-}
+}*/

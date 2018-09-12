@@ -24,13 +24,13 @@
 <div class="text-center">
 	<!--<button type="button" class="btn btn-custom text-center">POŠALJI UPIT</button>  -->
 	   <!-- <a href="#" class="btn btn-custom">Custom Link</a> -->
-	  <button type="button" class="btn btn-outline-secondary popmake-test"><strong>POŠALJI UPIT</strong> </button>
+	  <button type="button" class="btn btn-outline-secondary popmake-sastanak"><strong>POŠALJI UPIT</strong> </button>
 </div>
 
 
 
 	<!-- <div class="mouse">
-					    <img style="opacity: 1;" src="http://testiranje2222.tk/wp-content/uploads/2018/01/mouse-1.svg" alt="Hero mouse">
+					    <img style="opacity: 1;" src="http://testiranje2222.tk/wp-content/uploads/2018/01/mouse-1.svg" alt="Hero mouse">popmake-sastanak
 					  </div> -->
 
 

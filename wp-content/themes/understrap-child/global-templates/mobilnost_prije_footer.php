@@ -39,8 +39,8 @@
 
 <div class="example-container">
   <div class="example-row">
-    <div class="example-content-main">> Zatražite povratni poziv za info o našim uslugama</div>
-    <div class="example-content-secondary text-right"><button type="button" class="btn btn-outline-dark "><strong>INFO: +385 (0)1 6251 222</strong></button></div>
+    <div class="example-content-main"><a href="tel:+385 (0)1 6251 222">> Zatražite povratni poziv za info o našim uslugama</a> </div>
+    <div class="example-content-secondary text-right"><button type="button" class="btn btn-outline-dark "><strong> <a href="tel:+385 (0)1 6251 222">INFO: +385 (0)1 6251 222</a></strong></button></div>
   </div>
 </div>
 	

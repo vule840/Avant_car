@@ -15,7 +15,7 @@
 			    <div class="carousel-item active">
 			     
 			    
-					 <div data-toggle="modal" data-target="#exampleModal" class="row no-gutters">
+					 <div class="row no-gutters">
 			     	<div class="col-md-3 text-center">
 						
 					<p><svg class="avantour_covac"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#avantour-covac" /></p>
@@ -24,7 +24,7 @@
 					</div>
 
 						<div class="col-md-6">
-							<img  src="<?php bloginfo('url'); ?>/wp-content/uploads/2018/09/avantour_vozila.png" alt="Karta Hrvatske">
+							<img  src="<?php bloginfo('url'); ?>/wp-content/uploads/2018/09/Bussines_car.jpg" alt="Karta Hrvatske">
 							
 						</div>
 
@@ -42,7 +42,7 @@
 
 			<div class="carousel-item">
 
-					 <div class="row no-gutters popmake-transferi_bussines_car">
+					 <div class="row no-gutters ">
 			     	<div class="col-md-3 text-center">
 						
 					<p><svg class="avantour_covac"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#avantour-covac" /></p>
@@ -51,7 +51,7 @@
 					</div>
 
 						<div class="col-md-6">
-							<img  src="<?php bloginfo('url'); ?>/wp-content/uploads/2018/09/avantour_vozila.png" alt="Karta Hrvatske">
+							<img  src="<?php bloginfo('url'); ?>/wp-content/uploads/2018/09/COMFORT-van.jpg" alt="Karta Hrvatske">
 							
 						</div>
 						
@@ -70,7 +70,7 @@
 			   <div class="carousel-item">
 			     
 			    
-					 <div class="row no-gutters popmake-transferi_bussines_car">
+					 <div class="row no-gutters ">
 			     	<div class="col-md-3 text-center">
 						
 					<p><svg class="avantour_covac"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#avantour-covac" /></p>
@@ -79,7 +79,7 @@
 					</div>
 
 						<div class="col-md-6">
-							<img  src="<?php bloginfo('url'); ?>/wp-content/uploads/2018/09/avantour_vozila.png" alt="Karta Hrvatske">
+							<img  src="<?php bloginfo('url'); ?>/wp-content/uploads/2018/09/VIP-van.jpg" alt="Karta Hrvatske">
 							
 						</div>
 						
@@ -98,7 +98,7 @@
 			    <div class="carousel-item">
 			     
 			    
-					 <div class="row no-gutters popmake-transferi_bussines_car">
+					 <div class="row no-gutters ">
 			     	<div class="col-md-3 text-center">
 						
 					<p><svg class="avantour_covac"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#avantour-covac" /></p>
@@ -107,7 +107,7 @@
 					</div>
 
 						<div class="col-md-6">
-							<img  src="<?php bloginfo('url'); ?>/wp-content/uploads/2018/09/avantour_vozila.png" alt="Karta Hrvatske">
+							<img  src="<?php bloginfo('url'); ?>/wp-content/uploads/2018/09/PREMIUM-car.jpg" alt="Karta Hrvatske">
 							
 						</div>
 						
@@ -126,7 +126,7 @@
 			    <div class="carousel-item">
 			     
 			    
-					 <div class="row no-gutters popmake-transferi_bussines_car">
+					 <div class="row no-gutters ">
 			     	<div class="col-md-3 text-center">
 						
 					<p><svg class="avantour_covac"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#avantour-covac" /></p>
@@ -135,7 +135,7 @@
 					</div>
 
 						<div class="col-md-6">
-							<img  src="<?php bloginfo('url'); ?>/wp-content/uploads/2018/09/avantour_vozila.png" alt="Karta Hrvatske">
+							<img  src="<?php bloginfo('url'); ?>/wp-content/uploads/2018/09/TESLA-model-S.jpg" alt="Karta Hrvatske">
 							
 						</div>
 						
@@ -153,7 +153,7 @@
 			    <div class="carousel-item">
 			     
 			    
-					 <div class="row no-gutters popmake-transferi_bussines_car">
+					 <div class="row no-gutters ">
 			     	<div class="col-md-3 text-center">
 						
 					<p><svg class="avantour_covac"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#avantour-covac" /></p>
@@ -162,7 +162,7 @@
 					</div>
 
 						<div class="col-md-6">
-							<img  src="<?php bloginfo('url'); ?>/wp-content/uploads/2018/09/avantour_vozila.png" alt="Karta Hrvatske">
+							<img  src="<?php bloginfo('url'); ?>/wp-content/uploads/2018/09/Tesla-model-X.jpg" alt="Karta Hrvatske">
 							
 						</div>
 						
@@ -186,6 +186,6 @@
 			    <span class="sr-only">Next</span>
 			  </a> -->  
 
-			  <p class="transferi_link_rezervirajte text-center">> Rezervirajte unaprijed i putuj bezbrižno do odredišta</p>
+			  <p class="transferi_link_rezervirajte popmake-transferi text-center">> Rezervirajte unaprijed i putuj bezbrižno do odredišta</p>
 			</div>
 

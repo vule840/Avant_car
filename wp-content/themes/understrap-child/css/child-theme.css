@@ -11082,6 +11082,8 @@ div#content {
   background: var(--zelena);
   padding: 1rem;
   color: var(--siva_tamno); }
+  #home_1_pogodnosti .card-body {
+    padding: 0.8rem; }
   #home_1_pogodnosti h2 {
     font-size: 2.4rem;
     margin-bottom: 0.5rem; }
@@ -11281,12 +11283,18 @@ ul.home_lista2 {
 
 #hrv_slo_4_reference {
   background: var(--zelena);
-  padding: 3rem; }
+  padding: 2rem; }
+  #hrv_slo_4_reference .card-body {
+    padding: 0.8rem; }
 
 #hrv_slo_5_mobilnost {
   padding: 3rem;
   background-size: cover;
   background-repeat: no-repeat; }
+  #hrv_slo_5_mobilnost a {
+    color: var(--siva_tamno); }
+  #hrv_slo_5_mobilnost .btn-outline-dark a:hover {
+    color: #fff; }
 
 /********************
 
@@ -11335,7 +11343,8 @@ ul.home_lista2 {
     bottom: 25px;
     left: 0;
     right: 0;
-    margin: auto; }
+    margin: auto;
+    z-index: 1111111; }
   #avantour_3_vozila .carousel .carousel-indicators {
     top: 300px;
     margin-right: 0;
@@ -11495,12 +11504,10 @@ div#avantour_1_kontakt {
 
 **********************/
 #wrapper-footer {
-  background: var(--zelena);
-  background-image: url("http://localhost/avant_car/wp-content/uploads/2018/09/footer_auto-8.png");
-  background-repeat: no-repeat;
-  background-position: center -126px;
-  padding-top: 4rem;
-  padding-bottom: 0; }
+  background: var(--siva_tamno);
+  /*background-repeat: no-repeat;
+    background-position: center -126px;*/
+  padding: 4rem 0; }
 
 /********************
 
@@ -11558,7 +11565,7 @@ div#avantour_1_kontakt {
 
 .kontakt_auti {
   fill: var(--siva_tamno);
-  width: 160px;
+  width: 120px;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -11735,6 +11742,18 @@ div#avantour_1_kontakt {
   padding: 0.2rem; }
   .ikonice td:nth-child(1) {
     border: none; }
+
+.face, .linkd, .inst {
+  width: 30px; }
+
+.logo_avant {
+  width: 220px; }
+
+.popmake-title {
+  display: none; }
+
+.bg_obrazac {
+  background: #E1E1E1; }
 
 /********************
 
@@ -11968,6 +11987,9 @@ SUBMIT GUMB
   .submit_gumb:focus {
     -webkit-box-shadow: none;
             box-shadow: none; }
+
+.gform_wrapper .gform_footer {
+  text-align: center; }
 
 .modal-dialog {
   max-width: 1200px;

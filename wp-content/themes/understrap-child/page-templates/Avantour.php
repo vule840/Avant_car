@@ -145,7 +145,7 @@ partnera, pojavite se sa stilom!</p>
             <div class="my-auto mx-auto text-center">
                 <h2 class="card-title">VOZITE SE SA STILOM. U SVIM PRILIKAMA.</h2>
                 <h4 class="text">Osjetite budućnost.</h4>
-                <button type="button" class="btn btn-outline-secondary">POŠALJI UPIT</button>
+                <button type="button" class="btn btn-outline-secondary popmake-sastanak">POŠALJI UPIT</button>
             </div>
         
   
@@ -237,11 +237,8 @@ partnera, pojavite se sa stilom!</p>
 
 
 
-<?php get_template_part( 'global-templates/modal' ); ?>
-
-
 	<!-- SIDEBAR_STICKY -->
-	<?php get_template_part( 'global-templates/sidebar_sticky' ); ?>
+	<?php get_template_part( 'global-templates/gumb_sticky' ); ?>
 
 </div><!-- Wrapper end -->
 

@@ -244,6 +244,9 @@ div#content {
 	background: var(--zelena);
 	@include padding(1rem);
 	color: var(--siva_tamno);
+	.card-body{
+		padding: 0.8rem;
+	}
 	h2{
 		font-size: 2.4rem;
 		margin-bottom: 0.5rem;
@@ -496,12 +499,24 @@ list-style-image: url("#{$urlsass}/strelica_crna.svg");
 }
 #hrv_slo_4_reference{
 	background: var(--zelena);
-	@include padding(3rem);
-
+	@include padding(2rem);
+	.card-body{
+		padding: 0.8rem;
+	}
 }
 #hrv_slo_5_mobilnost{
 	@include padding(3rem);
 	@include bg_repeat();
+	a{
+		color: var(--siva_tamno);
+	}
+	.btn-outline-dark a {
+		&:hover{
+			color: #fff;
+		}
+    
+   
+	}
 }
 
 
@@ -556,7 +571,7 @@ list-style-image: url("#{$urlsass}/strelica_crna.svg");
 			left: 0;
 			right: 0;
 			margin: auto;
-
+			z-index: 1111111;
 
 		}
 		.carousel-indicators{
@@ -752,12 +767,12 @@ div#avantour_1_kontakt {
 **********************/
 
 #wrapper-footer{
-	background: var(--zelena);
-	background-image: url("#{$urlsass2}/2018/09/footer_auto-8.png");
-	background-repeat: no-repeat;
-    background-position: center -126px;
-    padding-top: 4rem;
-    padding-bottom: 0;;
+	background: var(--siva_tamno);
+	//background-image: url("#{$urlsass2}/2018/09/footer_auto-8.png");
+	/*background-repeat: no-repeat;
+    background-position: center -126px;*/
+    padding: 4rem 0;
+   // padding-bottom: 0;;
 	//height: 50px;/
 } 
 /********************
@@ -790,7 +805,7 @@ div#avantour_1_kontakt {
 	@include svg(var(--siva_tamno),50px,inline-flex, center);
 }
 .kontakt_auti{
-	@include svg(var(--siva_tamno),160px,inline-flex, center);
+	@include svg(var(--siva_tamno),120px,inline-flex, center);
 }
 /* hr i slo*/
 .karta_hr{
@@ -870,6 +885,19 @@ div#avantour_1_kontakt {
 		}
 	}
 	
+}
+.face, .linkd, .inst{
+
+	width: 30px;;
+}
+.logo_avant{
+	width: 220px;
+}
+.popmake-title{
+	display: none;
+}
+.bg_obrazac{
+	background: #E1E1E1;
 }
 /********************
 
@@ -1116,7 +1144,9 @@ SUBMIT GUMB
 
   }
 
-
+.gform_wrapper .gform_footer{
+	text-align: center;
+}
 
 
 
