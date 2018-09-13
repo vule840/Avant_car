@@ -41,7 +41,7 @@ HERO SECTION__HEADER
 				<div class="card-group">
 				  <div class="card">
 				  
-					<svg class="home_ikone"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#home-kauc" /></svg>
+					<svg class="home_ikone"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#home-sat" /></svg>
 				    
 
 
@@ -60,7 +60,7 @@ HERO SECTION__HEADER
 				    </div>
 				  </div>
 				  <div class="card">
-				    <svg class="home_ikone"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#home-slagalica" /></svg>
+				    <svg class="ref_auti2"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#ref-auti" /></svg>
 				    <div class="card-body">
 				      <h5 class="card-title">FLOTA ZA SVAKI UKUS VAŠA FLOTA. 1.600 VOZILA</h5>
 				      <p class="card-text">Vaša sigurnost i udobnost u vožnji su nam iznimno bitni. Upravo zato isporučujemo sve klase modernih vozila koja se redovito servisiraju i zamijenjuju sa najnovijim modelima.</p>
@@ -68,7 +68,7 @@ HERO SECTION__HEADER
 				    </div>
 				  </div>
 				  <div class="card">
-				    <svg class="home_ikone"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#home-sat" /></svg>
+				    <svg class="home_ikone"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#home-call-cura" /></svg>
 				    <div class="card-body">
 				      <h5 class="card-title">PODRŠKA 24/7/365 <br> UVIJEK SMO TU ZA VAS</h5>
 				      <p class="card-text">Naši profesionalni djelatnici i dugogodišnje iskustvo garantiraju izvanrednu korisničku i tehničku podršku. Vjerujemo u naše poslovanje te imamo rješenje za svaku vašu situaciju.</p>
@@ -87,7 +87,7 @@ HERO SECTION__HEADER
 		2. POCETNA__DUGOROČNI_NAJAM
 
 		 *************** -->
-		<div id="home_2_dugorocni" class="row" style="background-image:url('<?php the_field('sekcija_bg'); ?>');">
+		<div  id="dugorocni-najam" class="row" style="background-image:url('<?php the_field('sekcija_bg'); ?>');">
 
 			<div class="col-md-12 content-area text-center" id="primary">
 

@@ -135,7 +135,7 @@ partnera, pojavite se sa stilom!</p>
 		4. AVANTOUR__VOZITE_OVERLAY
 
 		 *************** -->
-		<div class="row traka_logo"><img class="p-2" src="<?php bloginfo('url'); ?>/wp-content/uploads/2018/09/Avantour_logo_2.png" alt="Karta Hrvatske"></div>
+		<div id="Chauffeur-service" class="row traka_logo"><img class="p-2" src="<?php bloginfo('url'); ?>/wp-content/uploads/2018/09/Avantour_logo_2.png" alt="Karta Hrvatske"></div>
 		
 				
 

@@ -44,14 +44,14 @@ $('.popmake-kratkorocni-najam').click(function() {
 $('.popmake-dugorocni-najam').click(function() {
      var test2 =  $(this).text();
      //alert( test2 );
-     $('#input_4_14').val(test2);
-    $('#input_4_14').attr("placeholder", test2);
+     $('#input_4_19').val(test2);
+    $('#input_4_19').attr("placeholder", test2);
 });
 
 
             /**  GUMBI I SCROLL **/
         window.onscroll = function() {scrollFunction()};
-
+          window.onscroll = function() {scrollFunction2()};
         function scrollFunction() {
             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
                 document.getElementById("fade").style.display = "block";
@@ -59,12 +59,16 @@ $('.popmake-dugorocni-najam').click(function() {
                 document.getElementById("fade").style.display = "none";
             }
 
-             if (document.body.scrollTop > 30 || document.documentElement.scrollTop > 30) {
+            
+        }
+         function scrollFunction2() {
+             if (document.body.scrollTop > 180 || document.documentElement.scrollTop > 180) {
                 document.getElementById("fade2").style.display = "block";
             } else {
                 document.getElementById("fade2").style.display = "none";
             }
         }
+
 
            /**  DATEPICKER FIX DA IZLETAVA SAMO DATUM 
            https://docs.gravityforms.com/disable-keyboard-input-datepicker-fields/
@@ -125,8 +129,44 @@ if ($(window).width() < 480) { // only for mobile devices
 
 
 
+$('a[href*="#"]')
+  // Remove links that don't actually link to anything
+  .not('[href="#"]')
+  .not('[href="#0"]')
+  .click(function(event) {
+    // On-page links
+    if (
+      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') 
+      && 
+      location.hostname == this.hostname
+    ) {
+      // Figure out element to scroll to
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      // Does a scroll target exist?
+      if (target.length) {
+        // Only prevent default if animation is actually gonna happen
+        event.preventDefault();
+        $('html, body').animate({
+          scrollTop: target.offset().top - 50
+        }, 1000, function() {
+          // Callback after animation
+          // Must change focus!
+          var $target = $(target);
+          $target.focus();
+          if ($target.is(":focus")) { // Checking if the target was focused
+            return false;
+          } else {
+            $target.attr('tabindex','-1'); // Adding tabindex for elements not focusable
+            $target.focus(); // Set focus again
+          };
+        });
+      }
+    }
+  });
+
+
+
 
 });
-
-
 
