@@ -9,6 +9,7 @@
         </button>
       </div>
       <div class="modal-body">
+        -
          <div class="carousel-item active">
            
           <h2 class="text-center text-uppercase">City/Compact</h2>
@@ -31,7 +32,7 @@
             <div id="" class="col-md-4 text-center">
               <!--  <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('category-thumb'); ?></a>  -->
                   <!-- NASLOV --> 
-                  <h2><a class="popmake-kratkorocni-najam" href="#"><?php the_title(); ?></a></h2>
+                  <h2><a  href="#"><?php the_title(); ?></a></h2>
 
                 <!-- SLIKA -->
                   <?php if( get_field('avantour_auto_slika') ): ?>

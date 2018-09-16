@@ -565,7 +565,7 @@ z-index: 2000000000 !important;
 
 **************/
 
-add_filter( 'gform_progress_bar', 'my_custom_function', 10, 3 );
+/*add_filter( 'gform_progress_bar', 'my_custom_function', 10, 3 );
 function my_custom_function( $progress_bar, $form, $confirmation_message ) {
  
     $progress_bar = '<ul>
@@ -575,6 +575,14 @@ function my_custom_function( $progress_bar, $form, $confirmation_message ) {
     </ul>';
  
     return $progress_bar;
+}*/
+
+add_filter( 'gform_progress_steps', 'progress_steps_markup', 10, 3 );
+function progress_steps_markup( $progress_steps, $form, $page ) {
+    $active_class = 'gf_step_active';
+    $progress_steps = str_replace( $active_class, $active_class . ' your_custom_class', $progress_steps );
+ 
+    return $progress_steps;
 }
 
 /************

@@ -13352,3 +13352,16 @@ SUBMIT GUMB
 
 .validation_message {
   display: none; }
+
+#avantour_1_kontakt .gf_simple_horizontal .top_label .gfield_label {
+  display: inline-block;
+  position: static;
+  height: auto;
+  width: auto; }
+
+.gf_step_label {
+  background: red; }
+
+.gform_wrapper .gf_page_steps {
+  position: absolute;
+  bottom: 10px; }

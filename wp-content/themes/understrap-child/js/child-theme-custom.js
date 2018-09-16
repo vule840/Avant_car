@@ -31,7 +31,29 @@ $(".carousel").on("touchstart", function(event){
 });
 
 
+//********DODAJ DATA TOGGLE********/
 
+ $("#input_2_10").attr("data-toggle",'modal');
+ $("#input_2_10").attr("data-target",'#exampleModal');
+
+ $('.vozila').click(function() {
+    
+     
+     $('a').click(function () {
+            var test3 =  $(this).text();
+           // alert( test3 );
+            $('#input_2_10').val(test3);
+            $('#input_2_10').attr("placeholder", test3);
+            if( $(this).data('clicked', true)){
+                $("#exampleModal").modal("hide");
+            }
+     })
+     
+});
+/*$('#input_2_10').hover(function() {
+      $(this).css("background-color", "yellow");
+    
+});*/
         /** za auto koji izabaers https://stackoverflow.com/questions/9232810/change-placeholder-text-using-jquery  ***/
 
 $('.popmake-kratkorocni-najam').click(function() {
@@ -50,8 +72,8 @@ $('.popmake-dugorocni-najam').click(function() {
 
 
             /**  GUMBI I SCROLL **/
-        window.onscroll = function() {scrollFunction()};
-          window.onscroll = function() {scrollFunction2()};
+        window.onscroll = function() {scrollFunction() };
+         //window.onscroll = function() {scrollFunction2()};
         function scrollFunction() {
             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
                 document.getElementById("fade").style.display = "block";
@@ -59,15 +81,19 @@ $('.popmake-dugorocni-najam').click(function() {
                 document.getElementById("fade").style.display = "none";
             }
 
-            
-        }
-         function scrollFunction2() {
-             if (document.body.scrollTop > 180 || document.documentElement.scrollTop > 180) {
+             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
                 document.getElementById("fade2").style.display = "block";
             } else {
                 document.getElementById("fade2").style.display = "none";
             }
         }
+     /*   function scrollFunction2() {
+             if (document.body.scrollTop > 180 || document.documentElement.scrollTop > 180) {
+                document.getElementById("fade2").style.display = "block";
+            } else {
+                document.getElementById("fade2").style.display = "none";
+            }
+        }*/
 
 
            /**  DATEPICKER FIX DA IZLETAVA SAMO DATUM 

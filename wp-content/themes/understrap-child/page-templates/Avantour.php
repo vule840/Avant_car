@@ -234,8 +234,10 @@ partnera, pojavite se sa stilom!</p>
 
 	</div><!-- Container end -->
 
-
-
+<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+  Launch demo modal
+</button>
+<?php get_template_part( 'global-templates/modal' ); ?>
 
 	<!-- SIDEBAR_STICKY -->
 	<?php get_template_part( 'global-templates/gumb_sticky' ); ?>
