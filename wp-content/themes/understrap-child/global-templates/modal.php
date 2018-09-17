@@ -9,10 +9,10 @@
         </button>
       </div>
       <div class="modal-body">
-        -
+        
          <div class="carousel-item active">
            
-          <h2 class="text-center text-uppercase">City/Compact</h2>
+        <!-- <h2 class="text-center text-uppercase pb-3">Transferi</h2> -->  
            
 
 
@@ -42,7 +42,7 @@
                   <?php endif; ?> 
                 
                   <!-- TABLICA -->
-                  <table class="table w-50 table-light ikonice">
+                  <table class="table w-25 table-light ikonice">
                      
                       <tbody>
                         <tr>

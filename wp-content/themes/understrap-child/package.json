@@ -39,7 +39,6 @@
     "gulp-rename": "^1.2.2",
     "gulp-replace": "1.0.0",
     "gulp-rimraf": "^0.2.2",
-    "gulp-sass": "3.2.1",
     "gulp-sequence": "1.0.0",
     "gulp-sourcemaps": "2.6.4",
     "gulp-uglify": "^3.0.0",
@@ -52,6 +51,7 @@
     "understrap": "^0.8.6"
   },
   "devDependencies": {
-    "gulp": "^3.9.1"
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.2.1"
   }
 }

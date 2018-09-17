@@ -1,6 +1,6 @@
 <div class="row" id="hrv_slo_5_mobilnost" style="background-image:url('<?php the_field('mobilnost_prije_footer'); ?>');">
 
-			<div class="col-md-12"><h2 class="text-left">MOBILNOST ZA SVE VAŠE POTREBE</h2></div>
+			<div class="col-md-12"><h2 class="text-left popmake-sastanak">MOBILNOST ZA SVE VAŠE POTREBE</h2></div>
 
 
 			
@@ -39,7 +39,7 @@
 
 <div class="example-container">
   <div class="example-row">
-    <div class="example-content-main"><a href="tel:+385 (0)1 6251 222">> Zatražite povratni poziv za info o našim uslugama</a> </div>
+    <div class="example-content-main popmake-sastanak">> Zatražite povratni poziv za info o našim uslugama </div>
     <div class="example-content-secondary text-right"><button type="button" class="btn btn-outline-dark "><strong> <a href="tel:+385 (0)1 6251 222">INFO: +385 (0)1 6251 222</a></strong></button></div>
   </div>
 </div>

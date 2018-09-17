@@ -148,7 +148,7 @@ HERO SECTION__HEADER
     
     <div class="card-body home_zatrazite">
       
-     <p class="popmake-sastanak">> Zatražite info ponudu za dugoročni najam</p>
+     <p class="popmake-dugorocni-najam-izbor">> Zatražite info ponudu za dugoročni najam</p>
       
     </div>
   </div>
@@ -176,7 +176,7 @@ HERO SECTION__HEADER
 				<h2 class="text-center zelena">Flota za svaki ukus</h2>
 
 				<img class="text-center pt-5" src="<?php bloginfo('url') ?>/wp-content/uploads/2018/09/home_auti-8.png">
-				<p class="text-left home_kompletnu">> Pogledajte kompletnu flotu</p>
+				<p class="text-left home_kompletnu"><a href="<?php bloginfo('url') ?>/nasa-flota">> Pogledajte kompletnu flotu</a> </p>
 
 			</div>
 
@@ -215,7 +215,7 @@ HERO SECTION__HEADER
 		<div class="row text-center" id="home_4_zatrazite">
 
 			<div class="col-md-7 mx-auto">
-				<h2 class="text-center">ZATRAŽITE PONUDU PO VAŠOJ MJERI</h2>
+				<h2 class="text-center popmake-dugorocni-najam-izbor">ZATRAŽITE PONUDU PO VAŠOJ MJERI</h2>
 				<p class="text-center italic_slova">Jednostavno unesite kontakt podatke i pripremit ćemo vam informativnu ponudu. <br>Bez obzira jeste li mala ili velika tvrtka - imamo rješenje za vaše potrebe!</p>
 			</div>
 
@@ -260,7 +260,7 @@ dinamično okruženje te pratiti vaš razvoj.</p>
 			</div><!-- #primary -->
 
 			<div class="col-md-12 text-center">
-				<button type="button" class="btn btn-outline-secondary popmake-sastanak">ZATRAŽITE PONUDU</button>
+				<button type="button" class="btn btn-outline-secondary popmake-dugorocni-najam-izbor">ZATRAŽITE PONUDU</button>
 			</div>
 
 
@@ -287,8 +287,8 @@ dinamično okruženje te pratiti vaš razvoj.</p>
 
 			<div class="col-md-6 ml-auto">
 
-				<h2>ELEKTRIČNA MOBILNOST</h2>
-				<span class="italic_slova">Kreiramo nove dimenzije. Posjetite naš showroom.</span>
+				<h2 class="popmake-sastanak">ELEKTRIČNA MOBILNOST</h2>
+				<span class="italic_slova popmake-sastanak">Kreiramo nove dimenzije. Posjetite naš showroom.</span>
 
 				<!-- <p>Stvaramo novo korisničko iskustvo. U skladu s prirodom, tiho i čisto.
 Misija našeg poslovanja je pojednostavniti živote ljudi stvaranjem naprednih
@@ -311,7 +311,7 @@ mobilnost je tu, bez buke i bez emisije.</p>
 
 <div class="example-container">
   <div class="example-row">
-    <div class="example-content-main"><p>> Kreiramo novo iskustvo. Posjetite naš showroom.</p></div>
+    <div class="example-content-main popmake-sastanak"><p>> Kreiramo novo iskustvo. Posjetite naš showroom.</p></div>
     <div class="example-content-secondary"><svg class="home_list"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#home-list" /></svg></div>
   </div>
 </div>

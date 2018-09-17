@@ -21,9 +21,29 @@ ul li{
 .dropdown > .dropdown-toggle:active {
     /*Without this, clicking will make it sticky*/
     pointer-events: none;
-}
+} 
 .navbar-brand{
     top: 0;
+}
+ul.dropdown-menu{
+	
+		.nav-item:hover{
+		border-bottom: 0;
+
+		}
+		a{
+			&:hover{
+				color: var(--zelena);
+			}
+		}
+		.active{
+		border-bottom: 0;
+		}
+	background-color: var(--siva_tamno);
+}
+
+.navbar .dropdown-menu .active{
+	border: 0px;
 }
 /********************
 
@@ -583,6 +603,9 @@ list-style-image: url("#{$urlsass}/strelica_crna.svg");
 			right: 0;
 			margin: auto;
 			z-index: 1111111;
+			a{
+				color: var(--siva_tamno);
+			}
 
 		}
 		.carousel-indicators{
@@ -627,6 +650,13 @@ list-style-image: url("#{$urlsass}/strelica_crna.svg");
 	}
 	small{
 		color: var(--siva_tamno);
+	}
+	.btn-outline-dark a{
+		color: var(--siva_tamno);
+		&:hover{
+			color: var(--bijela);
+			text-decoration: none;
+		}
 	}
 }
 
@@ -785,6 +815,9 @@ div#avantour_1_kontakt {
     padding: 4rem 0;
    // padding-bottom: 0;;
 	//height: 50px;/
+	a{
+		color: #fff;
+	}
 } 
 /********************
 
@@ -1256,5 +1289,191 @@ SUBMIT GUMB
 .gform_wrapper .gf_page_steps {
    
     position: absolute;
-    bottom: 10px;
+    bottom: -8px;
+}
+.red{
+	background: #000;
+}
+
+
+/*********
+
+OBRAZAC GRAVITY FORMS STILOVI
+
+********/
+.dropdown-item:hover{
+	
+	background: none;
+}
+
+
+.gform_wrapper input:focus[type=text]{
+	border-color: var(--zelena);
+	-webkit-box-shadow: 0 0 0 0.2rem rgba(167, 184, 73, 0.25);
+    box-shadow: 0 0 0 0.2rem rgba(167, 184, 73, 0.25);
+}
+.gform_wrapper select:focus{
+	border-color: var(--zelena);
+	-webkit-box-shadow: 0 0 0 0.2rem rgba(167, 184, 73, 0.25);
+    box-shadow: 0 0 0 0.2rem rgba(167, 184, 73, 0.25);
+}
+.gform_wrapper textarea:focus{
+	border-color: var(--zelena);
+	-webkit-box-shadow: 0 0 0 0.2rem rgba(167, 184, 73, 0.25);
+    box-shadow: 0 0 0 0.2rem rgba(167, 184, 73, 0.25);
+}
+.gform_next_button{
+	background-image: url("#{$urlsass}/submit_gumb.svg") !important;
+  	 background-repeat: no-repeat;
+    text-indent: -99999px;
+    width: 50px !important;
+    height: 58px;
+    background-color: transparent;
+    &:focus{
+    	box-shadow:none;
+    }
+
+}
+#gform_fields_2{
+	
+	 input[type=text]{
+		color:#fff;
+		    background: transparent;
+		    &:focus{
+		    	color:#fff;
+		    background: transparent;
+		    }
+	}
+	.gform_wrapper input:focus[type=text]{
+		border-color: none;
+			background: transparent;
+			-webkit-box-shadow: tranparent;
+		    box-shadow: tranparent;
+	}
+	
+	
+	
+
+}
+.gform_previous_button{
+	background-image: url("#{$urlsass}/submit_gumb_lijevi.svg") !important;
+  	     background-repeat: no-repeat;
+    text-indent: -99999px;
+        width: 50px !important;
+    height: 58px;
+    background-color: transparent;
+    &:focus{
+    	box-shadow:none;
+    }
+
+}
+
+/*micanje bootstrapa**/
+.gform_wrapper .button{
+	background: none;
+	border:none;
+	background-repeat:no-repeat;
+	&:hover{
+		background: none;
+	border:none;
+	background-repeat:no-repeat;
+	}
+	&:focus{
+		    box-shadow: none;
+		    border:none;
+	}
+	&:active{
+		    box-shadow: none;
+		    border:none;
+	}
+}
+.gform_wrapper .button:not(:disabled):not(.disabled):active{
+	background: none;
+	border:none;
+	background-repeat:no-repeat;
+	    -webkit-box-shadow: !important; 
+     box-shadow: none !important; 
+}
+.gform_wrapper .gf_page_steps{
+	text-align: center;
+}
+.gform_wrapper .gf_step span.gf_step_number {
+    font-size: 1.25em;
+    font-family: arial,sans-serif;
+    margin-right: 4px;
+    background: var(--zelena);	
+    border-radius: 50%;
+    width: 20px;
+    text-indent: -9999px;
+}
+
+/*kružići steps**/
+
+.form-control, .gform_wrapper input[type=date], .gform_wrapper input[type=datetime-local], .gform_wrapper input[type=datetime], .gform_wrapper input[type=email], .gform_wrapper input[type=month], .gform_wrapper input[type=number], .gform_wrapper input[type=password], .gform_wrapper input[type=search], .gform_wrapper input[type=tel], .gform_wrapper input[type=text], .gform_wrapper input[type=time], .gform_wrapper input[type=url], .gform_wrapper input[type=week], .gform_wrapper select, .gform_wrapper textarea, .wpcf7 .wpcf7-validation-errors, .wpcf7 input[type=color], .wpcf7 input[type=date], .wpcf7 input[type=datetime-local], .wpcf7 input[type=datetime], .wpcf7 input[type=email], .wpcf7 input[type=file], .wpcf7 input[type=month], .wpcf7 input[type=number], .wpcf7 input[type=range], .wpcf7 input[type=search], .wpcf7 input[type=submit], .wpcf7 input[type=tel], .wpcf7 input[type=text], .wpcf7 input[type=time], .wpcf7 input[type=url], .wpcf7 input[type=week], .wpcf7 select, .wpcf7 textarea{
+	border: 0px solid #ced4da;
+	border-bottom: 2px solid var(--zelena);
+	border-radius: 0rem;
+	    border-color: var(--zelena); 
+    outline: 0;
+    background-color: transparent;
+  /* -webkit-box-shadow: 0 0 0 0.2rem rgba(167, 184, 73, 0.25);
+    box-shadow: 0 0 0 0.2rem rgba(167, 184, 73, 0.25);*/
+}
+
+/*gumbić u desno**/
+div.gform_wrapper .gform_page_footer {
+   //margin: 3rem 0;
+   margin-bottom: 3rem;
+    text-align: center;
+    border-top: 0;
+    /*position: relative;
+    left: 38px;*/
+    z-index: 1;
+}
+
+
+.pum-theme-82 .pum-content + .pum-close, .pum-theme-default-theme .pum-content + .pum-close{
+	    background-color: var(--zelena) !important;
+}
+
+
+/*********
+
+MODAL TRANSFERI GRAVITY FORMS STILOVI
+
+********/
+
+.modal-header{
+	border-bottom: none;
+}
+.modal-content{
+	border-top: 5px solid var(--zelena);
+	border-bottom: 5px solid var(--zelena);
+	border-radius:0;
+}
+
+.carousel-item{
+	a{
+		color: var(--siva_tamno);
+	}
+	.row{
+		.col-md-4{
+			padding-bottom: 2rem;
+		}
+	}
+}
+
+#exampleModal{
+	.ikonice{
+	
+			margin: 0 auto;
+
+	}
+	tbody {
+		
+		td{
+			border-top: 0;
+		}
+		
+	}
 }

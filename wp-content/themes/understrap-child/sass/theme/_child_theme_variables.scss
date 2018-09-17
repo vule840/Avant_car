@@ -102,3 +102,43 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
 @mixin line_height($height){
   margin-bottom: $height;
 }
+
+
+@mixin placeholder-color ($color, $focus) {
+  &::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+    color: $color;
+    &:focus{
+      &::-webkit-input-placeholder { /* WebKit, Blink, Edge */
+        color: $focus;
+      }
+    }
+  }
+  &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+   color: $color;
+   opacity:  1;
+   &:focus{
+     &:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+        color: $focus;
+        opacity:  1;
+     }
+   }
+  }
+  &::-moz-placeholder { /* Mozilla Firefox 19+ */
+   color: $color;
+   opacity:  1;
+   &:focus{
+     &::-moz-placeholder { /* Mozilla Firefox 19+ */
+        color: $focus;
+        opacity:  1;
+     }
+   }
+  }
+  &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+   color: $color;
+   &:focus{
+     &:-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: $focus;
+     }
+   }
+ }
+}

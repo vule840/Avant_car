@@ -193,7 +193,7 @@ partnera, pojavite se sa stilom!</p>
 				      <h5 class="card-title">ZADAR</h5>
 				      <p class="card-text"><small >Srce Dalmacije</small></p>
 				      
-				      
+				       
 				    </div>
 				  </div><div class="card">
 				   
@@ -218,7 +218,7 @@ partnera, pojavite se sa stilom!</p>
 				 
 				</div>
 
-				<button type="button" class="btn btn-outline-dark font-weight-bold">ZAPOČNITE AVANTOUR</button>
+				<button type="button" class="btn btn-outline-dark font-weight-bold"><a href="#">ZAPOČNITE AVANTOUR</a></button>
 
 			</div><!-- #primary -->
 
@@ -234,9 +234,10 @@ partnera, pojavite se sa stilom!</p>
 
 	</div><!-- Container end -->
 
-<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
+<!-- <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal">
   Launch demo modal
-</button>
+</button> -->
+
 <?php get_template_part( 'global-templates/modal' ); ?>
 
 	<!-- SIDEBAR_STICKY -->

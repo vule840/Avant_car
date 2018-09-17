@@ -101,12 +101,12 @@ u međunarodnim zračnim lukama i u više od 10 gradova.</P>
 
 		 	
 			<div class="col-md-6">
-				<h2>VIZIJA </h2>
+				<h2 class="popmake-sastanak">VIZIJA </h2>
 				<p>Utvrditi položaj uspješno međunarodno uvaženog ponuđača cjelovitih rješenja mobilnosti nove generacije.</p>	
 
 			</div>
 			<div class="col-md-6">
-				<h2>MISIJA</h2>
+				<h2 class="popmake-sastanak">MISIJA</h2>
 				<p>Pojednostavniti živote ljudi stvaranjem naprednih rješenja trajne mobilnosti.</p>
 			</div>
 
