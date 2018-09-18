@@ -46,7 +46,8 @@ HERO SECTION__HEADER
 
 
 				    <div class="card-body">
-				      <h5 class="card-title">KOMPLETNA USLUGA UŠTEDA VREMENA</h5>
+				      <h5 class="card-title">UŠTEDA
+VREMENA</h5>
 				      <p class="card-text">Kompletna usluga vam omogućava optimizaciju troškova i uštedu vremena. Nema skrivenih troškova, već su svi troškovi osiguranja i održavanja vozila uključeni. Jedna i konstantna faktura.</p>
 				     
 				    </div>
@@ -62,7 +63,7 @@ HERO SECTION__HEADER
 				  <div class="card">
 				    <svg class="ref_auti2"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#ref-auti" /></svg>
 				    <div class="card-body">
-				      <h5 class="card-title">FLOTA ZA SVAKI UKUS VAŠA FLOTA. 1.600 VOZILA</h5>
+				      <h5 class="card-title">VAŠA FLOTA. 1.600 VOZILA</h5>
 				      <p class="card-text">Vaša sigurnost i udobnost u vožnji su nam iznimno bitni. Upravo zato isporučujemo sve klase modernih vozila koja se redovito servisiraju i zamijenjuju sa najnovijim modelima.</p>
 				      
 				    </div>
@@ -70,7 +71,8 @@ HERO SECTION__HEADER
 				  <div class="card">
 				    <svg class="home_ikone"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#home-call-cura" /></svg>
 				    <div class="card-body">
-				      <h5 class="card-title">PODRŠKA 24/7/365 <br> UVIJEK SMO TU ZA VAS</h5>
+				      <h5 class="card-title">UVIJEK SMO TU
+ZA VAS</h5>
 				      <p class="card-text">Naši profesionalni djelatnici i dugogodišnje iskustvo garantiraju izvanrednu korisničku i tehničku podršku. Vjerujemo u naše poslovanje te imamo rješenje za svaku vašu situaciju.</p>
 				      
 				    </div>

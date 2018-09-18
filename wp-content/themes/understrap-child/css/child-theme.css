@@ -12306,16 +12306,16 @@ h2 {
   padding-bottom: 0;
   padding-top: 1rem; }
   .navbar .nav-item {
-    font-weight: bold;
-    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 1px;
     margin: 0 1rem; }
     .navbar .nav-item a {
       color: var(--bijela); }
     .navbar .nav-item:hover {
-      border-bottom: 5px solid var(--zelena); }
+      border-bottom: 3px solid var(--zelena); }
   .navbar .active {
     color: var(--zelena);
-    border-bottom: 5px solid var(--zelena); }
+    border-bottom: 3px solid var(--zelena); }
     .navbar .active .nav-link {
       color: var(--zelena); }
 

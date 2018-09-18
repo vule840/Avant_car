@@ -118,20 +118,21 @@ h2{
 	padding-bottom: 0;
 	padding-top: 1rem;
 	.nav-item{
-		font-weight: bold;
-		text-transform: uppercase;
+		font-weight: 300;
+		//text-transform: uppercase;
+		letter-spacing: 1px;
 		margin: 0 1rem;
 		a{
 			color:var(--bijela);
 
 		}
 		&:hover{
-			    border-bottom: 5px solid var(--zelena);
+			    border-bottom: 3px solid var(--zelena);
 		}
 	}
 	.active {
 			color:var(--zelena);
-			 border-bottom: 5px solid var(--zelena);			 
+			 border-bottom: 3px solid var(--zelena);			 
 			 	.nav-link{
 			 		color:var(--zelena);
 			 	
