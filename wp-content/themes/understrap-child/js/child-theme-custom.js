@@ -50,6 +50,15 @@ $(".carousel").on("touchstart", function(event){
      })
      
 });
+
+ $('#gform_submit_button_2').click(function() {
+    // handle redirect here
+    console.log('jeejeje');
+     // handle redirect here
+    var link = $('#exampleModal').data('link');
+    location.href = link;
+    $('#exampleModal').modal('hide')
+});
 /*$('#input_2_10').hover(function() {
       $(this).css("background-color", "yellow");
     

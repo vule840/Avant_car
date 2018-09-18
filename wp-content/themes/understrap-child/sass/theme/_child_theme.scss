@@ -1213,66 +1213,6 @@ SUBMIT GUMB
 
 /** Gravity Forms */
 
-.gform_wrapper form {
-  margin-bottom: 0;
-}
-
-.gform_wrapper ul {
-  @extend .list-unstyled;
-}
-
-.gform_wrapper li {
-  @extend .form-group;
-}
-
-.gform_wrapper .gfield_required {
-  padding-left: 1px;
-  color: $danger;
-}
-
-.gform_wrapper input[type="email"],
-.gform_wrapper input[type="date"],
-.gform_wrapper input[type="datetime"],
-.gform_wrapper input[type="datetime-local"],
-.gform_wrapper input[type="month"],
-.gform_wrapper input[type="number"],
-.gform_wrapper input[type="password"],
-.gform_wrapper input[type="search"],
-.gform_wrapper input[type="tel"],
-.gform_wrapper input[type="text"],
-.gform_wrapper input[type="time"],
-.gform_wrapper input[type="week"],
-.gform_wrapper input[type="url"],
-.gform_wrapper select,
-.gform_wrapper textarea {
-  @extend .form-control;
-}
-
-.gform_wrapper .button {
-  @extend .btn;
-  @extend .btn-primary;
-}
-
-.gform_wrapper .gfield_error {
-  .gfield_label {
-    @extend .alert-danger;
-  }
-
-  input,
-  select,
-  textarea {
-    @extend .alert-danger;
-  }
-}
-
-.validation_error {
-  @extend .alert;
-  @extend .alert-danger;
-}
-
-.validation_message {
-  display: none;
-}
 
 
 
@@ -1339,15 +1279,16 @@ OBRAZAC GRAVITY FORMS STILOVI
 	
 	 input[type=text]{
 		color:#fff;
-		    background: transparent;
+		    background: transparent  !important;
 		    &:focus{
 		    	color:#fff;
-		    background: transparent;
+		    background: transparent !important;
 		    }
+
 	}
 	.gform_wrapper input:focus[type=text]{
 		border-color: none;
-			background: transparent;
+			background: transparent !important;
 			-webkit-box-shadow: tranparent;
 		    box-shadow: tranparent;
 	}
@@ -1416,9 +1357,11 @@ OBRAZAC GRAVITY FORMS STILOVI
 	border-radius: 0rem;
 	    border-color: var(--zelena); 
     outline: 0;
+    color:#fff;
     background-color: transparent;
   /* -webkit-box-shadow: 0 0 0 0.2rem rgba(167, 184, 73, 0.25);
     box-shadow: 0 0 0 0.2rem rgba(167, 184, 73, 0.25);*/
+   
 }
 
 /*gumbić u desno**/
@@ -1478,3 +1421,38 @@ MODAL TRANSFERI GRAVITY FORMS STILOVI
 		
 	}
 }
+#gform_page_2_1{
+   .gform_page_footer{
+       z-index: 1;
+    position: absolute;
+    top: -14px;
+    right: -195px;
+    display: inline-flex;
+    width: 15%;
+    @include media-breakpoint-down(md) {
+        // Smaller than md: 768px
+        
+    z-index: 1;
+    position: absolute;
+    /* top: -14px; */
+    right: 10px;
+    
+    bottom: -53px;
+
+    }
+
+    }
+}
+
+#gform_page_2_2{
+     
+    .gform_page_footer{
+       z-index: 1;
+    position: absolute;
+    top: -14px;
+    right: -237px;
+    display: inline-flex;
+    width: 15%;
+    }
+}
+

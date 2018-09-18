@@ -615,7 +615,7 @@ function add_search_box_to_menu( $items, $args ) {
     return $items;
 }*/
 
-add_action( 'gform_after_submission', 'access_entry_via_field', 10, 2 );
+/*add_action( 'gform_after_submission', 'access_entry_via_field', 10, 2 );
 function access_entry_via_field( $entry, $form ) {
     foreach ( $form['fields'] as $field ) {
         $inputs = $field->get_entry_inputs();
@@ -632,3 +632,13 @@ function access_entry_via_field( $entry, $form ) {
         }
     }
 }
+
+add_filter( 'gform_confirmation', function ( $confirmation, $form, $entry, $ajax ) {
+    if ( isset( $confirmation['redirect'] ) ) {
+        $url          = esc_url_raw( $confirmation['redirect'] );
+        $confirmation = 'Thanks for contacting us! We will get in touch with you shortly.';
+        $confirmation .= "<script type=\"text/javascript\">window.open('$url', '_blank');</script>";
+    }
+ 
+    return $confirmation;
+}, 10, 4 );*/
