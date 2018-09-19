@@ -16,7 +16,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 HERO SECTION__HEADER
 
  -->
-<?php get_template_part( 'global-templates/header_slika' ); ?>
+<?php get_template_part( 'global-templates/carusel_avantour' ); ?>
 
 
 <div class="wrapper" id="full-width-page-wrapper">

@@ -58,7 +58,7 @@ $(".carousel").on("touchstart", function(event){
      
 });
  $(".pum-close").text('ZATVORI');
- $("#gform_submit_button_6 span")text('POŠALJI');
+ $("#gform_submit_button_6 span").text('POŠALJI');
 
 
  /*$("#gform_submit_button_6").removeClass('submit_gumb');
@@ -94,8 +94,28 @@ $('.popmake-dugorocni-najam').click(function() {
 });
 
 
-            /**  GUMBI I SCROLL **/
-        window.onscroll = function() {scrollFunction() };
+          /**  GUMBI I SCROLL **/
+//https://jsfiddle.net/RoryMcCrossan/8mwdoLtu/
+$(window).scroll(function() {
+
+
+    //prvi
+  if ($(this).scrollTop() > 250 && $(this).scrollTop() < 5000) {
+    $('#fade').fadeIn();
+  } else {
+    $('#fade').fadeOut();}
+
+ //drugi
+  if ($(this).scrollTop() > 650 && $(this).scrollTop() < 5000) {
+    $('#fade2').fadeIn();
+  } else {
+    $('#fade2').fadeOut();}
+
+}); 
+
+
+
+     /*   window.onscroll = function() {scrollFunction() };
          //window.onscroll = function() {scrollFunction2()};
         function scrollFunction() {
             if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
@@ -109,14 +129,8 @@ $('.popmake-dugorocni-najam').click(function() {
             } else {
                 document.getElementById("fade2").style.display = "none";
             }
-        }
-     /*   function scrollFunction2() {
-             if (document.body.scrollTop > 180 || document.documentElement.scrollTop > 180) {
-                document.getElementById("fade2").style.display = "block";
-            } else {
-                document.getElementById("fade2").style.display = "none";
-            }
         }*/
+   
 
 
            /**  DATEPICKER FIX DA IZLETAVA SAMO DATUM 
