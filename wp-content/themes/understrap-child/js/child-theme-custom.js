@@ -6,6 +6,13 @@ console.log('dsfds');
 jQuery(document).ready(function($) {
 
 
+/*$img = 'http://localhost/avant_car/wp-content/uploads/2018/09/Nasa_flota.jpg';
+$('.page-id-74 #cover').fadeTo('slow', 0.3, function()
+{
+
+    $(this).css('background', 'red');
+}).delay(1000).fadeTo('slow', 1);*/
+
 /*jQuery('#pum-88').popmake('open', callback);
 
 
@@ -33,8 +40,8 @@ $(".carousel").on("touchstart", function(event){
 
 //********DODAJ DATA TOGGLE********/
 
- $("#input_2_10").attr("data-toggle",'modal');
- $("#input_2_10").attr("data-target",'#exampleModal');
+ $("#input_13_11").attr("data-toggle",'modal');
+ $("#input_13_11").attr("data-target",'#exampleModal');
 
  $('.vozila').click(function() {
     
@@ -42,23 +49,30 @@ $(".carousel").on("touchstart", function(event){
      $('a').click(function () {
             var test3 =  $(this).text();
            // alert( test3 );
-            $('#input_2_10').val(test3);
-            $('#input_2_10').attr("placeholder", test3);
+            $('#input_13_11').val(test3);
+            $('#input_13_11').attr("placeholder", test3);
             if( $(this).data('clicked', true)){
                 $("#exampleModal").modal("hide");
             }
      })
      
 });
+ $(".pum-close").text('ZATVORI');
+ $("#gform_submit_button_6 span")text('POŠALJI');
 
- $('#gform_submit_button_2').click(function() {
+
+ /*$("#gform_submit_button_6").removeClass('submit_gumb');
+ $("#gform_submit_button_6").addClass('btn-success');*/
+
+
+/* $('#gform_submit_button_2').click(function() {
     // handle redirect here
     console.log('jeejeje');
      // handle redirect here
     var link = $('#exampleModal').data('link');
     location.href = link;
     $('#exampleModal').modal('hide')
-});
+});*/
 /*$('#input_2_10').hover(function() {
       $(this).css("background-color", "yellow");
     
@@ -68,8 +82,8 @@ $(".carousel").on("touchstart", function(event){
 $('.popmake-kratkorocni-najam').click(function() {
      var test =  $(this).text();
      //alert( test );
-     $('#input_3_17').val(test);
-    $('#input_3_17').attr("placeholder", test);
+     $('#input_19').val(test);
+    $('#input_19').attr("placeholder", test);
 });
   
 $('.popmake-dugorocni-najam').click(function() {

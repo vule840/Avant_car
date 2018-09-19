@@ -186,6 +186,6 @@
 			    <span class="sr-only">Next</span>
 			  </a> -->  
 
-			  <p class="transferi_link_rezervirajte text-center"> <a href="#">> Rezervirajte unaprijed i putuj bezbrižno do odredišta</a></p>
+			  <p class="transferi_link_rezervirajte text-center">> Rezervirajte unaprijed i putuj bezbrižno do odredišta</p>
 			</div>
 

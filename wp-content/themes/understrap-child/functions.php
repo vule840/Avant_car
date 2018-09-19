@@ -376,8 +376,7 @@ function Flota_dugorocni() {
     register_post_type( 'Van', $args );
 
     ///Vozila po naružbi
-
-      $labels = array(
+/* $labels = array(
         'name'                  => _x( 'Vozila_po_naruzbi', 'Post Type General Name', 'text_domain' ),
         'singular_name'         => _x( 'Vozila_po_naruzbi', 'Post Type Singular Name', 'text_domain' ),
         'menu_name'             => __( 'Vozila_po_naruzbi', 'text_domain' ),
@@ -425,7 +424,8 @@ function Flota_dugorocni() {
         'publicly_queryable'    => true,
         'capability_type'       => 'post',
     );
-    register_post_type( 'Vozila_po_naruzbi', $args );
+    register_post_type( 'Vozila_po_naruzbi', $args );*/
+     
 
 
     ///TRANSFERI
@@ -642,3 +642,7 @@ add_filter( 'gform_confirmation', function ( $confirmation, $form, $entry, $ajax
  
     return $confirmation;
 }, 10, 4 );*/
+
+add_filter( 'gform_confirmation_anchor_13', '__return_false' );
+
+add_filter('show_admin_bar', '__return_false');

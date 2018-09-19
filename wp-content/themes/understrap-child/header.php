@@ -32,7 +32,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 
 		<a class="skip-link screen-reader-text sr-only" href="#content"><?php esc_html_e( 'Skip to content', 'understrap' ); ?></a>
 
-		<nav class="navbar navbar-expand-md">
+		<nav class="navbar fixed-top navbar-expand-md">
 
 		<?php if ( 'container' == $container ) : ?>
 			<div class="container" >

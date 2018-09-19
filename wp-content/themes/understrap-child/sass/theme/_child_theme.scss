@@ -552,6 +552,9 @@ list-style-image: url("#{$urlsass}/strelica_crna.svg");
 }
 
 
+.btn-outline-dark{
+	background: rgba(255, 255, 2555, 0.3);
+}
 /********************
 
 	AVANTOUR_SEKCIJE
@@ -561,6 +564,42 @@ list-style-image: url("#{$urlsass}/strelica_crna.svg");
 #avantour_1_kontakt{
 	.gform_wrapper .top_label .gfield_label{
 		color: #fff;
+	}
+	.gfield_checkbox {
+		li {
+			position: relative;
+			padding-left:40px;
+			label {
+				&:after {
+					content:"";
+					background:#333;
+					width:27px;
+					height:27px;
+					display:block;
+					position: absolute;
+					left:0;
+					top:0;
+					border-radius:3px;
+					z-index: 0;
+				}
+				&:before {
+					content:"";
+					display:block;
+				    position: absolute;
+				    width: 6px;
+					height: 15px;
+				    border: solid #fff;
+				    border-width: 0 3px 3px 0;
+			    	left: 9px;
+					top: 4px;
+					transform: rotate(45deg);
+					opacity:0;
+					z-index:1;
+					transition:all 100ms;
+				}
+			}
+		}
+
 	}
 }
 
@@ -695,6 +734,9 @@ list-style-image: url("#{$urlsass}/strelica_crna.svg");
 	}
 	@include sivi_gradijent();
 	    margin-bottom: -6px;
+	    .carousel{
+	    	padding:0;
+	    }
 
 }
 
@@ -707,11 +749,15 @@ list-style-image: url("#{$urlsass}/strelica_crna.svg");
 #d_najam_vozila{
 	@include padding(3rem);
 	background: var(--siva_tamno);
+	.text-white{
+		margin-bottom: 0;
+	}
 	.italic_slova{
 		color: var(--bijela);
 	}
 	.zelena{
-		@include padding(3rem);
+		padding-bottom:3.5rem;
+		padding-top: 1rem;
 	}
 }
 #najam_1_flota{
@@ -1421,7 +1467,7 @@ MODAL TRANSFERI GRAVITY FORMS STILOVI
 		
 	}
 }
-#gform_page_2_1{
+#gform_page_13_1{
    .gform_page_footer{
        z-index: 1;
     position: absolute;
@@ -1444,7 +1490,7 @@ MODAL TRANSFERI GRAVITY FORMS STILOVI
     }
 }
 
-#gform_page_2_2{
+#gform_page_13_2{
      
     .gform_page_footer{
        z-index: 1;
@@ -1456,3 +1502,38 @@ MODAL TRANSFERI GRAVITY FORMS STILOVI
     }
 }
 
+#popmake-222{
+	.form-control, .gform_wrapper input[type=date], .gform_wrapper input[type=datetime-local], .gform_wrapper input[type=datetime], .gform_wrapper input[type=email], .gform_wrapper input[type=month], .gform_wrapper input[type=number], .gform_wrapper input[type=password], .gform_wrapper input[type=search], .gform_wrapper input[type=tel], .gform_wrapper input[type=text], .gform_wrapper input[type=time], .gform_wrapper input[type=url], .gform_wrapper input[type=week], .gform_wrapper select, .gform_wrapper textarea, .wpcf7 .wpcf7-validation-errors, .wpcf7 input[type=color], .wpcf7 input[type=date], .wpcf7 input[type=datetime-local], .wpcf7 input[type=datetime], .wpcf7 input[type=email], .wpcf7 input[type=file], .wpcf7 input[type=month], .wpcf7 input[type=number], .wpcf7 input[type=range], .wpcf7 input[type=search], .wpcf7 input[type=submit], .wpcf7 input[type=tel], .wpcf7 input[type=text], .wpcf7 input[type=time], .wpcf7 input[type=url], .wpcf7 input[type=week], .wpcf7 select, .wpcf7 textarea{
+		color: #000;
+	}
+	.submit_gumb{
+		background-image: none;
+    background-repeat: none;
+    text-indent: 0;
+    width: 100px;
+    height: auto;
+    background-color: var(--zelena);
+    color:#fff;
+    border-radius:0;
+    &:hover{
+    	background: #c5d959;
+    }
+	}
+}
+#popmake-121{
+	.form-control, .gform_wrapper input[type=date], .gform_wrapper input[type=datetime-local], .gform_wrapper input[type=datetime], .gform_wrapper input[type=email], .gform_wrapper input[type=month], .gform_wrapper input[type=number], .gform_wrapper input[type=password], .gform_wrapper input[type=search], .gform_wrapper input[type=tel], .gform_wrapper input[type=text], .gform_wrapper input[type=time], .gform_wrapper input[type=url], .gform_wrapper input[type=week], .gform_wrapper select, .gform_wrapper textarea, .wpcf7 .wpcf7-validation-errors, .wpcf7 input[type=color], .wpcf7 input[type=date], .wpcf7 input[type=datetime-local], .wpcf7 input[type=datetime], .wpcf7 input[type=email], .wpcf7 input[type=file], .wpcf7 input[type=month], .wpcf7 input[type=number], .wpcf7 input[type=range], .wpcf7 input[type=search], .wpcf7 input[type=submit], .wpcf7 input[type=tel], .wpcf7 input[type=text], .wpcf7 input[type=time], .wpcf7 input[type=url], .wpcf7 input[type=week], .wpcf7 select, .wpcf7 textarea{
+		color: #000;
+	}	
+	div.gform_wrapper .gform_page_footer {
+    margin-bottom: 3rem;
+    text-align: center;
+    border-top: 0;
+    z-index: 1;
+    position: absolute;
+    left: 52%;
+    bottom:0;
+}
+}
+.gform_title{
+	display:none;
+}

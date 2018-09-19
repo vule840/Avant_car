@@ -84,7 +84,38 @@ krećemo s unapređenjem vaše mobilnosti.</p>
 
 </div>
 			<div class="col-md-8 p-0">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2781.447356828965!2d16.0002752514525!3d45.80229837900381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765d6251c1f6303%3A0x9930e37456b4648a!2sRadni%C4%8Dka+cesta+52%2C+10000%2C+Zagreb!5e0!3m2!1sen!2shr!4v1535456363148" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+				<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+
+				 <!-- <ol class="carousel-indicators">
+				    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+				    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+				   
+				  </ol> --> 
+
+				  <div class="carousel-inner">
+				    <div class="carousel-item active">
+				      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2781.447356828965!2d16.0002752514525!3d45.80229837900381!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4765d6251c1f6303%3A0x9930e37456b4648a!2sRadni%C4%8Dka+cesta+52%2C+10000%2C+Zagreb!5e0!3m2!1sen!2shr!4v1535456363148" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+				    </div>
+				    <div class="carousel-item">
+				      <img class="d-block w-100" src="<?php bloginfo('url'); ?>/wp-content/uploads/2018/09/kontakt_carusel_slika.jpg" alt="Second slide">
+				    </div>
+				    
+				  </div>
+
+				  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+				    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+				    <span class="sr-only">Previous</span>
+				  </a>
+				  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+				    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+				    <span class="sr-only">Next</span>
+				  </a>
+				</div>
+
+
+
+
+				
 
 			</div>
 

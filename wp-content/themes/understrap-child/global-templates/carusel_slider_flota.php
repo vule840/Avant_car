@@ -15,7 +15,7 @@
 			     <li data-target="#carouselExampleIndicators" data-slide-to="3">PREMIUM TESLA</li>
 			      <li data-target="#carouselExampleIndicators" data-slide-to="4">ELECTRIC COMPACT BUSINESS</li>
 			      <li data-target="#carouselExampleIndicators" data-slide-to="5">VAN</li>
-			      <li data-target="#carouselExampleIndicators" data-slide-to="6">VOZILA PO NARUDŽBI</li>
+			     <!-- <li data-target="#carouselExampleIndicators" data-slide-to="6">VOZILA PO NARUDŽBI</li> --> 
 			  </ul>
 			  <div class="carousel-inner">
 

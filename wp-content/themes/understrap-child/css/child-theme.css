@@ -11315,6 +11315,9 @@ ul.home_lista2 {
   #hrv_slo_5_mobilnost .btn-outline-dark a:hover {
     color: #fff; }
 
+.btn-outline-dark {
+  background: rgba(255, 255, 255, 0.3); }
+
 /********************
 
 	AVANTOUR_SEKCIJE
@@ -11322,6 +11325,37 @@ ul.home_lista2 {
 **********************/
 #avantour_1_kontakt .gform_wrapper .top_label .gfield_label {
   color: #fff; }
+
+#avantour_1_kontakt .gfield_checkbox li {
+  position: relative;
+  padding-left: 40px; }
+  #avantour_1_kontakt .gfield_checkbox li label:after {
+    content: "";
+    background: #333;
+    width: 27px;
+    height: 27px;
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 3px;
+    z-index: 0; }
+  #avantour_1_kontakt .gfield_checkbox li label:before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 6px;
+    height: 15px;
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    left: 9px;
+    top: 4px;
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg);
+    opacity: 0;
+    z-index: 1;
+    -webkit-transition: all 100ms;
+    transition: all 100ms; }
 
 #avantour_2_usluge {
   background: var(--zelena);
@@ -11450,6 +11484,8 @@ ul.home_lista2 {
     padding-top: 4rem;
     padding-bottom: 2rem;
     padding: 5rem 3rem; }
+  #kontakt_2_mapa .carousel {
+    padding: 0; }
 
 /********************
 
@@ -11459,10 +11495,13 @@ ul.home_lista2 {
 #d_najam_vozila {
   padding: 3rem;
   background: var(--siva_tamno); }
+  #d_najam_vozila .text-white {
+    margin-bottom: 0; }
   #d_najam_vozila .italic_slova {
     color: var(--bijela); }
   #d_najam_vozila .zelena {
-    padding: 3rem; }
+    padding-bottom: 3.5rem;
+    padding-top: 1rem; }
 
 #najam_1_flota {
   background: var(--bijela);
@@ -12214,7 +12253,7 @@ MODAL TRANSFERI GRAVITY FORMS STILOVI
 #exampleModal tbody td {
   border-top: 0; }
 
-#gform_page_2_1 .gform_page_footer {
+#gform_page_13_1 .gform_page_footer {
   z-index: 1;
   position: absolute;
   top: -14px;
@@ -12224,14 +12263,14 @@ MODAL TRANSFERI GRAVITY FORMS STILOVI
   display: inline-flex;
   width: 15%; }
   @media (max-width: 991.98px) {
-    #gform_page_2_1 .gform_page_footer {
+    #gform_page_13_1 .gform_page_footer {
       z-index: 1;
       position: absolute;
       /* top: -14px; */
       right: 10px;
       bottom: -53px; } }
 
-#gform_page_2_2 .gform_page_footer {
+#gform_page_13_2 .gform_page_footer {
   z-index: 1;
   position: absolute;
   top: -14px;
@@ -12240,3 +12279,67 @@ MODAL TRANSFERI GRAVITY FORMS STILOVI
   display: -ms-inline-flexbox;
   display: inline-flex;
   width: 15%; }
+
+#popmake-222 .form-control, #popmake-222 .wpcf7 input[type=text], .wpcf7 #popmake-222 input[type=text],
+#popmake-222 .wpcf7 input[type=search], .wpcf7 #popmake-222 input[type=search],
+#popmake-222 .wpcf7 input[type=url], .wpcf7 #popmake-222 input[type=url],
+#popmake-222 .wpcf7 input[type=tel], .wpcf7 #popmake-222 input[type=tel],
+#popmake-222 .wpcf7 input[type=number], .wpcf7 #popmake-222 input[type=number],
+#popmake-222 .wpcf7 input[type=range], .wpcf7 #popmake-222 input[type=range],
+#popmake-222 .wpcf7 input[type=date], .wpcf7 #popmake-222 input[type=date],
+#popmake-222 .wpcf7 input[type=month], .wpcf7 #popmake-222 input[type=month],
+#popmake-222 .wpcf7 input[type=week], .wpcf7 #popmake-222 input[type=week],
+#popmake-222 .wpcf7 input[type=time], .wpcf7 #popmake-222 input[type=time],
+#popmake-222 .wpcf7 input[type=datetime], .wpcf7 #popmake-222 input[type=datetime],
+#popmake-222 .wpcf7 input[type=datetime-local], .wpcf7 #popmake-222 input[type=datetime-local],
+#popmake-222 .wpcf7 input[type=color], .wpcf7 #popmake-222 input[type=color],
+#popmake-222 .wpcf7 input[type=email], .wpcf7 #popmake-222 input[type=email],
+#popmake-222 .wpcf7 input[type=file], .wpcf7 #popmake-222 input[type=file],
+#popmake-222 .wpcf7 input[type=submit], .wpcf7 #popmake-222 input[type=submit],
+#popmake-222 .wpcf7 select, .wpcf7 #popmake-222 select,
+#popmake-222 .wpcf7 textarea, .wpcf7 #popmake-222 textarea, #popmake-222 .wpcf7 .wpcf7-validation-errors, .wpcf7 #popmake-222 .wpcf7-validation-errors, #popmake-222 .gform_wrapper input[type=date], #popmake-222 .gform_wrapper input[type=datetime-local], #popmake-222 .gform_wrapper input[type=datetime], #popmake-222 .gform_wrapper input[type=email], #popmake-222 .gform_wrapper input[type=month], #popmake-222 .gform_wrapper input[type=number], #popmake-222 .gform_wrapper input[type=password], #popmake-222 .gform_wrapper input[type=search], #popmake-222 .gform_wrapper input[type=tel], #popmake-222 .gform_wrapper input[type=text], #popmake-222 .gform_wrapper input[type=time], #popmake-222 .gform_wrapper input[type=url], #popmake-222 .gform_wrapper input[type=week], #popmake-222 .gform_wrapper select, #popmake-222 .gform_wrapper textarea, #popmake-222 .wpcf7 .wpcf7-validation-errors, #popmake-222 .wpcf7 input[type=color], #popmake-222 .wpcf7 input[type=date], #popmake-222 .wpcf7 input[type=datetime-local], #popmake-222 .wpcf7 input[type=datetime], #popmake-222 .wpcf7 input[type=email], #popmake-222 .wpcf7 input[type=file], #popmake-222 .wpcf7 input[type=month], #popmake-222 .wpcf7 input[type=number], #popmake-222 .wpcf7 input[type=range], #popmake-222 .wpcf7 input[type=search], #popmake-222 .wpcf7 input[type=submit], #popmake-222 .wpcf7 input[type=tel], #popmake-222 .wpcf7 input[type=text], #popmake-222 .wpcf7 input[type=time], #popmake-222 .wpcf7 input[type=url], #popmake-222 .wpcf7 input[type=week], #popmake-222 .wpcf7 select, #popmake-222 .wpcf7 textarea {
+  color: #000; }
+
+#popmake-222 .submit_gumb {
+  background-image: none;
+  background-repeat: none;
+  text-indent: 0;
+  width: 100px;
+  height: auto;
+  background-color: var(--zelena);
+  color: #fff;
+  border-radius: 0; }
+  #popmake-222 .submit_gumb:hover {
+    background: #c5d959; }
+
+#popmake-121 .form-control, #popmake-121 .wpcf7 input[type=text], .wpcf7 #popmake-121 input[type=text],
+#popmake-121 .wpcf7 input[type=search], .wpcf7 #popmake-121 input[type=search],
+#popmake-121 .wpcf7 input[type=url], .wpcf7 #popmake-121 input[type=url],
+#popmake-121 .wpcf7 input[type=tel], .wpcf7 #popmake-121 input[type=tel],
+#popmake-121 .wpcf7 input[type=number], .wpcf7 #popmake-121 input[type=number],
+#popmake-121 .wpcf7 input[type=range], .wpcf7 #popmake-121 input[type=range],
+#popmake-121 .wpcf7 input[type=date], .wpcf7 #popmake-121 input[type=date],
+#popmake-121 .wpcf7 input[type=month], .wpcf7 #popmake-121 input[type=month],
+#popmake-121 .wpcf7 input[type=week], .wpcf7 #popmake-121 input[type=week],
+#popmake-121 .wpcf7 input[type=time], .wpcf7 #popmake-121 input[type=time],
+#popmake-121 .wpcf7 input[type=datetime], .wpcf7 #popmake-121 input[type=datetime],
+#popmake-121 .wpcf7 input[type=datetime-local], .wpcf7 #popmake-121 input[type=datetime-local],
+#popmake-121 .wpcf7 input[type=color], .wpcf7 #popmake-121 input[type=color],
+#popmake-121 .wpcf7 input[type=email], .wpcf7 #popmake-121 input[type=email],
+#popmake-121 .wpcf7 input[type=file], .wpcf7 #popmake-121 input[type=file],
+#popmake-121 .wpcf7 input[type=submit], .wpcf7 #popmake-121 input[type=submit],
+#popmake-121 .wpcf7 select, .wpcf7 #popmake-121 select,
+#popmake-121 .wpcf7 textarea, .wpcf7 #popmake-121 textarea, #popmake-121 .wpcf7 .wpcf7-validation-errors, .wpcf7 #popmake-121 .wpcf7-validation-errors, #popmake-121 .gform_wrapper input[type=date], #popmake-121 .gform_wrapper input[type=datetime-local], #popmake-121 .gform_wrapper input[type=datetime], #popmake-121 .gform_wrapper input[type=email], #popmake-121 .gform_wrapper input[type=month], #popmake-121 .gform_wrapper input[type=number], #popmake-121 .gform_wrapper input[type=password], #popmake-121 .gform_wrapper input[type=search], #popmake-121 .gform_wrapper input[type=tel], #popmake-121 .gform_wrapper input[type=text], #popmake-121 .gform_wrapper input[type=time], #popmake-121 .gform_wrapper input[type=url], #popmake-121 .gform_wrapper input[type=week], #popmake-121 .gform_wrapper select, #popmake-121 .gform_wrapper textarea, #popmake-121 .wpcf7 .wpcf7-validation-errors, #popmake-121 .wpcf7 input[type=color], #popmake-121 .wpcf7 input[type=date], #popmake-121 .wpcf7 input[type=datetime-local], #popmake-121 .wpcf7 input[type=datetime], #popmake-121 .wpcf7 input[type=email], #popmake-121 .wpcf7 input[type=file], #popmake-121 .wpcf7 input[type=month], #popmake-121 .wpcf7 input[type=number], #popmake-121 .wpcf7 input[type=range], #popmake-121 .wpcf7 input[type=search], #popmake-121 .wpcf7 input[type=submit], #popmake-121 .wpcf7 input[type=tel], #popmake-121 .wpcf7 input[type=text], #popmake-121 .wpcf7 input[type=time], #popmake-121 .wpcf7 input[type=url], #popmake-121 .wpcf7 input[type=week], #popmake-121 .wpcf7 select, #popmake-121 .wpcf7 textarea {
+  color: #000; }
+
+#popmake-121 div.gform_wrapper .gform_page_footer {
+  margin-bottom: 3rem;
+  text-align: center;
+  border-top: 0;
+  z-index: 1;
+  position: absolute;
+  left: 52%;
+  bottom: 0; }
+
+.gform_title {
+  display: none; }
