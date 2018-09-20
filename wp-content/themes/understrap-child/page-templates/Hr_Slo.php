@@ -147,7 +147,7 @@ društvu nastojimo olakšati i unaprijediti život.</p>
 
 					<h2>REFERENCE</h2>
 
-				<div class="card-group">
+				<div class="card-deck">
 				  <div class="card">
 				    
 				    <div class="card-body">

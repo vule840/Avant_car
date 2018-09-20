@@ -10986,6 +10986,9 @@ h2 {
       color: var(--bijela); }
     .navbar .nav-item:hover {
       border-bottom: 3px solid var(--zelena); }
+    @media (min-width: 768px) and (max-width: 991.98px) {
+      .navbar .nav-item {
+        font-size: 0.8rem; } }
   .navbar .active {
     color: var(--zelena);
     border-bottom: 3px solid var(--zelena); }
@@ -11286,6 +11289,11 @@ ul.home_lista2 {
   padding: 2rem; }
   #hrv_slo_4_reference .card-body {
     padding: 0.8rem; }
+  @media (min-width: 992px) {
+    #hrv_slo_4_reference .card-deck .card {
+      -ms-flex: 0 0 15%;
+      -webkit-box-flex: 0;
+              flex: 0 0 15%; } }
 
 #hrv_slo_5_mobilnost {
   padding: 3rem;
@@ -11297,51 +11305,61 @@ ul.home_lista2 {
     color: #fff; }
 
 .btn-outline-dark {
-  background: rgba(255, 255, 255, 0.3); }
+  background: rgba(255, 255, 255, 0.3);
+  position: relative; }
 
 /********************
 
 	AVANTOUR_SEKCIJE
 
 **********************/
-#avantour_1_kontakt .gform_wrapper .top_label .gfield_label {
-  color: #fff; }
+#avantour_1_kontakt {
+  /*.gfield_checkbox {
+		li {
+			position: relative;
+			padding-left:40px;
+			label {
+				&:after {
+					content:"";
+					background:#333;
+					width:27px;
+					height:27px;
+					display:block;
+					position: absolute;
+					left:0;
+					top:0;
+					border-radius:3px;
+					z-index: 0;
+				}
+				&:before {
+					content:"";
+					display:block;
+				    position: absolute;
+				    width: 6px;
+					height: 15px;
+				    border: solid #fff;
+				    border-width: 0 3px 3px 0;
+			    	left: 9px;
+					top: 4px;
+					transform: rotate(45deg);
+					opacity:0;
+					z-index:1;
+					transition:all 100ms;
+				}
+			}
+		}
 
-#avantour_1_kontakt .gfield_checkbox li {
-  position: relative;
-  padding-left: 40px; }
-  #avantour_1_kontakt .gfield_checkbox li label:after {
-    content: "";
-    background: #333;
-    width: 27px;
-    height: 27px;
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    border-radius: 3px;
-    z-index: 0; }
-  #avantour_1_kontakt .gfield_checkbox li label:before {
-    content: "";
-    display: block;
-    position: absolute;
-    width: 6px;
-    height: 15px;
-    border: solid #fff;
-    border-width: 0 3px 3px 0;
-    left: 9px;
-    top: 4px;
-    -webkit-transform: rotate(45deg);
-            transform: rotate(45deg);
-    opacity: 0;
-    z-index: 1;
-    -webkit-transition: all 100ms;
-    transition: all 100ms; }
+	}*/ }
+  #avantour_1_kontakt .gform_wrapper .top_label .gfield_label {
+    color: #fff; }
 
 #avantour_2_usluge {
   background: var(--zelena);
   padding: 3rem;
-  color: var(--siva_tamno); }
+  color: var(--siva_tamno);
+  /*@include media-breakpoint-only(md) {
+    column-count: 2;
+  }*/ }
 
 #avantour_3_vozila {
   background: var(--bijela);
@@ -12068,7 +12086,7 @@ SUBMIT GUMB
 
 .gform_wrapper .gf_page_steps {
   position: absolute;
-  bottom: -8px; }
+  bottom: 0px; }
 
 .red {
   background: #000; }
@@ -12205,6 +12223,9 @@ div.gform_wrapper .gform_page_footer {
   /*position: relative;
     left: 38px;*/
   z-index: 1; }
+  @media (min-width: 768px) and (max-width: 991.98px) {
+    div.gform_wrapper .gform_page_footer {
+      bottom: -43px !important; } }
 
 .pum-theme-82 .pum-content + .pum-close, .pum-theme-default-theme .pum-content + .pum-close {
   background-color: var(--zelena) !important; }
@@ -12321,6 +12342,9 @@ MODAL TRANSFERI GRAVITY FORMS STILOVI
   position: absolute;
   left: 52%;
   bottom: 0; }
+  @media (max-width: 991.98px) {
+    #popmake-121 div.gform_wrapper .gform_page_footer {
+      position: inherit; } }
 
 .gform_title {
   display: none; }
@@ -12336,3 +12360,75 @@ MODAL TRANSFERI GRAVITY FORMS STILOVI
   min-height: 300px;
   background: no-repeat center center scroll;
   background-size: cover; }
+
+/*********
+
+PRIVACY 
+
+********/
+.page-id-259 div#content {
+  margin-top: 2rem; }
+
+.gform_wrapper .gf_step {
+  border-bottom: 1px solid #ccc; }
+
+.gform_wrapper .gf_step {
+  border-bottom: 1px solid #ccc; }
+
+.gform_wrapper .gf_step span.gf_step_number {
+  margin-right: 27px; }
+
+.gform_wrapper .gf_step span.gf_step_number {
+  margin-right: 24px !important; }
+
+.gform_wrapper .gf_step_last {
+  border-bottom: none !important; }
+
+.gform_wrapper .gf_step {
+  margin: 0 !important;
+  height: 12px !important; }
+
+.gform_wrapper .gf_page_steps {
+  border-bottom: none !important; }
+
+/*button#gform_submit_button_4 {
+    left: -17%;
+    position: absolute;
+    background-image: none;
+    text-indent: 0px;
+    background: var(--zelena);
+    color:white;
+    width:100px;
+    height:40px;
+}*/
+/*********
+
+RESPONZIVNI CARDS
+
+********/
+.card-deck {
+  margin: 0 -15px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
+.card-deck .card {
+  margin: 0 0 1rem; }
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .card-deck .card {
+    -ms-flex: 0 0 48.7%;
+    -webkit-box-flex: 0;
+            flex: 0 0 48.7%; } }
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .card-deck .card {
+    -ms-flex: 0 0 32%;
+    -webkit-box-flex: 0;
+            flex: 0 0 32%; } }
+
+@media (min-width: 992px) {
+  .card-deck .card {
+    -ms-flex: 0 0 20%;
+    -webkit-box-flex: 0;
+            flex: 0 0 20%; } }

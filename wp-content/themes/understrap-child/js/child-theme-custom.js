@@ -5,6 +5,21 @@ console.log('dsfds');
 
 jQuery(document).ready(function($) {
 
+//ANIMACIJA ZA POVRATAK
+//https://casberry.eu/2017/07/04/273/
+
+/*$('.gfield').change(function () {
+if ($(".gfield").is(":visible")) {
+$(this).nextAll(":visible").each(function () {
+$(this).animate({
+opacity: 0.25,
+}, 5000, function () {
+// Animation complete.
+});
+});
+}
+});
+*/
 
 /*$img = 'http://localhost/avant_car/wp-content/uploads/2018/09/Nasa_flota.jpg';
 $('.page-id-74 #cover').fadeTo('slow', 0.3, function()
@@ -101,15 +116,15 @@ $(window).scroll(function() {
 
     //prvi
   if ($(this).scrollTop() > 250 && $(this).scrollTop() < 5000) {
-    $('#fade').fadeIn();
+    $('#fade').fadeIn('slow');
   } else {
-    $('#fade').fadeOut();}
+    $('#fade').fadeOut('slow');}
 
  //drugi
-  if ($(this).scrollTop() > 650 && $(this).scrollTop() < 5000) {
-    $('#fade2').fadeIn();
+  if ($(this).scrollTop() > 750 && $(this).scrollTop() < 5000) {
+    $('#fade2').fadeIn('slow');
   } else {
-    $('#fade2').fadeOut();}
+    $('#fade2').fadeOut('slow');}
 
 }); 
 

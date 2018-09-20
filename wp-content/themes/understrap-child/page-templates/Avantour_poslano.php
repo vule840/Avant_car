@@ -1,6 +1,6 @@
 <?php
 /**
- * Template Name: Avantour
+ * Template Name: Avantour_poslano
  *
  * Template for displaying a page without sidebar even if a sidebar widget is published.
  *
@@ -19,7 +19,7 @@ HERO SECTION__HEADER
 <?php get_template_part( 'global-templates/carusel_avantour' ); ?>
 
 
-<div class="wrapper" id="full-width-page-wrapper">
+<div class="wrapper popmake-kontakt_sucess" id="full-width-page-wrapper">
 
 	<div class="<?php echo esc_attr( $container ); ?>" id="content">
 
@@ -55,48 +55,51 @@ HERO SECTION__HEADER
 
 					<h2>AVANTOUR USLUGE</h2>
 
-					<div class="card-deck">
-				  <div class="card">
-				    
-				    <div class="card-body">
-				    	<svg class="avantour_avion"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#avantour-avion" /></svg>
-				      <h5 class="card-title text-white">ZRAČNA LUKA</h5>
-				      <p class="card-text font-weight-bold">Povezujemo zračne luke i gradove.</p>
-				      <p class="card-text">Za Vas i vaše poslovne partnere organiziramo
-bezbrižan transfer iz i do zračnih luka u Hrvatskoj i
-Sloveniji. Za razliku od taksi usluge, nema čekanja
-te se transfer rezervira unaprijed po fiksnoj cijeni.</p>
-				      
-				    </div>
-				  </div>
-				   <div class="card">
-				   
-				    <div class="card-body">
-				    	<svg class="avantour_grad"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#avantour-grad" />
-				      <h5 class="card-title text-white">INTER CITY</h5>
-				      <p class="card-text font-weight-bold">Povezujemo destinacije.</p>
-				      <p class="card-text">Avantour omogućava vaš prijevoz od vrata do
-vrata - door-to-door. Ukoliko završavate sastanak
-u jednom gradu i morate odmah krenuti na
-poslovni angažman u drugi grad, INTER CITY
-transfer je rješenje za Vas!</p>
-				      
-				    </div>
-				  </div>
-				   <div class="card">
-				   
-				    <div class="card-body">
-				    	<svg class="avantour_lik"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#avantour-lik" />
-				      <h5 class="card-title text-white">CHAUFFEUR SERVICE</h5>
-				      <p class="card-text font-weight-bold">Stvaramo VIP doživljaj.</p>
-				      <p class="card-text">Usluga prijevoza Chauffeur service, vodi Vas do
-odredišta sa stilom. Profesionalni i educirani
-vozači preuzet će brigu oko prtljage i biti Vam
-cijelo vrijeme na usluzi. Bez obzira na prigodu,
-poslovno putovanje, event, prijevoz poslovnih
-partnera, pojavite se sa stilom!</p>
-				      
-				    </div>
+					<div class="card-group">
+
+					
+						  <div class="card">
+						    
+						    <div class="card-body">
+						    	<svg class="avantour_avion"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#avantour-avion" /></svg>
+						      <h5 class="card-title text-white">ZRAČNA LUKA</h5>
+						      <p class="card-text font-weight-bold">Povezujemo zračne luke i gradove.</p>
+						      <p class="card-text">Za Vas i vaše poslovne partnere organiziramo
+		bezbrižan transfer iz i do zračnih luka u Hrvatskoj i
+		Sloveniji. Za razliku od taksi usluge, nema čekanja
+		te se transfer rezervira unaprijed po fiksnoj cijeni.</p>
+						      
+						    </div>
+						  </div>
+
+						   <div class="card">
+						   
+						    <div class="card-body">
+						    	<svg class="avantour_grad"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#avantour-grad" />
+						      <h5 class="card-title text-white">INTER CITY</h5>
+						      <p class="card-text font-weight-bold">Povezujemo destinacije.</p>
+						      <p class="card-text">Avantour omogućava vaš prijevoz od vrata do
+		vrata - door-to-door. Ukoliko završavate sastanak
+		u jednom gradu i morate odmah krenuti na
+		poslovni angažman u drugi grad, INTER CITY
+		transfer je rješenje za Vas!</p>
+						      
+						    </div>
+						  </div>
+						   <div class="card">
+						   
+						    <div class="card-body">
+						    	<svg class="avantour_lik"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#avantour-lik" />
+						      <h5 class="card-title text-white">CHAUFFEUR SERVICE</h5>
+						      <p class="card-text font-weight-bold">Stvaramo VIP doživljaj.</p>
+						      <p class="card-text">Usluga prijevoza Chauffeur service, vodi Vas do
+		odredišta sa stilom. Profesionalni i educirani
+		vozači preuzet će brigu oko prtljage i biti Vam
+		cijelo vrijeme na usluzi. Bez obzira na prigodu,
+		poslovno putovanje, event, prijevoz poslovnih
+		partnera, pojavite se sa stilom!</p>
+						      
+						    </div>
 				  </div>
 				 
 				</div>

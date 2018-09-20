@@ -646,3 +646,50 @@ add_filter( 'gform_confirmation', function ( $confirmation, $form, $entry, $ajax
 add_filter( 'gform_confirmation_anchor_13', '__return_false' );
 
 add_filter('show_admin_bar', '__return_false');
+
+
+/*
+/* Add the following code to your theme (or child-theme)
+/*   'functions.php' file starting at 'add_action()'.
+*/
+//add_action( 'wp_footer', 'pum14_popup_reg_form_check', 1000 );
+/*
+ * Reopen a non-AJAX submitted form after form submit.
+ *
+ * @since 1.0.0.
+ *
+ * @return void
+ */
+/*function pum14_popup_reg_form_check() {
+        if ( isset( $_POST['pum-279'] ) && $_POST['pum-279'] == 'my_form' ) {
+                ?>
+                <script type="text/javascript">
+            PUM.open(88);
+                </script>
+                <?php
+        }
+}*/
+
+/*add_action( 'gform_post_submission', 'set_post_content', 10, 2 );
+function set_post_content( $entry, $form ) {
+  ?>
+     <script type="text/javascript">
+            PUM.open(88);
+                </script>
+  <?php
+    //updating post
+    //wp_update_post( $post );
+}*/
+
+
+/*function load_script_to_remove_arrow(){
+?>
+<script>
+
+    console.log('ovo je prošlo');
+    PUM.open(88);
+
+</script>
+<?php
+}
+add_action( 'gform_post_submission', 'load_script_to_remove_arrow' );*/

@@ -129,6 +129,13 @@ h2{
 		&:hover{
 			    border-bottom: 3px solid var(--zelena);
 		}
+		@media (min-width: 768px) and (max-width: 991.98px) {
+			  
+			        font-size: 0.8rem;
+			  
+			}
+
+
 	}
 	.active {
 			color:var(--zelena);
@@ -524,6 +531,14 @@ list-style-image: url("#{$urlsass}/strelica_crna.svg");
 	.card-body{
 		padding: 0.8rem;
 	}
+	@media (min-width: 992px)
+		{
+		  .card-deck .card {
+		    -ms-flex: 0 0 15%;
+		    flex: 0 0 15%;
+		  }
+		}
+
 }
 #hrv_slo_5_mobilnost{
 	@include padding(3rem);
@@ -543,6 +558,7 @@ list-style-image: url("#{$urlsass}/strelica_crna.svg");
 
 .btn-outline-dark{
 	background: rgba(255, 255, 2555, 0.3);
+	position: relative;
 }
 /********************
 
@@ -554,7 +570,8 @@ list-style-image: url("#{$urlsass}/strelica_crna.svg");
 	.gform_wrapper .top_label .gfield_label{
 		color: #fff;
 	}
-	.gfield_checkbox {
+
+	/*.gfield_checkbox {
 		li {
 			position: relative;
 			padding-left:40px;
@@ -589,13 +606,19 @@ list-style-image: url("#{$urlsass}/strelica_crna.svg");
 			}
 		}
 
-	}
+	}*/
+
 }
+
+
 
 #avantour_2_usluge{
 	background: var(--zelena);
 	@include padding(3rem);
 	color: var(--siva_tamno);
+	/*@include media-breakpoint-only(md) {
+    column-count: 2;
+  }*/
 }
 
 #avantour_3_vozila{
@@ -1265,7 +1288,7 @@ SUBMIT GUMB
 .gform_wrapper .gf_page_steps {
    
     position: absolute;
-    bottom: -8px;
+    bottom: 0px;
 }
 .red{
 	background: #000;
@@ -1408,6 +1431,9 @@ div.gform_wrapper .gform_page_footer {
     /*position: relative;
     left: 38px;*/
     z-index: 1;
+    @media (min-width: 768px) and (max-width: 991.98px) {
+		 bottom: -43px !important;
+		}
 }
 
 
@@ -1521,6 +1547,11 @@ MODAL TRANSFERI GRAVITY FORMS STILOVI
     position: absolute;
     left: 52%;
     bottom:0;
+    @include media-breakpoint-down(md) {
+        // Smaller than md: 768px
+        position: inherit;
+       // margin-bottom: 0rem;
+    }
 }
 }
 .gform_title{
@@ -1543,4 +1574,96 @@ MODAL TRANSFERI GRAVITY FORMS STILOVI
   -o-background-size: cover;
   background-size: cover;
 }
+}
+
+
+/*********
+
+PRIVACY 
+
+********/
+
+
+.page-id-259 div#content {
+    margin-top: 2rem;
+}
+
+
+//https://stackoverflow.com/questions/19642308/creating-css3-circles-connected-by-lines
+
+.gform_wrapper .gf_step{
+	    border-bottom: 1px solid #ccc;
+}
+.gform_wrapper .gf_step{
+	    border-bottom: 1px solid #ccc;
+}
+.gform_wrapper .gf_step span.gf_step_number{
+	    margin-right: 27px;
+}
+.gform_wrapper .gf_step span.gf_step_number{
+	margin-right: 24px !important;
+}
+.gform_wrapper .gf_step_last{
+	border-bottom: none !important;
+}
+.gform_wrapper .gf_step{
+	margin:0 !important;
+	    height: 12px !important;
+}
+.gform_wrapper .gf_page_steps{
+	border-bottom: none !important;
+}
+
+
+//Submit u gumb srdišnji
+
+/*button#gform_submit_button_4 {
+    left: -17%;
+    position: absolute;
+    background-image: none;
+    text-indent: 0px;
+    background: var(--zelena);
+    color:white;
+    width:100px;
+    height:40px;
+}*/
+
+
+/*********
+
+RESPONZIVNI CARDS
+
+********/
+
+//https://codepen.io/FrankieDoodie/pen/OoVXvp
+
+.card-deck {
+  margin: 0 -15px;
+  justify-content: space-between;
+}
+
+.card-deck .card {
+  margin: 0 0 1rem;
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .card-deck .card {
+    -ms-flex: 0 0 48.7%;
+    flex: 0 0 48.7%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .card-deck .card {
+    -ms-flex: 0 0 32%;
+    flex: 0 0 32%;
+  }
+}
+
+@media (min-width: 992px)
+{
+  .card-deck .card {
+    -ms-flex: 0 0 20%;
+    flex: 0 0 20%;
+  }
 }
