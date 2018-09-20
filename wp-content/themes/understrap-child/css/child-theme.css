@@ -11108,6 +11108,11 @@ div#content {
   #home_1_pogodnosti p {
     font-weight: 300;
     font-size: 0.9rem; }
+  @media (min-width: 992px) {
+    #home_1_pogodnosti .card-deck .card {
+      -ms-flex: 0 0 25%;
+      -webkit-box-flex: 0;
+              flex: 0 0 25%; } }
 
 /**   home_2_dugorocni = dugorocni-najam  **/
 #dugorocni-najam {
@@ -11164,6 +11169,11 @@ div#content {
   background: var(--siva_tamno);
   padding: 2rem;
   color: var(--bijela); }
+  @media (min-width: 992px) {
+    #home_4_zatrazite .card-deck .card {
+      -ms-flex: 0 0 33%;
+      -webkit-box-flex: 0;
+              flex: 0 0 33%; } }
   #home_4_zatrazite h2 {
     margin-bottom: -3px;
     font-size: 2.1rem; }
@@ -11360,6 +11370,11 @@ ul.home_lista2 {
   /*@include media-breakpoint-only(md) {
     column-count: 2;
   }*/ }
+  @media (min-width: 992px) {
+    #avantour_2_usluge .card-deck .card {
+      -ms-flex: 0 0 33%;
+      -webkit-box-flex: 0;
+              flex: 0 0 33%; } }
 
 #avantour_3_vozila {
   background: var(--bijela);
@@ -11619,6 +11634,9 @@ div#avantour_1_kontakt {
   display: inline-flex;
   -ms-flex-item-align: center;
       align-self: center; }
+  @media (max-width: 767.98px) {
+    .home_list {
+      width: 250px; } }
 
 /*kontakt*/
 .kontakt_email {
@@ -12270,7 +12288,8 @@ MODAL TRANSFERI GRAVITY FORMS STILOVI
       position: absolute;
       /* top: -14px; */
       right: 10px;
-      bottom: -53px; } }
+      bottom: -53px;
+      top: auto; } }
 
 #gform_page_13_2 .gform_page_footer {
   z-index: 1;
@@ -12281,6 +12300,9 @@ MODAL TRANSFERI GRAVITY FORMS STILOVI
   display: -ms-inline-flexbox;
   display: inline-flex;
   width: 15%; }
+  @media (max-width: 767.98px) {
+    #gform_page_13_2 .gform_page_footer {
+      position: static; } }
 
 #popmake-222 .form-control, #popmake-222 .wpcf7 input[type=text], .wpcf7 #popmake-222 input[type=text],
 #popmake-222 .wpcf7 input[type=search], .wpcf7 #popmake-222 input[type=search],
@@ -12432,3 +12454,7 @@ RESPONZIVNI CARDS
     -ms-flex: 0 0 20%;
     -webkit-box-flex: 0;
             flex: 0 0 20%; } }
+
+@media (max-width: 767.98px) {
+  .page-id-74 div#content {
+    margin-top: -32rem; } }

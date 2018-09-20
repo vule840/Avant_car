@@ -38,7 +38,7 @@ HERO SECTION__HEADER
 
 				<h2 class="text-center pt-4">PREDNOSTI POSLOVNOG KORISNIKA</h2>
 					
-				<div class="card-group">
+				<div class="card-deck">
 				  <div class="card">
 				  
 					<svg class="home_ikone"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#home-sat" /></svg>
@@ -224,7 +224,7 @@ ZA VAS</h5>
 			<div class="col-md-12 py-5 content-area" id="primary">
 
 
-				<div class="card-group">
+				<div class="card-deck">
 				 
 				  <div class="card">
 				   <p class="zelena">1.</p>

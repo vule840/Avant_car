@@ -287,6 +287,14 @@ div#content {
 		font-weight: 300;
 		font-size: 0.9rem;
 	}
+  @media (min-width: 992px)
+    {
+      .card-deck .card {
+        -ms-flex: 0 0 25%;
+        flex: 0 0 25%;
+      }
+    }
+
 }
 
 /**   home_2_dugorocni = dugorocni-najam  **/
@@ -365,7 +373,13 @@ div#content {
 	background: var(--siva_tamno);
 	@include padding(2rem);
 	color: var(--bijela);
-
+  @media (min-width: 992px)
+    {
+      .card-deck .card {
+        -ms-flex: 0 0 33%;
+        flex: 0 0 33%;
+      }
+    }
 	h2{
 		@include line_height(-3px); 
 		font-size: 2.1rem; 
@@ -400,6 +414,7 @@ div#content {
 		padding-bottom: 2rem;
 		display: block;
 	}
+
 }
 
 /********************
@@ -619,8 +634,20 @@ list-style-image: url("#{$urlsass}/strelica_crna.svg");
 	/*@include media-breakpoint-only(md) {
     column-count: 2;
   }*/
+  @media (min-width: 992px)
+{
+  .card-deck .card {
+    -ms-flex: 0 0 33%;
+    flex: 0 0 33%;
+  }
 }
 
+ @include media-breakpoint-down(sm) {
+      h2{
+        //margin-top: 6rem;
+      }
+  }
+}
 #avantour_3_vozila{
 	background: var(--bijela);
 	@include padding(0rem);
@@ -904,6 +931,10 @@ div#avantour_1_kontakt {
 }
 .home_list{
 	@include svg(var(--bijela),300px,inline-flex, center);
+  @include media-breakpoint-down(sm) {
+        // Smaller than md: 768px
+        width:250px;
+    }
 }
 /*kontakt*/
 .kontakt_email{
@@ -1499,7 +1530,7 @@ MODAL TRANSFERI GRAVITY FORMS STILOVI
     right: 10px;
     
     bottom: -53px;
-
+    top:auto;
     }
 
     }
@@ -1514,7 +1545,11 @@ MODAL TRANSFERI GRAVITY FORMS STILOVI
     right: -237px;
     display: inline-flex;
     width: 15%;
-    }
+    @include media-breakpoint-down(sm) {
+           position:static;
+        }
+      }
+    
 }
 
 #popmake-222{
@@ -1665,5 +1700,13 @@ RESPONZIVNI CARDS
   .card-deck .card {
     -ms-flex: 0 0 20%;
     flex: 0 0 20%;
+  }
+}
+
+.page-id-74 {
+   @include media-breakpoint-down(sm) {
+       div#content {
+      margin-top: -32rem;
+    }
   }
 }

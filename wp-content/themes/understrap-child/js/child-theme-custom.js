@@ -5,6 +5,10 @@ console.log('dsfds');
 
 jQuery(document).ready(function($) {
 
+
+
+
+ 
 //ANIMACIJA ZA POVRATAK
 //https://casberry.eu/2017/07/04/273/
 
