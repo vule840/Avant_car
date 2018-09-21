@@ -145,7 +145,7 @@ partnera, pojavite se sa stilom!</p>
             <div class="my-auto mx-auto text-center">
                 <h2 class="card-title">VOZITE SE SA STILOM. U SVIM PRILIKAMA.</h2>
                 <h4 class="text">Osjetite budućnost.</h4>
-                <button type="button" class="btn btn-outline-secondary popmake-sastanak">POŠALJI UPIT</button>
+                <button type="button" class="btn btn-outline-secondary popmake-sastanak">REZERVIRAJTE TESLU</button>
             </div>
         
   

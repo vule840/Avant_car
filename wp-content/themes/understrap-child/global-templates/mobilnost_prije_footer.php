@@ -1,6 +1,6 @@
 <div class="row" id="hrv_slo_5_mobilnost" style="background-image:url('<?php the_field('mobilnost_prije_footer'); ?>');">
 
-			<div class="col-md-12"><h2 class="text-left popmake-sastanak">MOBILNOST ZA SVE VAŠE POTREBE</h2></div>
+			<div class="col-md-12"><h2 class="text-left">MOBILNOST ZA SVE VAŠE POTREBE</h2></div>
 
 
 			
@@ -8,11 +8,11 @@
 						
 						<div class="col-md-6">
 						<ul class="home_lista2">
-							<li>Dugoročni najam</li>
-							<li>Kratkoročni najam</li>
-							<li>Električna mobilnost</li>
-							<li>Corporate car sharing</li>
-							<li>Transferi</li>
+							<li><a  class="popmake-dugorocni-najam" href="#">Dugoročni najam</a></li>
+							<li><a  class="popmake-kratkorocni-najam-izbor" href="#">Kratkoročni najam</a></li>
+							<li><a class="" href="<?php bloginfo( 'url' ); ?>/#home_5_elektricna">Električna mobilnost</a></li>
+							<li><a " href="<?php bloginfo( 'url' ); ?>/#home_4_zatrazite">Corporate car sharing</a></li>
+							<li><a href="../transferi/">Transferi</a></li>
 						</ul>
 					</div>
 
@@ -39,8 +39,8 @@
 
 <div class="example-container">
   <div class="example-row">
-    <div class="example-content-main popmake-sastanak">> Zatražite povratni poziv za info o našim uslugama </div>
-    <div class="example-content-secondary text-right"><button type="button" class="btn btn-outline-dark "><strong> <a href="tel:+385 (0)1 6251 222">INFO: +385 (0)1 6251 222</a></strong></button></div>
+    <div class="example-content-main"><a class="text-dark" href="mailto:matija.krznar@avantcar.hr?subject=Zahtjev%20za%20individualni%20termin%20sastanka">> Zatražite vaš individualni termin za sastanak</a></div>
+    <div class="example-content-secondary text-centar"><button type="button" class="btn btn-outline-dark "><strong> <a href="tel:+385 (0)1 6251 222">INFO: +385 (0)1 6251 222</a></strong></button></div>
   </div>
 </div>
 	

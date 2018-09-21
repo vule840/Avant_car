@@ -10949,7 +10949,7 @@ h1.naslovna {
   font-size: 5.5rem;
   color: var(--bijela);
   font-weight: 300;
-  line-height: 0.8; }
+  line-height: 1; }
   @media (max-width: 991.98px) {
     h1.naslovna {
       font-size: 3.5rem; } }
@@ -10978,6 +10978,12 @@ h2 {
   background: var(--siva_tamno);
   padding-bottom: 0;
   padding-top: 1rem; }
+  @media (max-width: 767.98px) {
+    .navbar {
+      padding-bottom: 1rem; }
+      .navbar .navbar-brand {
+        width: 200px;
+        top: 7px; } }
   .navbar .nav-item {
     font-weight: 300;
     letter-spacing: 1px;
@@ -11084,7 +11090,7 @@ div#content {
   background: var(--siva_tamno); }
 
 .btn-outline-secondary {
-  padding: 0.5rem 4rem;
+  padding: 0.5rem 3.4rem;
   font-weight: bold;
   border-radius: 0; }
 
@@ -11164,6 +11170,9 @@ div#content {
     font-size: 1.2rem; }
   #home_3_flota .home_lista li {
     font-size: 1.2rem; }
+    @media (max-width: 767.98px) {
+      #home_3_flota .home_lista li {
+        font-size: 1rem; } }
 
 #home_4_zatrazite {
   background: var(--siva_tamno);
@@ -11254,9 +11263,12 @@ ul.home_lista2 {
   position: fixed;
   bottom: 20px;
   left: 0px;
-  z-index: 99;
+  z-index: 99999999;
   background-image: none;
   cursor: pointer; }
+  @media (max-width: 767.98px) {
+    #fade {
+      display: none !important; } }
 
 #fade2 {
   /*margin: 50px;*/
@@ -11264,7 +11276,7 @@ ul.home_lista2 {
   position: fixed;
   bottom: 20px;
   left: 0px;
-  z-index: 99;
+  z-index: 99999999;
   background-image: none;
   cursor: pointer;
   display: none;
@@ -11275,6 +11287,9 @@ ul.home_lista2 {
   background-image: none;
   cursor: pointer;
   /* make things invisible upon start */ }
+  @media (max-width: 767.98px) {
+    #fade2 {
+      display: none !important; } }
 
 /********************
 
@@ -11309,10 +11324,15 @@ ul.home_lista2 {
   padding: 3rem;
   background-size: cover;
   background-repeat: no-repeat; }
+  #hrv_slo_5_mobilnost h2 {
+    margin-left: -2rem; }
   #hrv_slo_5_mobilnost a {
     color: var(--siva_tamno); }
   #hrv_slo_5_mobilnost .btn-outline-dark a:hover {
     color: #fff; }
+  @media (max-width: 991.98px) {
+    #hrv_slo_5_mobilnost h2 {
+      margin-left: -30px; } }
 
 .btn-outline-dark {
   background: rgba(255, 255, 255, 0.3);
@@ -11428,10 +11448,12 @@ ul.home_lista2 {
 
 #avantour_4_vozite {
   padding-top: 10rem;
-  padding-bottom: 10rem;
+  padding-bottom: 2rem;
   color: var(--bijela);
   background-size: cover;
   background-repeat: no-repeat; }
+  #avantour_4_vozite .btn-outline-secondary {
+    margin-top: 6rem; }
 
 #avantour_5_destinacije {
   padding: 3rem;
@@ -11532,6 +11554,9 @@ ul.home_lista2 {
 }*/ }
   #najam_1_flota .progressbar {
     top: -140px; }
+    @media (max-width: 767.98px) {
+      #najam_1_flota .progressbar {
+        display: none; } }
   #najam_1_flota .carousel-item h2 {
     padding: 2rem 0; }
   #najam_1_flota .carousel-indicators li {
@@ -11874,6 +11899,11 @@ div#avantour_1_kontakt {
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end; }
+  @media (max-width: 767.98px) {
+    .example-row {
+      text-align: center; }
+      .example-row .btn-outline-dark {
+        margin-top: 1.5rem; } }
 
 .example-content-main {
   position: relative;
@@ -11960,7 +11990,6 @@ div.pac-container {
 
 div.pum-theme-82 .pum-container, .pum-theme-default-theme .pum-container {
   padding: 0px;
-  padding-left: 1rem;
   border-bottom: 5px solid #A7B849;
   border-top: 5px solid #A7B849; }
   div.pum-theme-82 .pum-container #pum_popup_title_88, .pum-theme-default-theme .pum-container #pum_popup_title_88 {
@@ -12089,9 +12118,6 @@ SUBMIT GUMB
   max-width: 1200px;
   margin: 1.75rem auto; }
 
-.page-id-74 .btn-outline-secondary {
-  display: none; }
-
 /** Gravity Forms */
 #avantour_1_kontakt .gf_simple_horizontal .top_label .gfield_label {
   display: inline-block;
@@ -12105,6 +12131,9 @@ SUBMIT GUMB
 .gform_wrapper .gf_page_steps {
   position: absolute;
   bottom: 0px; }
+  @media (max-width: 767.98px) {
+    .gform_wrapper .gf_page_steps {
+      display: none; } }
 
 .red {
   background: #000; }
@@ -12302,7 +12331,13 @@ MODAL TRANSFERI GRAVITY FORMS STILOVI
   width: 15%; }
   @media (max-width: 767.98px) {
     #gform_page_13_2 .gform_page_footer {
-      position: static; } }
+      position: static;
+      width: 100%;
+      margin: auto;
+      display: inline-block; }
+      #gform_page_13_2 .gform_page_footer .submit_gumb {
+        height: 62px;
+        width: 52px; } }
 
 #popmake-222 .form-control, #popmake-222 .wpcf7 input[type=text], .wpcf7 #popmake-222 input[type=text],
 #popmake-222 .wpcf7 input[type=search], .wpcf7 #popmake-222 input[type=search],
@@ -12357,7 +12392,7 @@ MODAL TRANSFERI GRAVITY FORMS STILOVI
   color: #000; }
 
 #popmake-121 div.gform_wrapper .gform_page_footer {
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   text-align: center;
   border-top: 0;
   z-index: 1;
@@ -12371,6 +12406,13 @@ MODAL TRANSFERI GRAVITY FORMS STILOVI
 .gform_title {
   display: none; }
 
+.gform_body {
+  padding-bottom: 7rem;
+  padding-left: 1rem; }
+  @media (max-width: 767.98px) {
+    .gform_body {
+      padding-bottom: 1rem; } }
+
 .avantour_slider .carousel {
   padding: 0; }
 
@@ -12382,6 +12424,9 @@ MODAL TRANSFERI GRAVITY FORMS STILOVI
   min-height: 300px;
   background: no-repeat center center scroll;
   background-size: cover; }
+  @media (max-width: 767.98px) {
+    .avantour_slider .carousel-item {
+      height: 135vh; } }
 
 /*********
 
@@ -12411,7 +12456,8 @@ PRIVACY
   height: 12px !important; }
 
 .gform_wrapper .gf_page_steps {
-  border-bottom: none !important; }
+  border-bottom: none !important;
+  margin: 0 0 3rem !important; }
 
 /*button#gform_submit_button_4 {
     left: -17%;
@@ -12455,6 +12501,23 @@ RESPONZIVNI CARDS
     -webkit-box-flex: 0;
             flex: 0 0 20%; } }
 
+.page-id-74 #content {
+  margin-top: -15rem;
+  z-index: 99999999;
+  position: relative; }
+
 @media (max-width: 767.98px) {
   .page-id-74 div#content {
-    margin-top: -32rem; } }
+    margin-top: -37rem; } }
+
+.page-id-74 .fixed-top {
+  z-index: 9999999999; }
+
+@media (max-width: 767.98px) {
+  .page-id-71 .wrapper {
+    padding: 0; } }
+
+#popmake-302 {
+  border-top: none;
+  border-bottom: none;
+  background-color: none; }

@@ -19,7 +19,7 @@ HERO SECTION__HEADER
  -->
 
 
-<?php get_template_part( 'global-templates/header_slika' ); ?>
+<?php get_template_part( 'global-templates/header_slika_flota' ); ?>
 
 
 <div class="wrapper" id="full-width-page-wrapper">

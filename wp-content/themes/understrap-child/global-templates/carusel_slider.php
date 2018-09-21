@@ -13,15 +13,16 @@
 			  
 			   <!-- PRVI -->
 			    <div class="carousel-item active">
-			     
-			    
+			     	
+			    	<!-- DESKTOP -->
 					 <div class="row no-gutters">
-			     	<div class="col-md-3 text-center">
-						
-					<p><svg class="avantour_covac"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#avantour-covac" /></p>
-					<p class="tx_field_bold"><strong class="text-center">1-3</strong></p>	
+
+				     	<div class="col-md-3 text-center">
 							
-					</div>
+						<p><svg class="avantour_covac"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#avantour-covac" /></p>
+						<p class="tx_field_bold"><strong class="text-center">1-3</strong></p>	
+								
+						</div>
 
 						<div class="col-md-6">
 							<img  src="<?php bloginfo('url'); ?>/wp-content/uploads/2018/09/Bussines_car.jpg" alt="Karta Hrvatske">
@@ -34,6 +35,30 @@
 							
 						</div>
 			     	</div>
+			     	<!-- MOB -->
+			     	<!--<div class="row no-gutters hidden-md-up">
+
+				     	<div class="col-md-12">
+							<img  src="<?php bloginfo('url'); ?>/wp-content/uploads/2018/09/Bussines_car.jpg" alt="Karta Hrvatske">
+							
+						</div>
+
+				     	<div class="col-md-6 text-center">
+							
+						<p><svg class="avantour_covac"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#avantour-covac" /></p>
+						<p class="tx_field_bold"><strong class="text-center">1-3</strong></p>	
+								
+						</div>
+
+					
+
+						<div class="col-md-6 text-center">
+							<p><svg class="avantour_taska"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#avantour-taska" /></p>
+							<p class="tx_field_bold"><strong class="text-center">1-3</strong></p>
+							
+						</div>
+			     	</div>  -->
+			     	
 
 
 			    </div>

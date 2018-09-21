@@ -79,7 +79,7 @@ h1.naslovna {
     
     color: var(--bijela);
     font-weight: 300;
-        line-height: 0.8;
+        line-height: 1;
         
  
     @include media-breakpoint-down(md) {
@@ -117,6 +117,15 @@ h2{
 	background: var(--siva_tamno);
 	padding-bottom: 0;
 	padding-top: 1rem;
+
+	@include media-breakpoint-down(sm) {
+        // Smaller than md: 768px
+       padding-bottom: 1rem;
+       .navbar-brand{
+       	width: 200px;
+       	top:7px;
+       }
+    }
 	.nav-item{
 		font-weight: 300;
 		//text-transform: uppercase;
@@ -257,7 +266,7 @@ div#content {
 	//height: 100px;
 }
 .btn-outline-secondary{
-	padding: 0.5rem 4rem;
+	padding: 0.5rem 3.4rem;
 	font-weight: bold;
 	border-radius:0;
 }
@@ -366,6 +375,9 @@ div#content {
 	}
 	.home_lista li{
 		font-size: 1.2rem;
+		@include media-breakpoint-down(sm) {
+		      font-size: 1rem;
+		  }
 	}
 }
 
@@ -475,11 +487,13 @@ list-style-image: url("#{$urlsass}/strelica_crna.svg");
     position: fixed;
     bottom: 20px;
     left: 0px;
-    z-index: 99;
+    z-index: 99999999;
     background-image: none;
     cursor: pointer;
 
-
+	@include media-breakpoint-down(sm) {
+		      display: none !important; 
+		  }
 
 
 
@@ -494,7 +508,7 @@ list-style-image: url("#{$urlsass}/strelica_crna.svg");
     position: fixed;
     bottom: 20px;
     left: 0px;
-    z-index: 99;
+    z-index: 99999999;
     background-image: none;
     cursor: pointer;
       display: none;
@@ -505,6 +519,9 @@ list-style-image: url("#{$urlsass}/strelica_crna.svg");
     background-image: none;
     cursor: pointer;
 
+	@include media-breakpoint-down(sm) {
+		      display: none !important; 
+		  }
 
 
   /* make things invisible upon start */
@@ -558,6 +575,9 @@ list-style-image: url("#{$urlsass}/strelica_crna.svg");
 #hrv_slo_5_mobilnost{
 	@include padding(3rem);
 	@include bg_repeat();
+	h2{
+		margin-left:-2rem;
+	}
 	a{
 		color: var(--siva_tamno);
 	}
@@ -568,6 +588,11 @@ list-style-image: url("#{$urlsass}/strelica_crna.svg");
     
    
 	}
+	   @include media-breakpoint-down(md) {
+     	h2{
+     		margin-left: -30px;
+     	}
+    }
 }
 
 
@@ -710,9 +735,12 @@ list-style-image: url("#{$urlsass}/strelica_crna.svg");
 }
 
 #avantour_4_vozite{
-	@include padding_tb(10rem,10rem);
+	@include padding_tb(10rem,2rem);
 	color: var(--bijela);
 	@include bg_repeat();
+	.btn-outline-secondary{
+		margin-top: 6rem;
+	}
 }
 #avantour_5_destinacije{
 	@include padding(3rem);
@@ -800,12 +828,16 @@ list-style-image: url("#{$urlsass}/strelica_crna.svg");
 	}
 }
 #najam_1_flota{
+
 	background: var(--bijela);
 	/*.carousel{
 		padding: 2rem 0 2rem 1rem;
 	}*/
 	.progressbar{
 		top: -140px;
+		@include media-breakpoint-down(sm) {
+       		display: none;
+    	} 
 	}
 	.carousel-item{
 		h2{
@@ -904,7 +936,8 @@ div#avantour_1_kontakt {
 	a{
 		color: #fff;
 	}
-} 
+}
+
 /********************
 
 	SVG__STILOVI
@@ -1053,6 +1086,12 @@ div#avantour_1_kontakt {
 .example-row {
   @include make-row();
       align-items: flex-end;
+   @include media-breakpoint-down(sm) {
+       text-align: center;
+       .btn-outline-dark{
+       	margin-top: 1.5rem;
+       }
+    }   
 }
 
 .example-content-main {
@@ -1141,7 +1180,7 @@ div.pac-container {
 
 div.pum-theme-82 .pum-container, .pum-theme-default-theme .pum-container{
 	padding: 0px; 
-	padding-left: 1rem;
+	//padding-left: 1rem;
 	    border-bottom: 5px solid $zelena__;
 	        border-top: 5px solid $zelena__;
 	#pum_popup_title_88{
@@ -1296,7 +1335,7 @@ SUBMIT GUMB
 
 
 .page-id-74 .btn-outline-secondary{
-	display:none;
+	//display:none;
 }
 
 
@@ -1320,6 +1359,10 @@ SUBMIT GUMB
    
     position: absolute;
     bottom: 0px;
+
+    @include media-breakpoint-down(sm) {
+      display:none;
+    }
 }
 .red{
 	background: #000;
@@ -1547,6 +1590,13 @@ MODAL TRANSFERI GRAVITY FORMS STILOVI
     width: 15%;
     @include media-breakpoint-down(sm) {
            position:static;
+           width: 100%;
+    		margin: auto;
+    		    display: inline-block;
+    		    .submit_gumb{
+    		    	    height: 62px;
+    		    	    width: 52px;
+    		    }
         }
       }
     
@@ -1575,7 +1625,7 @@ MODAL TRANSFERI GRAVITY FORMS STILOVI
 		color: #000;
 	}	
 	div.gform_wrapper .gform_page_footer {
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     text-align: center;
     border-top: 0;
     z-index: 1;
@@ -1585,6 +1635,7 @@ MODAL TRANSFERI GRAVITY FORMS STILOVI
     @include media-breakpoint-down(md) {
         // Smaller than md: 768px
         position: inherit;
+
        // margin-bottom: 0rem;
     }
 }
@@ -1592,7 +1643,13 @@ MODAL TRANSFERI GRAVITY FORMS STILOVI
 .gform_title{
 	display:none;
 }
-
+.gform_body {
+    padding-bottom: 7rem;
+    padding-left: 1rem;
+     @include media-breakpoint-down(sm) {
+        padding-bottom: 1rem;
+    }
+}
 .avantour_slider{
   .carousel{
     padding:0;
@@ -1608,7 +1665,11 @@ MODAL TRANSFERI GRAVITY FORMS STILOVI
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-}
+  	@include media-breakpoint-down(sm) {
+            height: 135vh;
+		    }
+		}
+	
 }
 
 
@@ -1647,6 +1708,7 @@ PRIVACY
 }
 .gform_wrapper .gf_page_steps{
 	border-bottom: none !important;
+	margin: 0 0 3rem !important;
 }
 
 
@@ -1704,9 +1766,31 @@ RESPONZIVNI CARDS
 }
 
 .page-id-74 {
+	#content{
+		margin-top: -15rem;
+    z-index: 99999999;
+    position: relative;	    
+	}
    @include media-breakpoint-down(sm) {
        div#content {
-      margin-top: -32rem;
+      margin-top: -37rem;
     }
   }
+  .fixed-top{
+  	z-index: 9999999999;
+  }
+}
+
+.page-id-71{
+	@include media-breakpoint-down(sm) {
+      .wrapper{
+      	padding: 0;
+      }
+  }
+}
+
+#popmake-302{
+	border-top: none;
+	border-bottom: none;
+	background-color:none;
 }
