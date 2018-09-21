@@ -25,7 +25,7 @@ $container = get_theme_mod( 'understrap_container_type' );
 				
 			</div>
 			<div class="col-md-4 py-3 text-center text-white">Copyright 2018. Avantcar | <a href="<?php bloginfo('url'); ?>/privacy-policy">Privacy policy</a></div>
-			<div class="col-md-4 py-3 text-center"><img class="logo_avant" src="//localhost/avant_car/wp-content/uploads/2018/09/avant_car_logo.svg" alt="Karta Hrvatske"></div>
+			<div class="col-md-4 py-3 text-center"><img class="logo_avant" src="<?php bloginfo('url'); ?>/wp-content/uploads/2018/09/avant_car_logo.svg" alt="Karta Hrvatske"></div>
 						
 						<!--  <ul class="home_lista2 my-0">
 							<li>Dugoročni najam</li>
