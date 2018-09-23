@@ -63,10 +63,22 @@ $(".carousel").on("touchstart", function(event){
  $("#input_13_11").attr("data-target",'#exampleModal');
 
  $('.vozila').click(function() {
-    
+    $(".col-md-4").click(function() {
+        //$(this).css( 'cursor', 'pointer' );
+        var test3 =  $(this).find('h2 a').text();
+       // alert( test3 );
+        $('#input_13_11').val(test3);
+            $('#input_13_11').attr("placeholder", test3);
+            if( $(this).data('clicked', true)){
+                $("#exampleModal").modal("hide");
+            }
+        //var test4 =  $('h2 a').text();
+       // window.location =  $(this).find("a").attr("href"); 
+           
+    });
      
      $('a').click(function () {
-            var test3 =  $(this).text();
+            var test3 =  $('h2 a').text();
            // alert( test3 );
             $('#input_13_11').val(test3);
             $('#input_13_11').attr("placeholder", test3);

@@ -23,7 +23,7 @@
         
         ));
         if( $posts ): ?>
-        <div class="row">
+        <div class="row vozila_kursor">
         <?php foreach( $posts as $post ): 
             
             setup_postdata( $post );
