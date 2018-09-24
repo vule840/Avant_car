@@ -143,3 +143,15 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', end
  }
 }
 
+.gfield_checkbox{
+  color: #fff;
+      vertical-align: sub;
+      width: 100px;
+      padding-left: 0.5rem;
+}
+.gform_wrapper .gfield_checkbox li label{
+  max-width: 100%;
+}
+/*.gfield_label{
+  font-size:0.9rem;
+}*/
