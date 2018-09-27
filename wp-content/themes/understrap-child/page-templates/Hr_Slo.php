@@ -34,7 +34,7 @@ HERO SECTION__HEADER
 
 			<div class="col-md-8 content-area text-center mx-auto" id="primary">
 				<P>Naše usluge pružamo na području Hrvatske i Slovenije, sa logističknom i korisničkom podrškom
-u međunarodnim zračnim lukama i u više od 10 gradova.</P>
+u međunarodnim zračnim lukama i u <strong>12 gradova.</strong></P>
 
 			</div><!-- #primary -->
 			<div class="col-md-6 text-center">
@@ -49,6 +49,28 @@ u međunarodnim zračnim lukama i u više od 10 gradova.</P>
 			<!--<svg class="karta_slo"><use xlink:href="<?php bloginfo('template_url'); ?>/img/karta_slo.svg" /></svg>  -->	
 			</div>
 
+
+
+<!-- <div class="col-md-6 text-center">
+				<h4 class="text-light">KORPORATIVNI CENTAR ZAGREB </h4>
+				
+				<p>Radnička cesta 52</p>
+				<p>Green Gold</p>
+				<p>10 000 Zagreb</p>
+			
+
+			</div>
+
+					<div class="col-md-6 text-center">
+			
+				
+				<h4>KORPORATIVNI CENTAR LJUBLJANA</h4>
+				<p>Dunajska cesta 140</p>
+				<p>1000 Ljubljana</p>
+				
+			</div> -->
+			
+
 		</div><!-- .row end -->
 
 
@@ -58,17 +80,18 @@ u međunarodnim zračnim lukama i u više od 10 gradova.</P>
 
 		 *************** -->
 
-		 <div id="hrv_slo_2_lokacije" class="row">
+		 <div id="hrv_slo_2_lokacije" class="row text-center">
 		 	
 
 		 <!-- <div class="col-md-12 text-center zelena"><h2 class="pb-4">LOKACIJE POSLOVNICA</h2></div> -->	
-		 	<div class="col-md-12 text-center zelena"><h2 class="pb-4">KORPORATIVNI CENTRI</h2></div>
+		 	<!-- <div class="col-md-12 text-center zelena"><h2 class="pb-4">KORPORATIVNI CENTRI</h2></div> -->
 			<div class="col-md-6">
-				<h4>ZAGREB </h4>
-				
-				<p>Radnička cesta 52</p>
+				<h4 class="pb-4">KORPORATIVNI CENTRI ZAGREB</h4>
+
 				<p>Green Gold</p>
-				<p>10 000 Zagreb</p>
+				<p>Radnička cesta 52, 10 000 Zagreb</p>
+				
+				
 				<!-- <h4>ZAGREB - ZRAČNA LUKA</h4>
 				<p>Dr. Franjo Tuđman</p>
 				<p>Radnička cesta 52, 10 000 Zagreb</p>
@@ -81,7 +104,7 @@ u međunarodnim zračnim lukama i u više od 10 gradova.</P>
 				<p>Radno vrijeme: Pon - Pet 08:00 - 18:00</p>
 				<p></p> <hr>--> 
 				
-				<h4>LJUBLJANA</h4>
+				<h4 class="pb-4">KORPORATIVNI CENTRI LJUBLJANA</h4>
 				<p>Dunajska cesta 140</p>
 				<p>1000 Ljubljana</p>
 				<!-- <p>Radno vrijeme: Pon - Pet 08:00 - 18:00</p> -->

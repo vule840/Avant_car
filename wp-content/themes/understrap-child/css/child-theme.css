@@ -10957,13 +10957,19 @@ body #cover {
 	NASLOV_STILOVI
 
 **********************/
-h1.naslovna {
-  font-size: 5.5rem;
+/*.page-id-51 h1.naslovna{
+	font-size: 4.5rem;
+}
+html body.page-id-71 h1.naslovna{
+	font-size: 4.5rem;
+}*/
+body.page-template h1.naslovna {
+  font-size: 4.5rem;
   color: var(--bijela);
   font-weight: 300;
   line-height: 1; }
   @media (max-width: 991.98px) {
-    h1.naslovna {
+    body.page-template h1.naslovna {
       font-size: 3.5rem; } }
 
 .naslovna__ispod {
@@ -11157,7 +11163,7 @@ div#content {
 	}*/ }
   #dugorocni-najam p {
     margin-bottom: 1.5rem;
-    font-size: 0.95rem; }
+    font-size: 1rem; }
   #dugorocni-najam h2 {
     margin-bottom: -3px; }
   #dugorocni-najam .italic_slova {
@@ -11170,7 +11176,7 @@ div#content {
   #dugorocni-najam .card-body {
     padding: 0; }
     #dugorocni-najam .card-body p {
-      font-size: 0.8rem; }
+      font-size: 0.9rem; }
 
 #home_3_flota {
   background: var(--bijela);
@@ -11180,6 +11186,8 @@ div#content {
     font-weight: bold; }
   #home_3_flota .home_kompletnu {
     font-size: 1.2rem; }
+    #home_3_flota .home_kompletnu a {
+      color: var(--siva_tamno); }
   #home_3_flota .home_lista li {
     font-size: 1.2rem; }
     @media (max-width: 767.98px) {
@@ -11190,6 +11198,22 @@ div#content {
   background: var(--siva_tamno);
   padding: 2rem;
   color: var(--bijela); }
+  #home_4_zatrazite .kontakt_auti {
+    fill: var(--bijela);
+    width: 100px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-item-align: center;
+        align-self: center; }
+  #home_4_zatrazite .form {
+    fill: var(--bijela);
+    width: 60px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-item-align: center;
+        align-self: center; }
   @media (min-width: 992px) {
     #home_4_zatrazite .card-deck .card {
       -ms-flex: 0 0 33%;
@@ -11416,10 +11440,21 @@ ul.home_lista2 {
   #avantour_3_vozila .tx_field_bold {
     font-size: 2rem;
     font-weight: bold; }
+    @media (max-width: 767.98px) {
+      #avantour_3_vozila .tx_field_bold {
+        font-size: 1.5rem; } }
   #avantour_3_vozila .progressbar {
-    background: none; }
+    background: none;
+    top: unset !important;
+    bottom: 0; }
+    @media (max-width: 767.98px) {
+      #avantour_3_vozila .progressbar {
+        display: none; } }
     #avantour_3_vozila .progressbar li:before {
       margin-top: 0; }
+    #avantour_3_vozila .progressbar li:last-child {
+      text-indent: -50px !important;
+      width: 94px; }
   #avantour_3_vozila .carousel .avantour_covac {
     fill: var(--zelena);
     width: 50px;
@@ -11428,6 +11463,9 @@ ul.home_lista2 {
     display: inline-flex;
     -ms-flex-item-align: center;
         align-self: center; }
+    @media (max-width: 767.98px) {
+      #avantour_3_vozila .carousel .avantour_covac {
+        width: 35px; } }
   #avantour_3_vozila .carousel .avantour_taska {
     fill: var(--zelena);
     width: 70px;
@@ -11437,6 +11475,10 @@ ul.home_lista2 {
     -ms-flex-item-align: center;
         align-self: center;
     height: 150px; }
+    @media (max-width: 767.98px) {
+      #avantour_3_vozila .carousel .avantour_taska {
+        width: 50px;
+        height: 150px; } }
   #avantour_3_vozila .carousel .transferi_link_rezervirajte {
     position: absolute;
     bottom: 25px;
@@ -11450,13 +11492,13 @@ ul.home_lista2 {
     top: 300px;
     margin-right: 0;
     margin-left: 0;
-    padding: 2rem; }
+    padding: 2rem;
+    padding-left: 3rem; }
     #avantour_3_vozila .carousel .carousel-indicators li {
-      text-indent: 0;
+      text-indent: -151px;
+      padding-top: 1rem;
       margin-left: 0;
       margin-right: 0; }
-    #avantour_3_vozila .carousel .carousel-indicators .active {
-      background: var(--zelena); }
 
 #avantour_4_vozite {
   padding-top: 10rem;
@@ -11553,9 +11595,38 @@ ul.home_lista2 {
 
 #najam_1_flota {
   background: var(--bijela);
+  background: var(--bijela);
+  padding: 0rem;
+  /*.tx_field_bold{
+		font-size: 2rem;
+		font-weight: bold;
+	}*/
   /*.carousel{
 		padding: 2rem 0 2rem 1rem;
 	}*/
+  /*.progressbar{
+		top: -140px;
+		@include media-breakpoint-down(sm) {
+       		display: none;
+    	} 
+	}
+	.carousel-item{
+		h2{
+			padding: 2rem 0;
+		}
+	}
+	.carousel-indicators li{
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.carousel-indicators li::before{
+		position: static;
+	}
+	a{
+		 
+		color: var(--siva_tamno);
+	}
+*/
   /*	.progressbar li{
 		text-align: center;
 		text-indent: 0;
@@ -11563,21 +11634,70 @@ ul.home_lista2 {
 		}*/
   /*.progressbar li.active:before {
     
-}*/ }
+}*/
+  /*.progressbar li.active {
+    
+    color: var(--siva_tamno);
+    background: var(--siva_tamno);
+    &:before{
+      border-color: var(--siva_tamno);
+    background: var(--siva_tamno);
+ 
+    }
+}
+*/ }
+  #najam_1_flota h2 {
+    padding: 2rem 0; }
   #najam_1_flota .progressbar {
-    top: -140px; }
+    background: var(--zelena);
+    bottom: 0; }
     @media (max-width: 767.98px) {
       #najam_1_flota .progressbar {
         display: none; } }
-  #najam_1_flota .carousel-item h2 {
-    padding: 2rem 0; }
-  #najam_1_flota .carousel-indicators li {
+    #najam_1_flota .progressbar li {
+      background: transparent; }
+      #najam_1_flota .progressbar li:before {
+        margin-top: 0; }
+      #najam_1_flota .progressbar li:last-child {
+        text-indent: -6px !important;
+        width: 10px; }
+  #najam_1_flota .carousel .avantour_covac {
+    fill: var(--zelena);
+    width: 50px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-item-align: center;
+        align-self: center; }
+  #najam_1_flota .carousel .avantour_taska {
+    fill: var(--zelena);
+    width: 70px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -ms-flex-item-align: center;
+        align-self: center;
+    height: 150px; }
+  #najam_1_flota .carousel .transferi_link_rezervirajte {
+    position: absolute;
+    bottom: 25px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    z-index: 1111111; }
+    #najam_1_flota .carousel .transferi_link_rezervirajte a {
+      color: var(--siva_tamno); }
+  #najam_1_flota .carousel .carousel-indicators {
+    top: -140px;
+    margin-right: 0;
     margin-left: 0;
-    margin-right: 0; }
-  #najam_1_flota .carousel-indicators li::before {
-    position: static; }
-  #najam_1_flota a {
-    color: var(--siva_tamno); }
+    padding: 2rem;
+    padding-left: 4rem; }
+    #najam_1_flota .carousel .carousel-indicators li {
+      text-indent: -151px;
+      padding-top: 1rem;
+      margin-left: 0;
+      margin-right: 0; }
   #najam_1_flota .ikonice {
     margin: auto; }
     #najam_1_flota .ikonice tr td {
@@ -11600,12 +11720,6 @@ ul.home_lista2 {
       /*&:nth-child(1){
 			border:none;
 		}*/ }
-  #najam_1_flota .progressbar li.active {
-    color: var(--siva_tamno);
-    background: var(--siva_tamno); }
-    #najam_1_flota .progressbar li.active:before {
-      border-color: var(--siva_tamno);
-      background: var(--siva_tamno); }
 
 .page-template-Flota #content {
   margin-top: 0rem; }
@@ -11625,7 +11739,8 @@ div#avantour_1_kontakt {
     background-position: center -126px;*/
   padding: 4rem 0; }
   #wrapper-footer a {
-    color: #fff; }
+    color: #fff;
+    padding: 0 0.3rem; }
 
 /********************
 
@@ -11670,7 +11785,8 @@ div#avantour_1_kontakt {
   display: -ms-inline-flexbox;
   display: inline-flex;
   -ms-flex-item-align: center;
-      align-self: center; }
+      align-self: center;
+  height: 200px; }
   @media (max-width: 767.98px) {
     .home_list {
       width: 250px; } }
@@ -12061,7 +12177,6 @@ body .gform_wrapper .gf_progressbar_wrapper .gf_progressbar .gf_progressbar_perc
   text-align: center;
   text-transform: uppercase;
   color: #7d7d7d;
-  background: var(--siva_tamno);
   height: 2px; }
 
 .progressbar li:before {
@@ -12088,25 +12203,28 @@ body .gform_wrapper .gf_progressbar_wrapper .gf_progressbar .gf_progressbar_perc
   right: 0%;
   z-index: -1; }
 
-.progressbar li:first-child:after {
-  content: none; }
+.progressbar li:last-child:after {
+  background: transparent;
+  width: 1px; }
 
+/*.progressbar li:first-child:after {
+      content: none;
+  }*/
 .progressbar li.active {
-  color: var(--zelena); }
+  color: #000; }
 
 .progressbar li.active:before {
   border-color: var(--zelena);
-  background: var(--zelena);
   /*color: var(--siva_tamno);*/ }
-
-.progressbar li.active + li:after {
-  background-color: #55b776; }
 
 /* .carousel-indicators li{
   	height: 	2px;
   	margin-right: 	0;
   	margin-left: 	0;
   }*/
+.carousel-indicators .active {
+  background-color: transparent; }
+
 /*********
 
 SUBMIT GUMB
@@ -12116,8 +12234,9 @@ SUBMIT GUMB
   background-image: url("http://localhost/avant_car/wp-content/themes/understrap/img/submit_gumb.svg");
   background-repeat: no-repeat;
   text-indent: -99999px;
-  WIDTH: 50px;
+  WIDTH: 52px;
   height: 58px;
+  vertical-align: inherit;
   background-color: transparent; }
   .submit_gumb:focus {
     -webkit-box-shadow: none;
@@ -12127,7 +12246,7 @@ SUBMIT GUMB
   text-align: center; }
 
 .modal {
-  z-index: 99999999; }
+  z-index: 9999999999; }
 
 .modal-dialog {
   max-width: 1200px;
@@ -12371,6 +12490,14 @@ MODAL TRANSFERI GRAVITY FORMS STILOVI
       /* top: -14px; */
       right: 10px;
       bottom: -53px;
+      top: -75px; } }
+  @media (max-width: 767.98px) {
+    #gform_page_13_1 .gform_page_footer {
+      z-index: 1;
+      position: absolute;
+      /* top: -14px; */
+      right: 29px;
+      bottom: -28px;
       top: auto; } }
 
 #gform_page_13_2 .gform_page_footer {
@@ -12577,3 +12704,19 @@ RESPONZIVNI CARDS
 
 .vozila_kursor .col-md-4 {
   cursor: pointer; }
+
+#popmake-222 .gform_body {
+  padding-bottom: 0rem; }
+
+.gform_wrapper.gf_browser_chrome .gfield_checkbox li input, .gform_wrapper.gf_browser_chrome .gfield_checkbox li input[type=checkbox] {
+  margin-top: -21px;
+  color: #000; }
+
+div.gform_wrapper.gf_browser_chrome .gfield_checkbox li input, .gform_wrapper.gf_browser_chrome .gfield_checkbox li {
+  margin-top: 3px !important; }
+
+#field_6_22 .gfield_required {
+  display: none; }
+
+#field_4_26 .gfield_required {
+  display: none; }

@@ -13,7 +13,7 @@
 			    <li data-target="#carouselExampleIndicators" data-slide-to="1">ECONOMY</li>
 			    <li data-target="#carouselExampleIndicators" data-slide-to="2">BUSINESS</li>
 			     <li data-target="#carouselExampleIndicators" data-slide-to="3">PREMIUM TESLA</li>
-			      <li data-target="#carouselExampleIndicators" data-slide-to="4">ELECTRIC COMPACT BUSINESS</li>
+			      <li data-target="#carouselExampleIndicators" data-slide-to="4">ELECTRIC BUSINESS</li>
 			      <li data-target="#carouselExampleIndicators" data-slide-to="5">VAN</li>
 			     <!-- <li data-target="#carouselExampleIndicators" data-slide-to="6">VOZILA PO NARUDŽBI</li> --> 
 			  </ul>

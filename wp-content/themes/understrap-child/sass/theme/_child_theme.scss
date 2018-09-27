@@ -73,9 +73,14 @@ body #cover {
 	NASLOV_STILOVI
 
 **********************/
-
-h1.naslovna {
-    font-size: 5.5rem;
+/*.page-id-51 h1.naslovna{
+	font-size: 4.5rem;
+}
+html body.page-id-71 h1.naslovna{
+	font-size: 4.5rem;
+}*/
+body.page-template h1.naslovna {
+    font-size: 4.5rem;
     
     color: var(--bijela);
     font-weight: 300;
@@ -317,7 +322,7 @@ div#content {
     background-size: cover;
 	p{
 		margin-bottom: 1.5rem;
-    font-size: 0.95rem;
+    font-size: 1rem;
 	}
 	h2{
 		 @include line_height(-3px);  
@@ -357,7 +362,7 @@ div#content {
 		padding: 0;
 
 		p{
-			font-size: 0.8rem;
+			font-size: 0.9rem;
 		
 		}
 	}
@@ -372,6 +377,10 @@ div#content {
 	}
 	.home_kompletnu{
 		font-size: 1.2rem;
+		
+		a{
+			color: var(--siva_tamno);
+		}
 	}
 	.home_lista li{
 		font-size: 1.2rem;
@@ -385,6 +394,12 @@ div#content {
 	background: var(--siva_tamno);
 	@include padding(2rem);
 	color: var(--bijela);
+	.kontakt_auti{
+		@include svg(var(--bijela),100px,inline-flex, center);
+	}
+	.form{
+		@include svg(var(--bijela),60px,inline-flex, center);
+	}
   @media (min-width: 992px)
     {
       .card-deck .card {
@@ -682,23 +697,46 @@ list-style-image: url("#{$urlsass}/strelica_crna.svg");
 	.tx_field_bold{
 		font-size: 2rem;
 		font-weight: bold;
+		@include media-breakpoint-down(sm) {
+		     font-size: 1.5rem;
+
+		  }
 	}
 	.progressbar{
 		background: none;
+		    top: unset !important;
+		bottom: 0;
+		@include media-breakpoint-down(sm) {
+		      display:none;
+		  }
 		li{
 			&:before{
 				margin-top: 0;
 
 			}
+			 &:last-child {   
+			 	text-indent: -50px!important;
+			    width: 94px;
+			}
+			 
 		}
 	}
 	.carousel {
 		.avantour_covac{
 				@include svg(var(--zelena),50px,inline-flex, center);
+				@include media-breakpoint-down(sm) {
+		    		 width: 35px;
+		    		 
+		 			 }
 			}
 		.avantour_taska{
 				@include svg(var(--zelena),70px,inline-flex, center);
 				height: 150px;
+				@include media-breakpoint-down(sm) {
+		    		 width: 50px;
+		    		 height: 150px;
+		    		 
+		 			 }
 			}	
 		.transferi_link_rezervirajte{
 			position: absolute;
@@ -718,17 +756,20 @@ list-style-image: url("#{$urlsass}/strelica_crna.svg");
 			//background: var(--zelena);
 			margin-right: 0;
 			margin-left: 0;
+			   
 			@include padding(2rem);
+			 padding-left: 3rem;
 			li{
 				//border: 1px solid var(--zelena);
-				text-indent:0;
+				text-indent:-151px;
+				padding-top: 1rem;
     			//line-height: 4;
 				//padding-top: 1.2rem;
 				margin-left: 0;
 		margin-right: 0;
 			}
 			.active{
-					background: var(--zelena);
+					//background: var(--siva_tamno);
 				}
 		}
 	}
@@ -830,10 +871,84 @@ list-style-image: url("#{$urlsass}/strelica_crna.svg");
 #najam_1_flota{
 
 	background: var(--bijela);
+	background: var(--bijela);
+	@include padding(0rem);
+	h2{
+		padding: 2rem 0;
+	}
+	/*.tx_field_bold{
+		font-size: 2rem;
+		font-weight: bold;
+	}*/
+	.progressbar{
+		background: var(--zelena);
+		    //top: unset !important;
+		bottom: 0;
+		@include media-breakpoint-down(sm) {
+		      display:none;
+		  }
+		li{
+			background: transparent;
+			&:before{
+				margin-top: 0;
+
+			}
+			&:last-child{
+		      	text-indent: -6px !important;
+		    	width: 10px;
+		      }
+		}
+
+	}
+	.carousel {
+
+		.avantour_covac{
+				@include svg(var(--zelena),50px,inline-flex, center);
+			}
+		.avantour_taska{
+				@include svg(var(--zelena),70px,inline-flex, center);
+				height: 150px;
+			}	
+		.transferi_link_rezervirajte{
+			position: absolute;
+			bottom:25px;
+			left: 0;
+			right: 0;
+			margin: auto;
+			z-index: 1111111;
+			a{
+				color: var(--siva_tamno);
+			}
+
+		}
+		.carousel-indicators{
+			//bottom:10px;
+			top:-140px;
+			//background: var(--zelena);
+			margin-right: 0;
+			margin-left: 0;
+			   
+			@include padding(2rem);
+			 padding-left: 4rem;
+			li{
+
+				//border: 1px solid var(--zelena);
+				text-indent:-151px;
+				padding-top: 1rem;
+    			//line-height: 4;
+				//padding-top: 1.2rem;
+				margin-left: 0;
+		margin-right: 0;
+			}
+			.active{
+					//background: var(--siva_tamno);
+				}
+		}
+	}
 	/*.carousel{
 		padding: 2rem 0 2rem 1rem;
 	}*/
-	.progressbar{
+	/*.progressbar{
 		top: -140px;
 		@include media-breakpoint-down(sm) {
        		display: none;
@@ -855,7 +970,7 @@ list-style-image: url("#{$urlsass}/strelica_crna.svg");
 		 
 		color: var(--siva_tamno);
 	}
-
+*/
  
 /*	.progressbar li{
 		text-align: center;
@@ -895,7 +1010,7 @@ list-style-image: url("#{$urlsass}/strelica_crna.svg");
 	}
 }
 
-.progressbar li.active {
+/*.progressbar li.active {
     
     color: var(--siva_tamno);
     background: var(--siva_tamno);
@@ -905,7 +1020,7 @@ list-style-image: url("#{$urlsass}/strelica_crna.svg");
  
     }
 }
-
+*/
 
 }
 
@@ -935,6 +1050,7 @@ div#avantour_1_kontakt {
 	//height: 50px;/
 	a{
 		color: #fff;
+		    padding: 0 0.3rem;
 	}
 }
 
@@ -964,6 +1080,7 @@ div#avantour_1_kontakt {
 }
 .home_list{
 	@include svg(var(--bijela),300px,inline-flex, center);
+	height: 200px;
   @include media-breakpoint-down(sm) {
         // Smaller than md: 768px
         width:250px;
@@ -1252,8 +1369,9 @@ body .gform_wrapper .gf_progressbar_wrapper .gf_progressbar .gf_progressbar_perc
       text-align: center;
       text-transform: uppercase;
       color: #7d7d7d;
-      background: var(--siva_tamno);
+      //background: var(--siva_tamno);
       height: 2px;
+      
   }
   .progressbar li:before {
       width: 20px;
@@ -1270,6 +1388,7 @@ body .gform_wrapper .gf_progressbar_wrapper .gf_progressbar .gf_progressbar_perc
       content: "";
 
   }
+
   .progressbar li:after {
       width: 100%;
       height: 2px;
@@ -1279,22 +1398,29 @@ body .gform_wrapper .gf_progressbar_wrapper .gf_progressbar .gf_progressbar_perc
       top: 0px;
       right: 0%;
       z-index: -1;
+      
   }
-  .progressbar li:first-child:after {
+   .progressbar li:last-child:after{
+  	background: transparent;
+  	//display:none;
+  	width: 1px;
+  }
+  /*.progressbar li:first-child:after {
       content: none;
-  }
+  }*/
   .progressbar li.active {
-      color: var(--zelena);
+      color: #000;
+
   }
   .progressbar li.active:before {
       border-color: var(--zelena);
-      background: var(--zelena);
+      //background: var(--zelena);
       //border-color: var(--siva_tamno);
     //background: var(--siva_tamno);
     /*color: var(--siva_tamno);*/
   }
   .progressbar li.active + li:after {
-      background-color: #55b776;
+      //background-color: #55b776;
   }
  /* .carousel-indicators li{
   	height: 	2px;
@@ -1302,7 +1428,9 @@ body .gform_wrapper .gf_progressbar_wrapper .gf_progressbar .gf_progressbar_perc
   	margin-left: 	0;
   }*/
 
-
+.carousel-indicators .active{
+	background-color: transparent;
+}
 /*********
 
 SUBMIT GUMB
@@ -1313,8 +1441,9 @@ SUBMIT GUMB
   	 background-image: url("#{$urlsass}/submit_gumb.svg");
   	     background-repeat: no-repeat;
     text-indent: -99999px;
-        WIDTH: 50px;
+        WIDTH: 52px;
     height: 58px;
+    vertical-align: inherit;
     background-color: transparent;
     &:focus{
     	box-shadow:none;
@@ -1328,7 +1457,7 @@ SUBMIT GUMB
 
 
 .modal{
-	    z-index: 99999999;
+	    z-index: 9999999999;
 }
 .modal-dialog {
     max-width: 1200px;
@@ -1532,6 +1661,7 @@ div.gform_wrapper .gform_page_footer {
     z-index: 1;
     @media (min-width: 768px) and (max-width: 991.98px) {
 		 bottom: -43px !important;
+
 		}
 }
 
@@ -1598,8 +1728,20 @@ MODAL TRANSFERI GRAVITY FORMS STILOVI
     right: 10px;
     
     bottom: -53px;
+    top:-75px;
+    }
+
+        @include media-breakpoint-down(sm) {
+        // Smaller than md: 768px
+        
+    z-index: 1;
+    position: absolute;
+    /* top: -14px; */
+   right: 29px;
+    bottom: -28px;
     top:auto;
     }
+    //805-705
 
     }
 }
@@ -1823,4 +1965,28 @@ RESPONZIVNI CARDS
   .col-md-4{
     cursor: pointer;
   }
+}
+
+
+
+#popmake-222{
+	.gform_body{
+		padding-bottom: 0rem;
+	}
+}
+
+
+.gform_wrapper.gf_browser_chrome .gfield_checkbox li input, .gform_wrapper.gf_browser_chrome .gfield_checkbox li input[type=checkbox]{
+	margin-top: -21px;
+	color: #000;
+}
+div.gform_wrapper.gf_browser_chrome .gfield_checkbox li input, .gform_wrapper.gf_browser_chrome .gfield_checkbox li {
+	    margin-top: 3px !important;
+}
+#field_6_22 .gfield_required{
+	display: none;
+}
+
+#field_4_26 .gfield_required{
+	display: none;
 }

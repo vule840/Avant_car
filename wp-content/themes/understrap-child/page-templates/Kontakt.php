@@ -44,14 +44,13 @@ kontaktirat će Vas u roku 24 sata.</p>
 			<div class="col-md-4">
 				<svg class="kontakt_mob"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#kontakt-mob" /></svg>
 				<h4 class="font-weight-light pb-2"><a class="zelena" href="mailto:corporate@avantcar.hr">+385 (0)1 6251 222</a></h4>
-				<p>Možete nas jednostavno nazvati i odmah
-krećemo s unapređenjem vaše mobilnosti.</p>
+				<p>Unaprijedite vašu mobilnost odmah.</p>
 
 </div>
 <div class="col-md-4">
 				<svg class="kontakt_auti"><use xlink:href="<?php bloginfo('template_url'); ?>/img/sprite-sheet.svg#ref-auti" /></svg>
 				<h3 class="font-weight-light">
-					Otkrijte more mogućnosti uz Avant car poslovna rješenja	
+					Otkrijte more mogućnosti
 				</h3>
 				<!-- <p>Otkrijte more mogućnosti uz Avant car poslovna rješenja</p>
  -->

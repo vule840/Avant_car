@@ -96,14 +96,14 @@ $(".carousel").on("touchstart", function(event){
  $("#gform_submit_button_6").addClass('btn-success');*/
 
 
-/* $('#gform_submit_button_2').click(function() {
+ $('#gform_submit_button_2').click(function() {
     // handle redirect here
     console.log('jeejeje');
      // handle redirect here
     var link = $('#exampleModal').data('link');
     location.href = link;
     $('#exampleModal').modal('hide')
-});*/
+});
 /*$('#input_2_10').hover(function() {
       $(this).css("background-color", "yellow");
     
@@ -137,7 +137,7 @@ $(window).scroll(function() {
     $('#fade').fadeOut('slow');}
 
  //drugi
-  if ($(this).scrollTop() > 750 && $(this).scrollTop() < 5000) {
+  if ($(this).scrollTop() > 1350 && $(this).scrollTop() < 5000) {
     $('#fade2').fadeIn('slow');
   } else {
     $('#fade2').fadeOut('slow');}
