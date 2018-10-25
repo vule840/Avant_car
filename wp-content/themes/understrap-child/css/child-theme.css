@@ -12215,6 +12215,7 @@ body .gform_wrapper .gf_progressbar_wrapper .gf_progressbar .gf_progressbar_perc
 
 .progressbar li.active:before {
   border-color: var(--zelena);
+  background: var(--zelena);
   /*color: var(--siva_tamno);*/ }
 
 /* .carousel-indicators li{
@@ -12720,3 +12721,6 @@ div.gform_wrapper.gf_browser_chrome .gfield_checkbox li input, .gform_wrapper.gf
 
 #field_4_26 .gfield_required {
   display: none; }
+
+body img.gform_ajax_spinner {
+  display: none !important; }

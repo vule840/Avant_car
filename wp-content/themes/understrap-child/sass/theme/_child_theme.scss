@@ -1414,7 +1414,8 @@ body .gform_wrapper .gf_progressbar_wrapper .gf_progressbar .gf_progressbar_perc
   }
   .progressbar li.active:before {
       border-color: var(--zelena);
-      //background: var(--zelena);
+
+      background: var(--zelena);
       //border-color: var(--siva_tamno);
     //background: var(--siva_tamno);
     /*color: var(--siva_tamno);*/
@@ -1989,4 +1990,8 @@ div.gform_wrapper.gf_browser_chrome .gfield_checkbox li input, .gform_wrapper.gf
 
 #field_4_26 .gfield_required{
 	display: none;
+}
+
+body img.gform_ajax_spinner {
+ display: none !important;
 }

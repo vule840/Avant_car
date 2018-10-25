@@ -761,3 +761,9 @@ function filter_gf_select_optgroup( $input, $field ) {
                 <?php
         }
 }*/
+
+function themeslug_enqueue_style() {
+  wp_enqueue_script( 'test', get_template_directory_uri() . '/js/test.js', array(), true);
+}
+
+add_action( 'gform_after_submission_13', 'themeslug_enqueue_style' );

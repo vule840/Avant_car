@@ -15,14 +15,14 @@
             </div>
           </div>
           <!-- Slide Two - Set the background image for this slide in the line below -->
-          <div class="carousel-item" style="background-image: url('<?php the_field('avantour_auto_slika1'); ?>')">
+          <div class="carousel-item" style="background-image: url('<?php the_field('avantour_auto_slika_1'); ?>')">
             <div class="carousel-caption d-none d-md-block">
               <h1 class="naslovna">AVANTOUR</h1>
               <p class="naslovna__ispod2">vaš bezbrižan transfer</p>
             </div>
           </div>
           <!-- Slide Three - Set the background image for this slide in the line below -->
-          <div class="carousel-item" style="background-image: url('<?php the_field('avantour_auto_slika2'); ?>')">
+          <div class="carousel-item" style="background-image: url('<?php the_field('avantour_auto_slika_2'); ?>')">
             <div class="carousel-caption d-none d-md-block">
               <h1 class="naslovna">AVANTOUR</h1>
               <p class="naslovna__ispod2">vaš bezbrižan transfer</p>
